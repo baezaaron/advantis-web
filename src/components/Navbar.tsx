@@ -7,7 +7,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   return (
     <nav className="bg-white shadow fixed top-0 w-full z-50 h-16">
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-center md:justify-between h-full">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-full">
         {/* Logo */}
         <Link href="/" className="flex items-center h-full">
           <img
