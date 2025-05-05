@@ -10,7 +10,7 @@ export default function CareersPage() {
           At Advantis, we're on a mission to transform healthcare through innovative technology and compassionate care. We're looking for talented individuals who share our passion for improving patient outcomes and making quality healthcare accessible to all.
           </p>
           <p className="text-lg text-primary font-medium">
-            Please reach out to us at <a href="mailto:info@advantis.care" className="underline">info@advantis.care</a>.
+            Please reach out to us at <a href="mailto:info@advantis.care" className="underline">info@advantis.care</a>
           </p>
         </div>
       </div>

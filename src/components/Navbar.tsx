@@ -2,26 +2,21 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import CustomImage from '@/components/Image';
+// import Image from 'next/image'; // Not using Next.js Image here for logo
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   return (
     <nav className="bg-white shadow-md fixed w-full z-50">
-      <div className="container mx-auto px-4 md:px-6 flex items-center h-20 justify-between">
+      <div className="container mx-auto px-4 md:px-6 flex items-center h-24 sm:h-28 md:h-16 justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center flex-none">
-          {/* Adjust logo size: mobile larger, scale up on md/lg */}
-          <div className="relative h-12 md:h-16 lg:h-24 w-36 md:w-56 lg:w-72">
-            <CustomImage
-              src="/images/Advantis-Logo-200.png"
-              alt="Advantis Logo"
-              fill
-              sizes="(max-width: 640px) 96px, (max-width: 1024px) 128px, 160px"
-              className="object-contain"
-              priority
-            />
-          </div>
+        <Link href="/" className="flex-shrink-0">
+          <img
+            src="/images/Advantis-Logo-200.png"
+            alt="Advantis Logo"
+            className="h-16 sm:h-20 md:h-16 object-contain"
+            loading="eager"
+          />
         </Link>
 
         {/* Centered navigation links (hidden on mobile) */}

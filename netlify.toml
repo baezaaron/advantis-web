@@ -8,4 +8,10 @@
 
 # Disable the Netlify Next.js plugin
 [[plugins]]
-  package = "@netlify/plugin-nextjs" 
+  package = "@netlify/plugin-nextjs"
+
+# Disable the custom images redirect
+# [[redirects]]
+#   from = "/images/*"
+#   to = "/images/:splat"
+#   status = 200 

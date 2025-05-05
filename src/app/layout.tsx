@@ -36,9 +36,11 @@ export default function RootLayout({
       <head>
         {/* reCAPTCHA Script removed from layout; loaded client-side in RecaptchaWidget */}
         
-        {/* Favicon - extra redundancy */}
+        {/* Favicon setup */}
+        <link rel="icon" href="/images/favicon-32x32.png" sizes="32x32" type="image/png" />
         <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon-32x32.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/favicon-32x32.png" sizes="180x180" />
       </head>
       <body className="min-h-screen flex flex-col bg-neutral-100 font-sans antialiased">
         <Navbar />
