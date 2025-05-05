@@ -13,7 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Advantis | Healthcare Technology Solutions",
+  title: "Advantis | Data-Driven Remote Care",
   description: "Advantis provides technology-enabled support for patients at home, revolutionizing healthcare delivery with innovative solutions.",
   icons: {
     icon: [
