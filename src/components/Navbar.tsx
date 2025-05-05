@@ -8,17 +8,15 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   return (
     <nav className="bg-white shadow-md fixed w-full z-50">
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between h-12 sm:h-16 md:h-16">
+      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between h-12 sm:h-16 md:h-16 lg:h-20">
         {/* Logo */}
         <Link href="/" className="flex-shrink-0">
-          <div className="h-full w-20 sm:w-24 md:w-32 lg:w-40 flex items-center">
-            <img
-              src="/images/Advantis-Logo-200.png"
-              alt="Advantis Logo"
-              className="h-full w-auto object-contain"
-              loading="eager"
-            />
-          </div>
+          <img
+            src="/images/Advantis-Logo-200.png"
+            alt="Advantis Logo"
+            className="h-8 sm:h-12 md:h-12 lg:h-16 object-contain"
+            loading="eager"
+          />
         </Link>
 
         {/* Centered navigation links (hidden on mobile) */}
