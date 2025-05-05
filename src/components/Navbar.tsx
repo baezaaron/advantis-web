@@ -13,7 +13,7 @@ export default function Navbar() {
           <img
             src="/images/Advantis-Logo-200.png"
             alt="Advantis Logo"
-            className="h-12 object-contain mt-3"
+            className="h-12 object-contain mt-1"
           />
         </Link>
 
