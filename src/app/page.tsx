@@ -13,30 +13,29 @@ export default function Home() {
       {/* Mission Section with Image */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] items-center gap-8">
             <div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
                 Our Mission
               </h2>
               <p className="text-xl md:text-2xl text-neutral-700 mb-8 leading-relaxed">
-                At Advantis, we believe that everyone deserves access to high-quality healthcare,
-                regardless of location or mobility constraints. Our mission is to leverage technology
-                to bring comprehensive healthcare services directly to patients' homes, ensuring
-                continuity of care, improving health outcomes, and enhancing quality of life.
+              Advantis is rethinking how healthcare is delivered — starting with the basics: daily vitals. By using real-time data, we help providers catch issues early, make smarter decisions, and keep patients healthier at home. It's about shifting from reactive care to proactive care — and using technology to make that shift seamless.
               </p>
               <Button href="/about" variant="outline" className="px-8">
                 Learn About Our Approach
               </Button>
             </div>
             <div className="flex justify-center">
-              <CustomImage
-                src="/images/caretaking.jpg"
-                alt="Caretaker"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-                priority
-              />
+              <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[400px]">
+                <CustomImage
+                  src="/images/caretaking.jpg"
+                  alt="Caretaker"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (min-width: 641px) 50vw, 600px"
+                  className="rounded-lg shadow-lg object-cover"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>

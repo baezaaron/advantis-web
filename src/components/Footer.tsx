@@ -26,10 +26,18 @@ export default function Footer() {
     setError('');
 
     try {
-      // Replace with your form submission logic
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      setIsSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
+      // Submit to Formspree
+      const response = await fetch('https://formspree.io/f/xyzwkdrz', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setError('There was an error submitting the form.');
+      }
     } catch (err) {
       setError('Something went wrong. Please try again.');
     } finally {

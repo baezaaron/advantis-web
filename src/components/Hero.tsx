@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Button';
+import CustomImage from '@/components/Image';
 
 export default function Hero() {
   return (

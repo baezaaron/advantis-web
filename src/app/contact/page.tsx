@@ -32,7 +32,7 @@ export default function ContactPage() {
 
     try {
       // Integration with Formspree
-      const response = await fetch('https://formspree.io/f/xyyqonjb', {
+      const response = await fetch('https://formspree.io/f/xyzwkdrz', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -141,7 +141,7 @@ export default function ContactPage() {
                     </svg>
                   }
                   title="Phone"
-                  description="Monday-Friday, 9am-5pm PT"
+                  description="Monday-Friday, 9am-9pm EST"
                   value="(347) 524-2988"
                   link="tel:+13475242988"
                 />
@@ -309,15 +309,6 @@ export default function ContactPage() {
                 )}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Map Section */}
-      <section className="pb-16 md:pb-24">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="bg-neutral-200 h-96 rounded-xl flex items-center justify-center">
-            <p className="text-neutral-500">Google Maps integration would be displayed here</p>
           </div>
         </div>
       </section>
