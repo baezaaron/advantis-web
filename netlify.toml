@@ -15,3 +15,6 @@
   from = "/_next/static/*"
   to = "/_next/static/:splat"
   status = 200 
+
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_DISABLED = "1" 
