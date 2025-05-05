@@ -44,7 +44,7 @@
 
 ## Chronological Summary of Key Changes and Design Iterations
 1. **Initial Build & Image Error**: Encountered "Failed to construct 'Image'" with Next.js Image; created `CustomImage` component and updated `Navbar.tsx`/`Footer.tsx`, switched social icons to inline SVG.
-2. **Static Export Configuration & Asset Errors**: Cleaned `.next`, configured `next.config.js` with `output: "export"`, `trailingSlash: true`, `images.unoptimized: true`; added `serve` and `rimraf` scripts.
+2. **Static Export Configuration & Asset Errors**: Cleaned `.next`, configured `next.config.js` with `output: "export"`, `trailingSlash: true`, `images.unoptimized: true`; added `serve` and `rimraf` scripts. Removed invalid `plugins` block with `disabled` property in `netlify.toml` to fix parsing errors.
 3. **About Page Aesthetic Tweaks**: Iterated heading centering, boxed content, decorative shapes, icon-enhanced cards, Team section, gradient CTA; added then removed reusable `PageHeader` for simpler headers.
 4. **Navbar Redesign**: Refactored for white background, centered links, logo left, "Contact Us" button right; removed scroll styles and mobile menu.
 5. **Resources Page & Blog Listing**: Switched from full blog listing to static article view; added dynamic card grid filtered by slug; later reverted to single card view with title, date, "Read More".
