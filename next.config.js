@@ -10,7 +10,6 @@ const nextConfig = {
   experimental: {
     // Use more stable configuration options
     appDocumentPreloading: false,
-    serverActions: false
   },
   // Skip type checking during build to speed up build process
   typescript: {

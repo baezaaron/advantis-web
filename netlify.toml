@@ -1,0 +1,7 @@
+[build]
+  command = "npm run export"
+  publish = "out"
+
+# Optionally, specify functions directory if using Netlify Functions
+# [functions]
+#   directory = "netlify/functions" 
