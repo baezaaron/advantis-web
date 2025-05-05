@@ -4,4 +4,9 @@
 
 # Optionally, specify functions directory if using Netlify Functions
 # [functions]
-#   directory = "netlify/functions" 
+#   directory = "netlify/functions"
+
+# Disable the Netlify Next.js plugin
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+  disabled = true 
