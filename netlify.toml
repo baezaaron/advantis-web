@@ -10,3 +10,8 @@
 # [[plugins]]
 #   package = "@netlify/plugin-nextjs"
 #   disabled = true 
+
+[[redirects]]
+  from = "/_next/static/*"
+  to = "/_next/static/:splat"
+  status = 200 
