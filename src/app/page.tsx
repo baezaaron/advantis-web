@@ -13,7 +13,7 @@ export default function Home() {
       {/* Mission Section with Image */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] items-center gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-[1fr_1.5fr] items-center gap-8">
             <div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
                 Our Mission
@@ -26,7 +26,7 @@ export default function Home() {
               </Button>
             </div>
             <div className="flex justify-center">
-              <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[400px]">
+              <div className="relative w-full h-80 sm:h-96 md:h-[400px] lg:h-[500px]">
                 <CustomImage
                   src="/images/caretaking.jpg"
                   alt="Caretaker"

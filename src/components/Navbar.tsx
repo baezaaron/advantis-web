@@ -8,11 +8,11 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   return (
     <nav className="bg-white shadow-md fixed w-full z-50">
-      <div className="container mx-auto px-4 md:px-6 flex items-center h-20">
+      <div className="container mx-auto px-4 md:px-6 flex items-center h-20 justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center flex-none">
-          {/* Dramatically larger logo container */}
-          <div className="relative h-10 md:h-14 lg:h-20 w-32 md:w-48 lg:w-64">
+          {/* Adjust logo size: mobile larger, scale up on md/lg */}
+          <div className="relative h-12 md:h-16 lg:h-24 w-36 md:w-56 lg:w-72">
             <CustomImage
               src="/images/Advantis-Logo-200.png"
               alt="Advantis Logo"
@@ -45,7 +45,7 @@ export default function Navbar() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden ml-4 p-2 text-neutral-700"
+          className="md:hidden p-2 text-neutral-700"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
