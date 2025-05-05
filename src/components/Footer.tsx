@@ -162,31 +162,20 @@ export default function Footer() {
             </div>
 
             {/* Quick Links */}
-            <div className="lg:col-span-4 grid grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-lg font-semibold mb-4">Company</h3>
-                <ul className="space-y-2">
-                  <li><Link href="/about" className="text-neutral-300 hover:text-accent transition-colors">About Us</Link></li>
-                  <li><Link href="/team" className="text-neutral-300 hover:text-accent transition-colors">Our Team</Link></li>
-                  <li><Link href="/careers" className="text-neutral-300 hover:text-accent transition-colors">Careers</Link></li>
-                  <li><Link href="/contact" className="text-neutral-300 hover:text-accent transition-colors">Contact Us</Link></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-4">Resources</h3>
-                <ul className="space-y-2">
-                  <li><Link href="/resources" className="text-neutral-300 hover:text-accent transition-colors">Blog</Link></li>
-                  <li><Link href="/faqs" className="text-neutral-300 hover:text-accent transition-colors">FAQs</Link></li>
-                  <li><Link href="/privacy" className="text-neutral-300 hover:text-accent transition-colors">Privacy Policy</Link></li>
-                  <li><Link href="/terms" className="text-neutral-300 hover:text-accent transition-colors">Terms of Service</Link></li>
-                </ul>
-              </div>
+            <div className="lg:col-span-4">
+              <h3 className="text-lg font-semibold mb-4">Company</h3>
+              <ul className="space-y-2">
+                <li><Link href="/about" className="text-neutral-300 hover:text-accent transition-colors">About Us</Link></li>
+                <li><Link href="/careers" className="text-neutral-300 hover:text-accent transition-colors">Careers</Link></li>
+                <li><Link href="/contact" className="text-neutral-300 hover:text-accent transition-colors">Contact Us</Link></li>
+                <li><Link href="/resources" className="text-neutral-300 hover:text-accent transition-colors">Blog</Link></li>
+              </ul>
             </div>
           </div>
 
           {/* Copyright */}
           <div className="border-t border-white/10 mt-12 pt-8 text-center text-neutral-400">
-            <p>© {currentYear} Advantis Healthcare. All rights reserved.</p>
+            <p>© {currentYear} Advantis Care. All rights reserved.</p>
           </div>
         </div>
       </footer>

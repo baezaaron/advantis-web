@@ -1,21 +1,19 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
-// import Image from 'next/image'; // Not using Next.js Image here for logo
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   return (
-    <nav className="bg-white shadow-md fixed w-full z-50">
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between h-12 sm:h-16 md:h-16 lg:h-20">
+    <nav className="bg-white shadow fixed top-0 w-full z-50 h-16">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-center md:justify-between h-full">
         {/* Logo */}
-        <Link href="/" className="flex-shrink-0">
+        <Link href="/" className="flex items-center h-full">
           <img
             src="/images/Advantis-Logo-200.png"
             alt="Advantis Logo"
-            className="h-8 sm:h-12 md:h-12 lg:h-16 object-contain"
-            loading="eager"
+            className="h-12 object-contain mt-3"
           />
         </Link>
 
@@ -40,7 +38,7 @@ export default function Navbar() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden p-2 text-neutral-700"
+          className="md:hidden absolute right-4 p-2 text-neutral-700"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >

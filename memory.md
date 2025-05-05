@@ -1,5 +1,70 @@
 # Advantis Healthcare Website Project
 
+## Complete Project Summary
+
+1. Project Setup
+   - Built a Next.js 14 App Router site with Tailwind CSS for Advantis Healthcare.
+   - Pages include Home, About, Services, Resources (single Markdown blog), Careers, Contact, Privacy Policy, Terms of Service, custom 404, error, and fallback pages.
+   - Reusable components: `Navbar`, `Footer`, `Button`, `Hero`, `ServiceCard`, icon components, `CustomImage` helper, and blog-post renderer.
+
+2. Local Build & Export
+   - Configured `next.config.js` for static export (`output: 'export'`, `trailingSlash: true`, `images.unoptimized: true`).
+   - Added scripts in `package.json`: `build`, `export` (`next build && next export`), `start` (`serve out`), and `clean`.
+
+3. Netlify Deployment Issues
+   - Initial Netlify build using `npm run build` only, so no static export ran; CSS/JS weren't in `out/`.
+   - Changed `netlify.toml` to run `npm run export`, then switched back to `npm run build` once Next 14 deprecated `next export` CLI.
+   - Encountered 301 loops and missing assets because Netlify's built-in Next.js plugin was intercepting `/_next` and `/images` paths.
+   - Tried disabling the plugin via `netlify.toml` and env var `NETLIFY_NEXT_PLUGIN_DISABLED=1`, then removing custom redirects, then re-enabling the plugin with:
+     ```toml
+     [[plugins]]
+       package = "@netlify/plugin-nextjs"
+     ```
+   - Ultimately recommended removing all custom redirects for `/images` and relying on the plugin alone, clearing caches, and verifying direct access to `/images/...png`.
+
+4. Styling & Responsive Layout
+   - Tailwind setup: `tailwind.config.js` content paths, `globals.css` with directives, custom utility classes (`container`, `section`, etc.).
+   - Home Hero: gradient wave, text with gradient clip, responsive grid.
+   - Mission Section: two-column layout with caretaker image; dynamically sized image wrapper.
+   - Services: three core services with icon cards and anchor links.
+   - Contact & Footer: Formspree forms with reCAPTCHA widget loaded client-side; social links and "Quick Links" columns.
+
+5. Navbar/Logo Problems
+   - Built a `Navbar` with logo on the left, links centered on desktop, and a hamburger menu on mobile.
+   - Logo displayed locally but failed on live-domain tablet view and overflowed on desktop/mobile after size tweaks.
+   - Tested multiple approaches: `CustomImage`, Next.js `Image`, plain `<img>`, static imports, responsive Tailwind heights, fixed wrapper sizes, flex properties, and redirects—none resolved the issue.
+   - Recommended final pattern:
+     ```jsx
+     <img
+       src="/images/Advantis-Logo-200.png"
+       className="h-10 md:h-12 object-contain"
+       alt="Advantis Logo"
+     />
+     ```
+   - Place inside a static 60px-tall nav, remove conflicting redirects and plugin toggles, clear caches, and confirm `/images/...png` loads directly.
+
+6. Footer Adjustments
+   - Identified "Company" and "Resources" link columns in `Footer.tsx`.
+   - User requested removing links: "Our Team", "FAQs", "Privacy Policy", and "Terms of Service" from the footer's Quick Links.
+
+7. Favicon & Tab Title
+   - Ensured `layout.tsx` metadata includes `<link rel="icon" href="/images/favicon-32x32.png">` and `<title>` via the `metadata` export.
+   - Confirmed `public/images/favicon-32x32.png` exists and is served.
+
+8. Next Steps
+   - Simplify `netlify.toml` to only:
+     ```toml
+     [build]
+       command = "npm run build"
+       publish = "out"
+
+     [[plugins]]
+       package = "@netlify/plugin-nextjs"
+     ```
+   - Remove all other redirects and env flags, clear Netlify cache, and redeploy.
+   - Apply the simple Navbar snippet above for predictable logo loading.
+   - Edit `Footer.tsx` to delete the unwanted Quick Links entries.
+
 ## Project Overview
 - Created a responsive, production-ready website for Advantis, a healthcare company
 - Built using Next.js (with App Router) and Tailwind CSS

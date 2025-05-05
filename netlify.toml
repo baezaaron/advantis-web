@@ -11,7 +11,8 @@
   package = "@netlify/plugin-nextjs"
 
 # Disable the custom images redirect
-# [[redirects]]
-#   from = "/images/*"
-#   to = "/images/:splat"
-#   status = 200 
+[[redirects]]
+  from   = "/images/*"
+  to     = "/images/:splat"
+  status = 200
+  force  = true 
