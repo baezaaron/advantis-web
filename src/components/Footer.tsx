@@ -88,7 +88,7 @@ export default function Footer() {
                   <p className="mb-1">Suite 13B</p>
                   <p className="mb-1">New York, NY 10020</p>
                   <p className="mb-4">United States</p>
-                  <p className="mb-1">Phone: (347) 524-2989</p>
+                  <p className="mb-1">Phone: (212) 470-6966</p>
                   <p>Email: info@advantis.care</p>
                 </div>
               </div>

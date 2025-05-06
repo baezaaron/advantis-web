@@ -142,8 +142,8 @@ export default function ContactPage() {
                   }
                   title="Phone"
                   description="Monday-Friday, 9am-9pm EST"
-                  value="(347) 524-2988"
-                  link="tel:+13475242988"
+                  value="(212) 470-6966"
+                  link="tel:+12124706966"
                 />
               </div>
 
