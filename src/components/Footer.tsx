@@ -129,7 +129,7 @@ export default function Footer() {
                       name="howDidYouFindUs"
                       value={formData.howDidYouFindUs}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-accent text-white"
+                      className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-accent text-black"
                       required
                     >
                       <option value="" disabled>Select an option</option>
