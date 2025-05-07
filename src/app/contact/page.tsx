@@ -14,7 +14,8 @@ export default function ContactPage() {
     email: '',
     phone: '',
     organization: '',
-    message: ''
+    message: '',
+    howDidYouFindUs: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -47,7 +48,8 @@ export default function ContactPage() {
           email: '',
           phone: '',
           organization: '',
-          message: ''
+          message: '',
+          howDidYouFindUs: '',
         });
       } else {
         setError('There was an error submitting the form.');
@@ -236,6 +238,27 @@ export default function ContactPage() {
                           className="w-full px-4 py-2 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-accent"
                         />
                       </div>
+                    </div>
+
+                    <div>
+                      <label htmlFor="howDidYouFindUs" className="block text-sm font-medium text-neutral-700 mb-1">
+                        How did you find us?
+                      </label>
+                      <select
+                        id="howDidYouFindUs"
+                        name="howDidYouFindUs"
+                        value={formData.howDidYouFindUs}
+                        onChange={handleChange}
+                        className="w-full px-4 py-2 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-accent"
+                        required
+                      >
+                        <option value="" disabled>Select an option</option>
+                        <option value="Google Search">Google Search</option>
+                        <option value="Social Media">Social Media</option>
+                        <option value="Referral">Referral</option>
+                        <option value="Event/Conference">Event/Conference</option>
+                        <option value="Other">Other</option>
+                      </select>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-6">

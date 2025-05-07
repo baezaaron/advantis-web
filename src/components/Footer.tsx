@@ -9,13 +9,14 @@ export default function Footer() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: ''
+    message: '',
+    howDidYouFindUs: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState('');
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
@@ -34,7 +35,7 @@ export default function Footer() {
       });
       if (response.ok) {
         setIsSubmitted(true);
-        setFormData({ name: '', email: '', message: '' });
+        setFormData({ name: '', email: '', message: '', howDidYouFindUs: '', });
       } else {
         setError('There was an error submitting the form.');
       }
@@ -120,6 +121,24 @@ export default function Footer() {
                       className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-accent text-white"
                       required
                     />
+                  </div>
+                  <div>
+                    <label htmlFor="howDidYouFindUs" className="block text-sm font-medium mb-1 text-neutral-300">How did you find us?</label>
+                    <select
+                      id="howDidYouFindUs"
+                      name="howDidYouFindUs"
+                      value={formData.howDidYouFindUs}
+                      onChange={handleChange}
+                      className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-accent text-white"
+                      required
+                    >
+                      <option value="" disabled>Select an option</option>
+                      <option value="Google Search">Google Search</option>
+                      <option value="Social Media">Social Media</option>
+                      <option value="Referral">Referral</option>
+                      <option value="Event/Conference">Event/Conference</option>
+                      <option value="Other">Other</option>
+                    </select>
                   </div>
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium mb-1 text-neutral-300">Message</label>

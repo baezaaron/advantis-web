@@ -41,6 +41,15 @@ export default function RootLayout({
         <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
         <link rel="shortcut icon" href="/favicon-32x32.png" type="image/png" />
         <link rel="apple-touch-icon" href="/images/favicon-32x32.png" sizes="180x180" />
+
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8NX742D8C"></script>
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-T8NX742D8C');
+        ` }} />
       </head>
       <body className="min-h-screen flex flex-col bg-neutral-100 font-sans antialiased">
         <Navbar />
