@@ -1,3 +1,45 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy | Advantis Remote Patient Monitoring',
+  description: 'Read the Advantis privacy policy: how we protect patient data, ensure HIPAA compliance, and safeguard your information in remote patient monitoring (RPM) services.',
+  keywords: [
+    'privacy policy',
+    'patient data protection',
+    'HIPAA compliance',
+    'Advantis privacy',
+    'remote patient monitoring',
+    'RPM',
+    'senior care privacy',
+    'healthcare privacy',
+    'data security',
+    'RPM as a service'
+  ],
+  openGraph: {
+    title: 'Privacy Policy | Advantis Remote Patient Monitoring',
+    description: 'Read the Advantis privacy policy: how we protect patient data, ensure HIPAA compliance, and safeguard your information in remote patient monitoring (RPM) services.',
+    url: 'https://advantis.care/privacy-policy',
+    siteName: 'Advantis',
+    images: [
+      {
+        url: '/images/og-advantis.png',
+        width: 1200,
+        height: 630,
+        alt: 'Advantis Privacy Policy',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy | Advantis Remote Patient Monitoring',
+    description: 'Read the Advantis privacy policy: how we protect patient data, ensure HIPAA compliance, and safeguard your information in remote patient monitoring (RPM) services.',
+    images: ['/images/og-advantis.png'],
+    site: '@advantis',
+  },
+};
+
 export default function PrivacyPolicyPage() {
   return (
     <>

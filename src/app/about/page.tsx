@@ -1,5 +1,6 @@
 import Button from '@/components/Button';
 import CustomImage from '@/components/Image';
+import type { Metadata } from 'next';
 
 export default function AboutPage() {
   return (
@@ -27,13 +28,13 @@ export default function AboutPage() {
           <div className="w-20 h-1 bg-accent mx-auto mb-8 rounded-full"></div>
           <div className="max-w-4xl mx-auto bg-white p-8 md:p-10 rounded-lg shadow-md border border-neutral-200 border-l-4 border-accent">
             <p className="text-neutral-700 mb-6 text-lg">
-            Founded in 2023, Advantis was born from a simple but overlooked truth: while technology continues to evolve, our nation’s health continues to decline. In nearly every part of our lives, data drives better decisions—yet healthcare remains disconnected, reactive, and inefficient. We set out to change that.
+            Founded in 2023, Advantis was born from a simple but overlooked truth: while technology continues to evolve, our nation's health continues to decline. In nearly every part of our lives, data drives better decisions—yet healthcare remains disconnected, reactive, and inefficient. We set out to change that.
             </p>
             <p className="text-neutral-700 mb-6 text-lg">
             We noticed that while many companies were eager to solve this problem, they often placed the burden of innovation on already overworked providers and their clinical teams. These professionals are focused on the patients in front of them, within the four walls of their facilities. But what happens after the patient leaves?
             </p>
             <p className="text-neutral-700 text-lg">
-            At Advantis, we ensure care doesn’t stop at discharge. By leveraging data and remote patient monitoring, we bring continuity, insight, and accountability to care delivered at home. We believe an entire health profile shouldn’t be based on vitals captured in a single visit. It’s time to take a more proactive, qualitative approach—because real healthcare happens between appointments.
+            At Advantis, we ensure care doesn't stop at discharge. By leveraging data and remote patient monitoring, we bring continuity, insight, and accountability to care delivered at home. We believe an entire health profile shouldn't be based on vitals captured in a single visit. It's time to take a more proactive, qualitative approach—because real healthcare happens between appointments.
             </p>
           </div>
         </div>
@@ -185,4 +186,45 @@ function renderIcon(icon: string) {
     default:
       return null;
   }
-} 
+}
+
+export const metadata: Metadata = {
+  title: 'About Advantis | Remote Patient Monitoring & Healthcare Innovation',
+  description: 'Learn about Advantis: our mission to provide remote patient monitoring (RPM), innovative healthcare, and alternatives to nursing homes for seniors and families.',
+  keywords: [
+    'about Advantis',
+    'remote patient monitoring',
+    'RPM',
+    'healthcare innovation',
+    'alternatives to nursing homes',
+    'senior care at home',
+    'chronic care',
+    'elderly health monitoring',
+    'proactive care',
+    'best RPM service',
+    'HIPAA compliant RPM'
+  ],
+  openGraph: {
+    title: 'About Advantis | Remote Patient Monitoring & Healthcare Innovation',
+    description: 'Learn about Advantis: our mission to provide remote patient monitoring (RPM), innovative healthcare, and alternatives to nursing homes for seniors and families.',
+    url: 'https://advantis.care/about',
+    siteName: 'Advantis',
+    images: [
+      {
+        url: '/images/og-advantis.png',
+        width: 1200,
+        height: 630,
+        alt: 'About Advantis Remote Patient Monitoring',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Advantis | Remote Patient Monitoring & Healthcare Innovation',
+    description: 'Learn about Advantis: our mission to provide remote patient monitoring (RPM), innovative healthcare, and alternatives to nursing homes for seniors and families.',
+    images: ['/images/og-advantis.png'],
+    site: '@advantis',
+  },
+}; 

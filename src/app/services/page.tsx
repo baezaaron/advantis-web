@@ -1,5 +1,6 @@
 import { HeartPulseIcon, SupportIcon } from '@/components/icons';
 import Button from '@/components/Button';
+import type { Metadata } from 'next';
 
 // Inline shield icon for Preventative Care
 function ShieldIcon({ className = 'h-8 w-8' }) {
@@ -10,6 +11,48 @@ function ShieldIcon({ className = 'h-8 w-8' }) {
     </svg>
   );
 }
+
+export const metadata: Metadata = {
+  title: 'Our Services | Remote Patient Monitoring & Proactive Care | Advantis',
+  description: 'Explore Advantis services: remote patient monitoring (RPM), advanced primary care, and preventative care. The best alternative to nursing homes and traditional care.',
+  keywords: [
+    'remote patient monitoring services',
+    'RPM services',
+    'alternatives to nursing homes',
+    'proactive care',
+    'senior care at home',
+    'chronic care',
+    'elderly health monitoring',
+    'RPM as a service',
+    'home health technology',
+    'telehealth',
+    'best RPM service',
+    'HIPAA compliant RPM'
+  ],
+  openGraph: {
+    title: 'Our Services | Remote Patient Monitoring & Proactive Care | Advantis',
+    description: 'Explore Advantis services: remote patient monitoring (RPM), advanced primary care, and preventative care. The best alternative to nursing homes and traditional care.',
+    url: 'https://advantis.care/services',
+    siteName: 'Advantis',
+    images: [
+      {
+        url: '/images/og-advantis.png',
+        width: 1200,
+        height: 630,
+        alt: 'Advantis RPM Services',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Services | Remote Patient Monitoring & Proactive Care | Advantis',
+    description: 'Explore Advantis services: remote patient monitoring (RPM), advanced primary care, and preventative care. The best alternative to nursing homes and traditional care.',
+    images: ['/images/og-advantis.png'],
+    site: '@advantis',
+  },
+};
 
 export default function ServicesPage() {
   return (

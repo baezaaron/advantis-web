@@ -3,6 +3,49 @@ import ServiceCard from '@/components/ServiceCard';
 import Button from '@/components/Button';
 import { HeartPulseIcon, TechIcon, SupportIcon, EducationIcon } from '@/components/icons';
 import CustomImage from '@/components/Image';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Remote Patient Monitoring & Senior Care at Home | Advantis',
+  description: 'Discover Advantis: the leading alternative to nursing homes. We offer remote patient monitoring (RPM), senior care at home, and proactive health solutions for families and providers.',
+  keywords: [
+    'remote patient monitoring',
+    'RPM',
+    'alternatives to nursing homes',
+    'senior care at home',
+    'chronic care',
+    'elderly health monitoring',
+    'RPM as a service',
+    'home health technology',
+    'telehealth',
+    'proactive care',
+    'best RPM service',
+    'HIPAA compliant RPM'
+  ],
+  openGraph: {
+    title: 'Remote Patient Monitoring & Senior Care at Home | Advantis',
+    description: 'Discover Advantis: the leading alternative to nursing homes. We offer remote patient monitoring (RPM), senior care at home, and proactive health solutions for families and providers.',
+    url: 'https://advantis.care/',
+    siteName: 'Advantis',
+    images: [
+      {
+        url: '/images/og-advantis.png',
+        width: 1200,
+        height: 630,
+        alt: 'Advantis Remote Patient Monitoring',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Remote Patient Monitoring & Senior Care at Home | Advantis',
+    description: 'Discover Advantis: the leading alternative to nursing homes. We offer remote patient monitoring (RPM), senior care at home, and proactive health solutions for families and providers.',
+    images: ['/images/og-advantis.png'],
+    site: '@advantis',
+  },
+};
 
 export default function Home() {
   return (

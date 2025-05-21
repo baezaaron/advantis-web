@@ -1,3 +1,44 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Terms of Service | Advantis Remote Patient Monitoring',
+  description: 'Review the Advantis terms of service: guidelines for using our remote patient monitoring (RPM) and healthcare support services. Learn your rights and responsibilities.',
+  keywords: [
+    'terms of service',
+    'Advantis terms',
+    'RPM service terms',
+    'healthcare service agreement',
+    'remote patient monitoring',
+    'RPM',
+    'senior care terms',
+    'HIPAA compliant RPM',
+    'RPM as a service'
+  ],
+  openGraph: {
+    title: 'Terms of Service | Advantis Remote Patient Monitoring',
+    description: 'Review the Advantis terms of service: guidelines for using our remote patient monitoring (RPM) and healthcare support services. Learn your rights and responsibilities.',
+    url: 'https://advantis.care/terms-of-service',
+    siteName: 'Advantis',
+    images: [
+      {
+        url: '/images/og-advantis.png',
+        width: 1200,
+        height: 630,
+        alt: 'Advantis Terms of Service',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terms of Service | Advantis Remote Patient Monitoring',
+    description: 'Review the Advantis terms of service: guidelines for using our remote patient monitoring (RPM) and healthcare support services. Learn your rights and responsibilities.',
+    images: ['/images/og-advantis.png'],
+    site: '@advantis',
+  },
+};
+
 export default function TermsOfServicePage() {
   return (
     <>

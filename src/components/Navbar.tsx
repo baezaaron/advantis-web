@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import ServicesDropdown from './ServicesDropdown';
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -21,7 +22,7 @@ export default function Navbar() {
         <div className="hidden md:flex flex-1 justify-center space-x-8 text-lg font-medium text-neutral-700">
           <Link href="/">Home</Link>
           <Link href="/about/">About</Link>
-          <Link href="/services/">Services</Link>
+          <ServicesDropdown />
           <Link href="/resources/">Resources</Link>
           <Link href="/careers/">Careers</Link>
         </div>
@@ -56,7 +57,13 @@ export default function Navbar() {
           <div className="px-4 pt-2 pb-4 space-y-2">
             <Link href="/" className="block text-neutral-700 py-2">Home</Link>
             <Link href="/about/" className="block text-neutral-700 py-2">About</Link>
-            <Link href="/services/" className="block text-neutral-700 py-2">Services</Link>
+            <div className="py-2">
+              <div className="text-neutral-700 font-medium mb-2">Services</div>
+              <div className="pl-4 space-y-2">
+                <Link href="/services/" className="block text-neutral-700 py-1">For Providers</Link>
+                <Link href="/private-services/" className="block text-neutral-700 py-1">Private Services</Link>
+              </div>
+            </div>
             <Link href="/resources/" className="block text-neutral-700 py-2">Resources</Link>
             <Link href="/careers/" className="block text-neutral-700 py-2">Careers</Link>
             <Link href="/contact/" className="block bg-accent text-white text-center rounded-md py-2 mt-2">Contact Us</Link>
