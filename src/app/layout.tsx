@@ -17,7 +17,6 @@ export const metadata: Metadata = {
   description: "Advantis provides technology-enabled support for patients at home, revolutionizing healthcare delivery with innovative solutions.",
   icons: {
     icon: [
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
       { url: "/favicon.ico" }
     ],
     apple: [
@@ -37,10 +36,9 @@ export default function RootLayout({
         {/* reCAPTCHA Script removed from layout; loaded client-side in RecaptchaWidget */}
         
         {/* Favicon setup */}
-        <link rel="icon" href="/images/favicon-32x32.png" sizes="32x32" type="image/png" />
-        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
-        <link rel="shortcut icon" href="/favicon-32x32.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/images/favicon-32x32.png" sizes="180x180" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8NX742D8C"></script>
