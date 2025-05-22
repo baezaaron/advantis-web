@@ -11,6 +11,9 @@
     "clean": "rimraf .next out"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^16.0.1",
+    "@tailwindcss/typography": "^0.5.16",
+    "contentful": "^11.5.23",
     "next": "^15.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

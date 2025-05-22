@@ -1,9 +1,25 @@
+import client from '../../../lib/contentful';
 import Link from 'next/link';
-import { blogPosts } from '@/data/blog-posts';
 
-export default function ResourcesPage() {
-  // Only include the Remote Patient Monitoring article for now
-  const posts = blogPosts.filter(post => post.slug === 'remote-patient-monitoring-for-fqhcs');
+// Define the BlogPost type for Contentful data
+type BlogPost = {
+  title: string;
+  slug: string;
+  body: string;
+};
+
+// Fetch blog posts from Contentful
+async function getBlogPosts(): Promise<BlogPost[]> {
+  const entries = await client.getEntries({ content_type: 'blogPost' });
+  return entries.items.map((item: any) => ({
+    title: item.fields.title,
+    slug: item.fields.slug,
+    body: item.fields.body,
+  }));
+}
+
+export default async function ResourcesPage() {
+  const posts = await getBlogPosts();
 
   return (
     <>
@@ -20,11 +36,13 @@ export default function ResourcesPage() {
           <h1 className="text-3xl font-bold text-primary mb-8">Resources</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.map(post => (
-              <div key={post.id} className="bg-white rounded-lg shadow p-6">
-                <div className="text-sm text-neutral-500 mb-2">{post.date}</div>
+              <div key={post.slug} className="bg-white rounded-lg shadow p-6">
                 <h2 className="text-xl font-semibold text-primary mb-4">{post.title}</h2>
+                <div className="text-sm text-neutral-500 mb-2">
+                  {/* Add date or excerpt here if available from Contentful */}
+                </div>
                 <Link
-                  href={`/resources/${post.slug}`}
+                  href={`/blog/${post.slug}`}
                   className="inline-block bg-accent text-white px-4 py-2 rounded hover:bg-accent/90 transition-colors"
                 >
                   Read More
