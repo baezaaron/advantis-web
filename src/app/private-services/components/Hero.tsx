@@ -2,14 +2,15 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export default function Hero() {
   const [email, setEmail] = useState('');
+  const router = useRouter();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Email submitted:', email);
+    router.push(`/contact?email=${encodeURIComponent(email)}`);
   };
 
   return (

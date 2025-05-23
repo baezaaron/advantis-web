@@ -1,16 +1,19 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MedicalIcon, SupportIcon } from '@/components/icons';
 import dynamic from 'next/dynamic';
+import { useSearchParams } from 'next/navigation';
 const RecaptchaWidget = dynamic(
   () => import('@/components/RecaptchaWidget'),
   { ssr: false, loading: () => null }
 );
 
 export default function ContactForm() {
+  const searchParams = useSearchParams();
+  const emailFromQuery = searchParams.get('email') || '';
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
+    email: emailFromQuery,
     phone: '',
     serviceType: '',
     message: '',
@@ -19,6 +22,12 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState('');
+
+  useEffect(() => {
+    if (emailFromQuery) {
+      setFormData((prev) => ({ ...prev, email: emailFromQuery }));
+    }
+  }, [emailFromQuery]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
