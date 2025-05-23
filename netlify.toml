@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "out"
+  # publish = "out"  # Removed to let the plugin handle publishing
 
 # Optionally, specify functions directory if using Netlify Functions
 # [functions]
