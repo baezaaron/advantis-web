@@ -7,10 +7,10 @@ export default function Testimonials() {
       image: "/images/older-woman.png"
     },
     {
-      quote: "Since starting remote monitoring, I've had fewer hospital visits and better control of my blood pressure. The device is so easy to use!",
-      author: "John D.",
-      role: "Hypertension Patient",
-      image: "/images/older-man.png"
+      quote: "Since starting remote monitoring, I've been able to show my specialists my blood pressure, glucose, and oxygen levels. The devices are so easy to use.",
+      author: "Nelson L.",
+      role: "Hypertension, Diabetes, and CHF Patient",
+      image: "/images/nelson.jpg"
     },
     {
       quote: "As a family caregiver, this service has been a game-changer. I can focus on my work knowing my mother is being monitored professionally.",
