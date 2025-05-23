@@ -20,8 +20,6 @@ const nextConfig = {
   },
   // Add trailing slash for all routes (static export)
   trailingSlash: true,
-  // Output as static export (Next 14+)
-  output: 'export',
   // Ensure all assets are copied to output directory
   assetPrefix: "",
 }

@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
     if (!priceId || !customerEmail) {
       return NextResponse.json({ error: 'Missing priceId or customerEmail' }, { status: 400 });
     }
-    const origin = req.headers.get('origin') || process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+    const origin = req.headers.get('origin') || process.env.NEXT_PUBLIC_BASE_URL || 'advantis.care';
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
       line_items: [
