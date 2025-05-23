@@ -263,10 +263,15 @@ Phone: 212-470-6966
 You may also file a complaint with the U.S. Department of Health and Human Services – Office for Civil Rights.
 `;
 
-// Add mapping from plan name to product ID
+// Add mapping from plan name to price ID
+const priceIds: Record<PlanName, string> = {
+  Monthly: 'price_1RRwtRLcEb1KUprYp0r2vJrK',
+  Annual: 'price_1RRwsALcEb1KUprYLpMmMg6E',
+};
+
 const productIds: Record<PlanName, string> = {
-  Monthly: 'prod_SMKkjTIczDFodL',
-  Annual: 'prod_SMKmsF5L0jyW4S',
+  Monthly: 'prod_SMgFYqOqwyFou3',
+  Annual: 'prod_SMgEphjfCY2PZL',
 };
 
 export default function PricingComparison() {
@@ -371,28 +376,29 @@ export default function PricingComparison() {
   const handleStripeRedirect = async () => {
     setPaymentLoading(true);
     try {
-      // Call API to get priceId for the selected product
+      // Lookup the priceId for the selected product
       const res = await fetch('/api/get-price-id', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ productId: productIds[showSurvey!] }),
       });
       const data = await res.json();
-      if (data.priceId) {
-        // Now create checkout session, passing customerEmail
-        const checkoutRes = await fetch('/api/create-checkout-session', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ priceId: data.priceId, customerEmail: formData.email }),
-        });
-        const checkoutData = await checkoutRes.json();
-        if (checkoutData.url) {
-          window.location.href = checkoutData.url;
-        } else {
-          alert('Unable to start checkout.');
-        }
+      if (!data.priceId) {
+        alert('Unable to find a recurring price for this plan.');
+        setPaymentLoading(false);
+        return;
+      }
+      // Now create checkout session, passing customerEmail
+      const checkoutRes = await fetch('/api/create-checkout-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ priceId: data.priceId, customerEmail: formData.email }),
+      });
+      const checkoutData = await checkoutRes.json();
+      if (checkoutData.url) {
+        window.location.href = checkoutData.url;
       } else {
-        alert('Unable to find price for this plan.');
+        alert('Unable to start checkout.');
       }
     } catch (err) {
       alert('Error connecting to payment gateway.');
