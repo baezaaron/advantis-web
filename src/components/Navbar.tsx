@@ -55,18 +55,20 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="md:hidden bg-white shadow-md">
           <div className="px-4 pt-2 pb-4 space-y-2">
-            <Link href="/" className="block text-neutral-700 py-2">Home</Link>
-            <Link href="/about/" className="block text-neutral-700 py-2">About</Link>
+            <MobileNavLink href="/" onClick={() => setMobileOpen(false)}>Home</MobileNavLink>
+            <MobileNavLink href="/about/" onClick={() => setMobileOpen(false)}>About</MobileNavLink>
             <div className="py-2">
               <div className="text-neutral-700 font-medium mb-2">Services</div>
               <div className="pl-4 space-y-2">
-                <Link href="/services/" className="block text-neutral-700 py-1">For Providers</Link>
-                <Link href="/private-services/" className="block text-neutral-700 py-1">Private Services</Link>
+                <MobileNavLink href="/services/" onClick={() => setMobileOpen(false)}>For Providers</MobileNavLink>
+                <MobileNavLink href="/private-services/" onClick={() => setMobileOpen(false)}>Private Services</MobileNavLink>
               </div>
             </div>
-            <Link href="/resources/" className="block text-neutral-700 py-2">Resources</Link>
-            <Link href="/careers/" className="block text-neutral-700 py-2">Careers</Link>
-            <Link href="/contact/" className="block bg-accent text-white text-center rounded-md py-2 mt-2">Contact Us</Link>
+            <MobileNavLink href="/resources/" onClick={() => setMobileOpen(false)}>Resources</MobileNavLink>
+            <MobileNavLink href="/careers/" onClick={() => setMobileOpen(false)}>Careers</MobileNavLink>
+            <MobileNavLink href="/contact/" onClick={() => setMobileOpen(false)}>
+              <span className="block bg-accent text-white text-center rounded-md py-2 mt-2">Contact Us</span>
+            </MobileNavLink>
           </div>
         </div>
       )}
