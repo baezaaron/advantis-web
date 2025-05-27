@@ -5,7 +5,7 @@ const plans = [
   {
     name: 'Monthly',
     price: '$110',
-    period: 'per month',
+    period: 'per month for 12 months',
     features: [
       '24/7 nurse monitoring',
       'All devices free',
@@ -416,7 +416,7 @@ export default function PricingComparison() {
             Simple, Transparent Pricing
           </h2>
           <p className="text-lg text-neutral-700 max-w-2xl mx-auto">
-            Choose the plan that fits your needs. No hidden fees. 30-day money-back guarantee.
+            Choose the plan that fits your needs. No hidden fees. 60-day money-back guarantee.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
@@ -471,7 +471,7 @@ export default function PricingComparison() {
             <svg className="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
-            <span className="text-neutral-700 font-medium">30-day money-back guarantee</span>
+            <span className="text-neutral-700 font-medium">60-day money-back guarantee; cancel with 30 day notice</span>
           </div>
           <div className="flex items-center gap-4">
             <svg className="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
