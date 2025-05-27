@@ -45,7 +45,7 @@ export default function Hero() {
                 type="submit"
                 className="bg-accent hover:bg-accent/90 text-white font-medium px-8 py-3 rounded-lg transition-colors duration-200"
               >
-                Get Started
+                Learn More
               </button>
             </div>
           </form>
