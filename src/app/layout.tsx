@@ -33,6 +33,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} scroll-smooth`}>
       <head>
+        {/* Facebook Domain Verification */}
+        <meta name="facebook-domain-verification" content="kszwebzvzwcerfejsau1js6whcddak" />
         {/* reCAPTCHA Script removed from layout; loaded client-side in RecaptchaWidget */}
         
         {/* Favicon setup */}
