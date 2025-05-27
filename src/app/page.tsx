@@ -6,8 +6,8 @@ import CustomImage from '@/components/Image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Remote Patient Monitoring & Senior Care at Home | Advantis',
-  description: 'Discover Advantis: the leading alternative to nursing homes. We offer remote patient monitoring (RPM), senior care at home, and proactive health solutions for families and providers.',
+  title: 'Remote Patient Monitoring | Advantis',
+  description: 'Better outcomes from home. Advantis combines remote patient monitoring with human touch to manage chronic disease and give you peace of mind.',
   keywords: [
     'remote patient monitoring',
     'RPM',
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     'HIPAA compliant RPM'
   ],
   openGraph: {
-    title: 'Remote Patient Monitoring & Senior Care at Home | Advantis',
-    description: 'Discover Advantis: the leading alternative to nursing homes. We offer remote patient monitoring (RPM), senior care at home, and proactive health solutions for families and providers.',
+    title: 'Remote Patient Monitoring | Advantis',
+    description: 'Better outcomes from home. Advantis combines remote patient monitoring with human touch to manage chronic disease and give you peace of mind.',
     url: 'https://advantis.care/',
     siteName: 'Advantis',
     images: [
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Remote Patient Monitoring & Senior Care at Home | Advantis',
-    description: 'Discover Advantis: the leading alternative to nursing homes. We offer remote patient monitoring (RPM), senior care at home, and proactive health solutions for families and providers.',
+    title: 'Remote Patient Monitoring | Advantis',
+    description: 'Better outcomes from home. Advantis combines remote patient monitoring with human touch to manage chronic disease and give you peace of mind.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },
