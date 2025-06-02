@@ -64,11 +64,11 @@ export default function RPMDevices() {
               key={index}
               className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full"
             >
-              <div className="flex justify-center items-center bg-neutral-50" style={{ minHeight: '256px', height: '256px' }}>
+              <div className="flex justify-center items-center bg-white" style={{ minHeight: '256px', height: '256px' }}>
                 <img
                   src={device.image}
                   alt={device.name}
-                  className="object-contain h-48 w-auto"
+                  className="object-contain h-64 w-auto"
                   style={{ maxHeight: '224px', maxWidth: '100%' }}
                 />
               </div>

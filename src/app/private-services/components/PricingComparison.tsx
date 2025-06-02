@@ -4,7 +4,7 @@ import { useState, useRef } from 'react';
 const plans = [
   {
     name: 'Monthly',
-    price: '$110',
+    price: '$99',
     period: 'per month for 12 months',
     features: [
       '24/7 nurse monitoring',
@@ -19,7 +19,7 @@ const plans = [
   },
   {
     name: 'Annual',
-    price: '$99',
+    price: '$89',
     period: 'per month (billed annually)',
     features: [
       '24/7 nurse monitoring',
