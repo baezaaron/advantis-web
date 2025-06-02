@@ -42,7 +42,7 @@ export default function RPMDevices() {
         'Automatic data sync',
         'Battery powered',
       ],
-      image: '/images/thermometer.jpg',
+      image: '/images/Beurer-FT95.jpg',
     },
   ];
 
@@ -58,18 +58,18 @@ export default function RPMDevices() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {devices.map((device, index) => (
             <div
               key={index}
               className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full"
             >
-              <div className="flex justify-center items-center" style={{ minHeight: '256px', height: '256px' }}>
+              <div className="flex justify-center items-center bg-neutral-50" style={{ minHeight: '256px', height: '256px' }}>
                 <img
                   src={device.image}
                   alt={device.name}
-                  className="object-contain h-56 w-auto"
-                  style={{ maxHeight: '224px' }}
+                  className="object-contain h-48 w-auto"
+                  style={{ maxHeight: '224px', maxWidth: '100%' }}
                 />
               </div>
               <div className="p-6 flex flex-col flex-1 text-left">
