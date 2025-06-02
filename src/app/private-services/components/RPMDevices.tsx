@@ -33,6 +33,17 @@ export default function RPMDevices() {
       ],
       image: '/images/OhCare-Lite.jpg',
     },
+    {
+      name: 'Contactless Thermometer',
+      description: 'Advanced bluetooth contactless thermometer for quick, hygienic temperature readings.',
+      features: [
+        'Non-contact measurement',
+        'Instant readings in seconds',
+        'Automatic data sync',
+        'Battery powered',
+      ],
+      image: '/images/thermometer.jpg',
+    },
   ];
 
   return (
