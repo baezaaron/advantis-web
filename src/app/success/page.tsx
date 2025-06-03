@@ -4,7 +4,7 @@ import { useSearchParams } from 'next/navigation';
 
 export default function SuccessPage() {
   const searchParams = useSearchParams();
-  const sessionId = searchParams.get('session_id');
+  const sessionId = searchParams?.get('session_id');
   const [showShipping, setShowShipping] = useState(false);
   const [shippingLoading, setShippingLoading] = useState(false);
   const [error, setError] = useState('');

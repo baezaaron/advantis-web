@@ -11,6 +11,7 @@ type BlogPost = {
 // Fetch blog posts from Contentful
 async function getBlogPosts(): Promise<BlogPost[]> {
   const entries = await client.getEntries({ content_type: 'blogPost' });
+  console.log('Number of blog posts fetched:', entries.items.length);
   return entries.items.map((item: any) => ({
     title: item.fields.title,
     slug: item.fields.slug,

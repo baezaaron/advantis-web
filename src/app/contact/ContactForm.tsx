@@ -10,7 +10,7 @@ const RecaptchaWidget = dynamic(
 
 export default function ContactForm() {
   const searchParams = useSearchParams();
-  const emailFromQuery = searchParams.get('email') || '';
+  const emailFromQuery = searchParams?.get('email') || '';
   const [formData, setFormData] = useState({
     name: '',
     email: emailFromQuery,

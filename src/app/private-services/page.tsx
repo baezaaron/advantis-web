@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: 'Advantis',
     images: [
       {
-        url: '/images/og-advantis.png',
+        url: '/images/Advantis-Logo-200.png',
         width: 1200,
         height: 630,
         alt: 'Advantis Private Remote Patient Monitoring',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Private Remote Patient Monitoring & Senior Care | Advantis',
     description: 'Private RPM and home health monitoring for seniors and chronic care. The best alternative to nursing homes: 24/7 remote monitoring, real nurses, and peace of mind for families.',
-    images: ['/images/og-advantis.png'],
+    images: ['/images/Advantis-Logo-200.png'],
     site: '@advantis',
   },
 };
