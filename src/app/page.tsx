@@ -100,7 +100,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             <ServiceCard
               title="Remote Patient Monitoring"
-              description="Continuous monitoring of vital signs and health metrics from the comfort of home, with real-time alerts for healthcare providers."
+              description="Continuous monitoring of vital signs and health metrics from the comfort of home, with real-time alerts managed by our clinicians."
               icon={<HeartPulseIcon className="h-7 w-7 text-accent" />}
               link="/services#remote-patient-monitoring"
             />
