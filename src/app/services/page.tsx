@@ -78,7 +78,7 @@ export default function ServicesPage() {
                   Remote Patient Monitoring
                 </h3>
                 <p className="text-lg text-neutral-700">
-                  Continuous monitoring of vital signs and health metrics from the comfort of home, with real-time alerts.
+                  24/7 monitoring of vital signs and health metrics from the comfort of home, with real-time alerts.
                 </p>
               </div>
               <HeartPulseIcon className="h-16 w-16 text-accent" />

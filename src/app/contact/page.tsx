@@ -75,8 +75,8 @@ export default function ContactPage() {
                   icon={<SupportIcon className="h-6 w-6" />}
                   title="Customer Support"
                   description="For general inquiries and patient support"
-                  value="support@advantis.care"
-                  link="mailto:support@advantis.care"
+                  value="info@advantis.care"
+                  link="mailto:info@advantis.care"
                 />
 
                 <ContactInfo

@@ -44,7 +44,6 @@ const diagnosesList = [
   'Obesity',
   "Alzheimer's",
   'Dementia',
-  'Other',
 ];
 
 const paymentMethods = [
@@ -293,6 +292,7 @@ export default function PricingComparison() {
   const tosRef = useRef<HTMLDivElement>(null);
   const [tosScrolled, setTosScrolled] = useState(false);
   const [paymentLoading, setPaymentLoading] = useState(false);
+  const [otherDiagnosis, setOtherDiagnosis] = useState('');
 
   // Handle survey form input changes
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -304,6 +304,16 @@ export default function PricingComparison() {
           ? [...prev.diagnoses, value]
           : prev.diagnoses.filter((d) => d !== value);
         return { ...prev, diagnoses };
+      });
+    } else if (name === 'otherDiagnosis') {
+      setOtherDiagnosis(value);
+      setFormData((prev) => {
+        // Remove any previous 'other' value
+        const filtered = prev.diagnoses.filter((d) => !d.startsWith('Other:'));
+        // Only add if not empty
+        return value
+          ? { ...prev, diagnoses: [...filtered, `Other: ${value}`] }
+          : { ...prev, diagnoses: filtered };
       });
     } else {
       setFormData((prev) => ({ ...prev, [name]: value }));
@@ -370,6 +380,7 @@ export default function PricingComparison() {
     });
     setFormError('');
     setTosScrolled(false);
+    setOtherDiagnosis('');
   };
 
   // Stripe payment redirect after TOS acceptance
@@ -518,6 +529,18 @@ export default function PricingComparison() {
                           {diag}
                         </label>
                       ))}
+                      {/* Other diagnosis as a text input */}
+                      <div className="flex items-center gap-2 text-neutral-700">
+                        <input
+                          type="text"
+                          name="otherDiagnosis"
+                          value={otherDiagnosis}
+                          onChange={handleChange}
+                          placeholder="Other"
+                          className="w-full px-3 py-2 rounded border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-accent text-sm"
+                          style={{ minHeight: '2.25rem' }}
+                        />
+                      </div>
                     </div>
                   </div>
                   <div>

@@ -34,7 +34,7 @@ export default function AboutPage() {
             We noticed that while many companies were eager to solve this problem, they often placed the burden of innovation on already overworked providers and their clinical teams. These professionals are focused on the patients in front of them, within the four walls of their facilities. But what happens after the patient leaves?
             </p>
             <p className="text-neutral-700 text-lg">
-            At Advantis, we ensure care doesn't stop at discharge. By leveraging data and remote patient monitoring, we bring continuity, insight, and accountability to care delivered at home. We believe an entire health profile shouldn't be based on vitals captured in a single visit. It's time to take a more proactive, qualitative approach—because real healthcare happens between appointments.
+            At Advantis, we ensure care doesn't stop at discharge. By leveraging data and remote patient monitoring, we bring continuity, insight, and accountability to care delivered at home. We believe an entire health profile shouldn't be based on vitals captured in a single visit. It's time to take a more proactive, qualitative approach, because real healthcare happens between appointments.
             </p>
           </div>
         </div>

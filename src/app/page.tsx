@@ -62,7 +62,7 @@ export default function Home() {
                 Our Mission
               </h2>
               <p className="text-xl md:text-2xl text-neutral-700 mb-8 leading-relaxed">
-              Advantis is rethinking how healthcare is delivered — starting with the basics: daily vitals. By using real-time data, we help providers catch issues early, make smarter decisions, and keep patients healthier at home. It's about shifting from reactive care to proactive care — and using technology to make that shift seamless.
+              Advantis is rethinking how healthcare is delivered, starting with the basics: daily vitals. By using real-time data, we help providers catch issues early, make smarter decisions, and keep patients healthier at home. It's about shifting from reactive care to proactive care and using technology to make that shift seamless.
               </p>
               <Button href="/about" variant="outline" className="px-8">
                 Learn About Our Approach
