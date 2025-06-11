@@ -22,10 +22,10 @@ export default function Hero() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white drop-shadow">
             Take Control of Your Health at Home
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8">
+          <p className="text-xl md:text-2xl text-white mb-8">
             Professional remote patient monitoring for seniors and chronic care patients.
             Easy setup, real nurses, and peace of mind.
           </p>
