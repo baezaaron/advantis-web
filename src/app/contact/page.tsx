@@ -106,7 +106,7 @@ export default function ContactPage() {
                   }
                   title="Office Location"
                   description="Headquarters"
-                  value="1221 Avenue of the Americas, Suite 13B, New York, NY 10020"
+                  value="181 7th Ave, New York, NY 10011"
                   link="https://maps.google.com"
                 />
 

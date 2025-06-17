@@ -20,7 +20,7 @@ export default function FAQ() {
     },
     {
       question: 'How often do I need to take readings?',
-      answer: 'The frequency of readings depends on your specific health needs and care plan. Typically, patients take readings once or twice daily, but your healthcare provider will determine the appropriate schedule for you.'
+      answer: 'The frequency of readings depends solely on you and your eagerness to stay on top of your health. Typically, patients take readings once or twice daily, and we will certainly remind you and guide you through the process.'
     },
     {
       question: 'What happens if there\'s an emergency?',

@@ -93,9 +93,8 @@ export default function Footer() {
                   </a>
                 </div>
                 <div className="text-neutral-300">
-                  <p className="mb-1">1221 Avenue of the Americas </p>
-                  <p className="mb-1">Suite 13B</p>
-                  <p className="mb-1">New York, NY 10020</p>
+                  <p className="mb-1">181 7th Ave</p>
+                  <p className="mb-1">New York, NY 10011</p>
                   <p className="mb-4">United States</p>
                   <p className="mb-1">Phone: (212) 470-6966</p>
                   <p>Email: info@advantis.care</p>
