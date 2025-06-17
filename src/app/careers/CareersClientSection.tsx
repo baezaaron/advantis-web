@@ -25,15 +25,23 @@ export default function CareersClientSection() {
       <section className="py-20 bg-neutral-100">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
+            <div className="text-center mb-8">
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
                 Advantis Healthcare Advocacy Program
               </h2>
-              <p className="text-xl text-neutral-700 leading-relaxed">
-                Make a difference in your community while building a rewarding career. Join our network of healthcare advocates and help bridge the gap between technology and compassionate care. The Advocacy Program is a unique opportunity to earn income while helping your community access better healthcare through remote patient monitoring (RPM). As an advocate, you educate others, enroll patients, and act as a trusted liaison between Advantis and underserved populations. No healthcare experience is required.
+              <p className="text-xl text-neutral-700 leading-relaxed mb-8">
+              Want to earn extra income while helping your community get healthier? Join the Advantis Healthcare Advocacy Program and start making a real difference — no medical background needed. Make a difference in your community while building a rewarding career. The Advocacy Program is a unique opportunity to earn income while helping your community access better healthcare through remote patient monitoring (RPM). As an advocate, you educate others, enroll patients, and act as a trusted liaison between Advantis and underserved populations. No healthcare experience is required.
               </p>
+              <div className="text-center mb-12">
+                <button
+                  onClick={() => setShowForm(true)}
+                  className="bg-accent text-white font-semibold px-10 py-4 rounded-lg hover:bg-accent/90 transition-colors text-lg shadow"
+                >
+                  Apply Now
+                </button>
+              </div>
             </div>
-            <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <div className="grid md:grid-cols-2 gap-12 mb-8">
               <div className="bg-white p-8 rounded-lg shadow-sm">
                 <h3 className="text-2xl font-semibold text-primary mb-4">What You'll Do</h3>
                 <ul className="space-y-4">
@@ -77,6 +85,12 @@ export default function CareersClientSection() {
                 </ul>
               </div>
             </div>
+            <div className="text-center max-w-2xl mx-auto mb-12">
+              <blockquote className="italic text-lg text-neutral-700 border-l-4 border-accent pl-4">
+                “I've already helped 12 patients get set up with RPM — including my own aunt. It feels great knowing they're being cared for every day, and I've made $600 in 2 weeks.”
+              </blockquote>
+              <div className="mt-2 text-neutral-500 text-base">– Luis M., Advocate in New York City</div>
+            </div>
           </div>
         </div>
       </section>
@@ -106,16 +120,6 @@ export default function CareersClientSection() {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* CTA Section for Advocacy Program */}
-      <div className="text-center mb-12">
-        <button
-          onClick={() => setShowForm(true)}
-          className="bg-accent text-white font-semibold px-10 py-4 rounded-lg hover:bg-accent/90 transition-colors text-lg shadow"
-        >
-          Apply Now
-        </button>
       </div>
 
       {/* Modal for Application Form */}
