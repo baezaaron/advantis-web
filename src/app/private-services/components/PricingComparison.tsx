@@ -283,6 +283,7 @@ export default function PricingComparison() {
     address: '',
     doctor: '',
     insurance: '',
+    referral: '',
     diagnoses: [] as string[],
     payment: '',
   });
@@ -375,6 +376,7 @@ export default function PricingComparison() {
       address: '',
       doctor: '',
       insurance: '',
+      referral: '',
       diagnoses: [],
       payment: '',
     });
@@ -514,6 +516,7 @@ export default function PricingComparison() {
                   <input name="address" type="text" placeholder="Address" value={formData.address} onChange={handleChange} className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-accent" required />
                   <input name="doctor" type="text" placeholder="Primary Care Doctor's Name" value={formData.doctor} onChange={handleChange} className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-accent" required />
                   <input name="insurance" type="text" placeholder="Insurance Carrier" value={formData.insurance} onChange={handleChange} className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-accent" required />
+                  <input name="referral" type="text" placeholder="Who referred you? (optional)" value={formData.referral} onChange={handleChange} className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-accent" />
                   <div>
                     <label className="block mb-1 font-medium text-neutral-700">Diagnoses</label>
                     <div className="grid grid-cols-2 gap-2">
