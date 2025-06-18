@@ -68,7 +68,7 @@ These Terms of Service (“Terms”) are entered into between you (“you,” �
 
 4. SERVICES & LIMITATIONS: The Services may include remote physiological monitoring devices, communication with Clinical Personnel, tracking of vital signs, trend analysis, reminders, and alerts. The Services are provided for informational and monitoring purposes only and should not be used as a replacement for physician visits, diagnostic testing, or emergency interventions. Advantis Care Corporation does not guarantee any specific health outcome or clinical result.
 
-5. PAYMENT & SUBSCRIPTIONS: By enrolling in the Services, you agree to pay all applicable fees according to your selected payment plan, whether monthly or annually. Pricing is currently: Monthly Plan – $110/month; Annual Plan – $99/month, billed annually in advance. Fees are subject to change with 30 days' notice. Payment is accepted via credit card, debit card, FSA, HSA, HRA, or other accepted payment methods. You authorize us to automatically charge your payment method on file for recurring billing. A 30-day money-back guarantee is available to first-time users. After the initial period, refunds are discretionary and handled on a case-by-case basis.
+5. PAYMENT & SUBSCRIPTIONS: By enrolling in the Services, you agree to pay all applicable fees according to your selected payment plan, whether monthly or annually. Pricing is currently: Monthly Plan – $99/month; Annual Plan – $89/month, billed annually in advance. Fees are subject to change with 30 days' notice. Payment is accepted via credit card, debit card, FSA, HSA, HRA, or other accepted payment methods. You authorize us to automatically charge your payment method on file for recurring billing. A 30-day money-back guarantee is available to first-time users. After the initial period, refunds are discretionary and handled on a case-by-case basis.
 
 6. DATA COLLECTION, ANONYMIZATION & AI DEVELOPMENT: You acknowledge that as part of your use of the Services, Advantis Care Corporation will collect health-related data including but not limited to biometric readings, device usage, communication logs, adherence data, and service interactions. You grant Advantis Care Corporation a perpetual, irrevocable, non-exclusive, royalty-free license to (a) use your data internally for quality improvement, service delivery, and analytics; (b) de-identify and aggregate such data in accordance with HIPAA and applicable law; and (c) use such anonymized data to train, refine, and develop machine learning models, algorithms, and artificial intelligence tools aimed at enhancing patient care, operational efficiency, and clinical insights. Advantis Care Corporation will not sell, share, or license any personally identifiable health data without your explicit consent, unless required by law.
 
@@ -93,8 +93,8 @@ These Terms of Service (“Terms”) are entered into between you (“you,” �
 16. CONTACT INFORMATION:
     For questions, concerns, or legal notices, please contact:
     Advantis Care Corporation
-    Email: support@advantis.care
-    Mailing Address: 3078 Heath Avenue, Bronx, NY 10463
+    Email: info@advantis.care
+    Mailing Address: 181 7th Ave, NY, NY 10011
 
 BY USING OUR SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREED TO THESE TERMS OF SERVICE.
 ---
@@ -429,7 +429,7 @@ export default function PricingComparison() {
             Simple, Transparent Pricing
           </h2>
           <p className="text-lg text-neutral-700 max-w-2xl mx-auto">
-            Choose the plan that fits your needs. No hidden fees. 60-day money-back guarantee.
+            Choose the plan that fits your needs. No hidden fees. 30-day money-back guarantee.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
@@ -484,7 +484,7 @@ export default function PricingComparison() {
             <svg className="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
-            <span className="text-neutral-700 font-medium">60-day money-back guarantee; cancel with 30 day notice</span>
+            <span className="text-neutral-700 font-medium">30-day money-back guarantee</span>
           </div>
           <div className="flex items-center gap-4">
             <svg className="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
