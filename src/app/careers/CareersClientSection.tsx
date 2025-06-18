@@ -87,7 +87,7 @@ export default function CareersClientSection() {
             </div>
             <div className="text-center max-w-2xl mx-auto mb-12">
               <blockquote className="italic text-lg text-neutral-700 border-l-4 border-accent pl-4">
-                “I've already helped 12 patients get set up with RPM — including my own aunt. It feels great knowing they're being cared for every day, and I've made $600 in 2 weeks.”
+                "I've already helped 12 patients get set up with RPM — including my own aunt. It feels great knowing they're being cared for every day, and I've made $600 in 2 weeks."
               </blockquote>
               <div className="mt-2 text-neutral-500 text-base">– Luis M., Advocate in New York City</div>
             </div>
@@ -156,13 +156,10 @@ export default function CareersClientSection() {
                   <label htmlFor="city" className="block text-left font-medium text-primary mb-1">City<span className="text-accent">*</span></label>
                   <input type="text" id="city" name="city" required className="w-full border border-neutral-300 rounded px-4 py-2 focus:outline-accent" />
                 </div>
-                <div>
-                  <label htmlFor="resume" className="block text-left font-medium text-primary mb-1">Resume or Statement (optional)</label>
-                  <input type="file" id="resume" name="resume" className="w-full border border-neutral-300 rounded px-4 py-2 focus:outline-accent" />
-                </div>
               </div>
               <button type="submit" className="mt-4 bg-accent text-white font-semibold px-8 py-3 rounded-lg hover:bg-accent/90 transition-colors">Submit Application</button>
             </form>
+            <div className="text-xs text-neutral-500 mt-2 text-center">*Feel free to send over your resume to <a href="mailto:info@advantis.care" className="underline text-primary">info@advantis.care</a></div>
           </div>
         </div>
       )}
