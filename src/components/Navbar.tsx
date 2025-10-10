@@ -62,6 +62,7 @@ export default function Navbar() {
               <div className="pl-4 space-y-2">
                 <MobileNavLink href="/services/" onClick={() => setMobileOpen(false)}>For Providers</MobileNavLink>
                 <MobileNavLink href="/private-services/" onClick={() => setMobileOpen(false)}>Private Services</MobileNavLink>
+                <MobileNavLink href="/services/community-first" onClick={() => setMobileOpen(false)}>Community First Initiative</MobileNavLink>
               </div>
             </div>
             <MobileNavLink href="/resources/" onClick={() => setMobileOpen(false)}>Resources</MobileNavLink>

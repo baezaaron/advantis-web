@@ -83,8 +83,8 @@ export default function ContactPage() {
                   icon={<MedicalIcon className="h-6 w-6" />}
                   title="Partnerships"
                   description="For healthcare providers and business inquiries"
-                  value="info@advantis.care"
-                  link="mailto:info@advantis.care"
+                  value="abaez@advantis.care"
+                  link="mailto:abaez@advantis.care"
                 />
 
                 <ContactInfo

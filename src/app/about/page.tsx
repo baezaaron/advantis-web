@@ -23,18 +23,17 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 bg-neutral-50">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">
-            Our Story
+            Our Why
           </h2>
           <div className="w-20 h-1 bg-accent mx-auto mb-8 rounded-full"></div>
           <div className="max-w-4xl mx-auto bg-white p-8 md:p-10 rounded-lg shadow-md border border-neutral-200 border-l-4 border-accent">
             <p className="text-neutral-700 mb-6 text-lg">
-            Founded in 2023, Advantis was born from a simple but overlooked truth: while technology continues to evolve, our nation's health continues to decline. In nearly every part of our lives, data drives better decisions—yet healthcare remains disconnected, reactive, and inefficient. We set out to change that.
+            Founded in 2023, Advantis was born from a simple but overlooked truth: while technology continues to evolve, our nation's health continues to decline. In nearly every part of our lives, data drives better decisions, yet healthcare remains disconnected, reactive, and inefficient. We set out to change that.
             </p>
             <p className="text-neutral-700 mb-6 text-lg">
-            We noticed that while many companies were eager to solve this problem, they often placed the burden of innovation on already overworked providers and their clinical teams. These professionals are focused on the patients in front of them, within the four walls of their facilities. But what happens after the patient leaves?
-            </p>
+            We noticed that while many companies were eager to solve this problem, they often placed the burden of innovation on already overworked providers and their clinical teams. The solution needs to start at the foundation. Beginning with the patient. Today, patients tend to be left to fend for themselves post discharge. Leaving them overwhelmed and frustrated. Resulting in reactive outcomes rather than preventative measures.       </p>
             <p className="text-neutral-700 text-lg">
-            At Advantis, we ensure care doesn't stop at discharge. By leveraging data and remote patient monitoring, we bring continuity, insight, and accountability to care delivered at home. We believe an entire health profile shouldn't be based on vitals captured in a single visit. It's time to take a more proactive, qualitative approach, because real healthcare happens between appointments.
+            However, with Advantis, health systems and clinics are plugging the gap. No more patients left to fall between the cracks. By leveraging data and remote patient monitoring, we bring continuity, insight, and accountability to care delivered at home. We believe an entire health profile shouldn't be based on vitals captured in a single visit. It's time to take a more proactive, qualitative approach, because real healthcare happens between appointments.
             </p>
           </div>
         </div>

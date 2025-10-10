@@ -62,7 +62,7 @@ export default function Home() {
                 Our Mission
               </h2>
               <p className="text-xl md:text-2xl text-neutral-700 mb-8 leading-relaxed">
-              Advantis is rethinking how healthcare is delivered, starting with the basics: daily vitals. By using real-time data, we help providers catch issues early, make smarter decisions, and keep patients healthier at home. It's about shifting from reactive care to proactive care and using technology to make that shift seamless.
+              Advantis is rethinking how healthcare reaches communities, starting with the foundation of proactive, data-informed care. We equip providers with the tools and support to stay connected to patients between visits, intervene early, and improve outcomes where it matters most.
               </p>
               <Button href="/about" variant="outline" className="px-8">
                 Learn About Our Approach
@@ -113,8 +113,8 @@ export default function Home() {
             />
 
             <ServiceCard
-              title="Preventative Care"
-              description="Education, screenings, and lifestyle programs designed to prevent illness and detect health issues early."
+              title="Chronic Care Management"
+              description="Education, screenings, and care plans designed to prevent illness and detect health issues early."
               icon={
                 <svg className="h-7 w-7 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2l8 4v6c0 5-3 9-8 11-5-2-8-6-8-11V6l8-4z" />

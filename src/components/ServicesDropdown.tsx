@@ -55,6 +55,14 @@ export default function ServicesDropdown() {
             >
               Private Services
             </Link>
+            <Link
+              href="/services/community-first"
+              className="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50 hover:text-accent transition-colors duration-200 border-t border-neutral-100"
+              role="menuitem"
+              onClick={() => setIsOpen(false)}
+            >
+              Community First Initiative
+            </Link>
           </div>
         </div>
       )}

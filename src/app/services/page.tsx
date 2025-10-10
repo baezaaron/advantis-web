@@ -101,13 +101,35 @@ export default function ServicesPage() {
             <div id="preventative-care" className="scroll-mt-20 bg-neutral-100 rounded-lg p-8 shadow flex items-center justify-between">
               <div className="max-w-xl">
                 <h3 className="text-2xl font-semibold text-primary mb-4">
-                  Preventative Care
+                  Chronic Care Management
                 </h3>
                 <p className="text-lg text-neutral-700">
-                  Education, screenings, and lifestyle programs designed to prevent illness and detect developing comorbidities.
+                  Education, screenings, and care plans designed to prevent illness and detect developing comorbidities.
                 </p>
               </div>
               <ShieldIcon className="h-16 w-16 text-accent" />
+            </div>
+
+            {/* Community First Initiative */}
+            <div id="community-first-initiative" className="scroll-mt-20 bg-gradient-to-r from-blue-50 to-green-50 rounded-lg p-8 shadow flex items-center justify-between border-l-4 border-accent">
+              <div className="max-w-xl">
+                <h3 className="text-2xl font-semibold text-primary mb-4">
+                  Community First Initiative
+                </h3>
+                <p className="text-lg text-neutral-700 mb-4">
+                  Supporting community health centers through challenging times with no upfront costs. 
+                  Improve UDS scores, increase patient engagement, and create revenue growth opportunities.
+                </p>
+                <Button href="/services/community-first" size="sm" variant="primary">
+                  Learn More
+                </Button>
+              </div>
+              <div className="flex items-center">
+                <svg className="h-16 w-16 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
