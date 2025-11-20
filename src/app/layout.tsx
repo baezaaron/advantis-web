@@ -1,15 +1,22 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Lora, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 // Load fonts
-const poppins = Poppins({
+const lora = Lora({
   subsets: ["latin"],
   display: "swap",
-  weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-lora",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -31,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${poppins.variable} scroll-smooth`}>
+    <html lang="en" className={`${lora.variable} ${inter.variable} scroll-smooth`}>
       <head>
         {/* Facebook Domain Verification */}
         <meta name="facebook-domain-verification" content="kszwebzvzwcerfejsau1js6whcddak" />
@@ -51,7 +58,7 @@ export default function RootLayout({
           gtag('config', 'G-T8NX742D8C');
         ` }} />
       </head>
-      <body className="min-h-screen flex flex-col bg-neutral-100 font-sans antialiased">
+      <body className={`min-h-screen flex flex-col bg-neutral-100 antialiased ${lora.variable} ${inter.variable} font-sans`} suppressHydrationWarning>
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />

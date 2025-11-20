@@ -34,9 +34,9 @@ export default function PreventativeCare() {
       <div className="container mx-auto px-4">
         {/* Centered Social Proof */}
         <div className="text-center mb-16">
-          <div className="text-6xl font-extrabold text-primary mb-2">97%</div>
+          <div className="text-6xl font-extrabold text-primary mb-2">100%</div>
           <div className="text-2xl md:text-3xl text-primary mb-2">
-            of our patients say they get the <span className="italic">best quality care</span>
+            of our patients feel better <span className="italic">supported</span>
           </div>
           <hr className="my-4 border-neutral-200 max-w-xs mx-auto" />
           <div className="uppercase text-xs tracking-widest text-neutral-500">Patient Surveys</div>

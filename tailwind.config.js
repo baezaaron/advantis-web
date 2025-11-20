@@ -23,8 +23,9 @@ module.exports = {
         'neutral-900': '#0A0D14',
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
-        heading: ['Poppins', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+        serif: ['Lora', 'serif'],
+        heading: ['Lora', 'serif'],
       },
     },
   },

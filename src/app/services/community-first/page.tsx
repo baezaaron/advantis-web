@@ -1,5 +1,6 @@
 import { HeartPulseIcon, SupportIcon } from '@/components/icons';
 import Button from '@/components/Button';
+import FadeInSection from '@/components/FadeInSection';
 import type { Metadata } from 'next';
 
 // Inline icons for Community First Initiative
@@ -81,71 +82,58 @@ export default function CommunityFirstPage() {
         </div>
       </section>
 
-      {/* Problem Statement */}
-      <section className="py-16 bg-red-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-red-800 mb-6">
-              The Challenge Facing Community Health Centers
-            </h2>
-             <p className="text-lg text-red-700 mb-8">
-               With the recent passing of the <strong>One Big Beautiful Bill Act</strong>, community health centers are facing unprecedented challenges. 
-               These health centers serve the most vulnerable populations, yet they're being forced to cut essential services 
-                 or close their doors due to financial pressures and regulatory changes.
-             </p>
-          </div>
-        </div>
-      </section>
-
       {/* Our Solution */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              Our Community First Initiative
-            </h2>
-            <p className="text-lg text-gray-700 mb-8">
-              Advantis Healthcare is committed to serving as an extension to community health centers, 
-              providing high-quality care and support to help them not just survive, but thrive.
-            </p>
+      <FadeInSection>
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+                Our Community First Initiative
+              </h2>
+              <p className="text-lg text-gray-700 mb-8">
+                Advantis Healthcare is committed to serving as an extension to community health centers, 
+                providing high-quality care and support to help them not just survive, but thrive.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {/* Improve UDS Scores */}
+              <div className="text-center p-6 bg-blue-50 rounded-lg">
+                <ChartIcon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-blue-800 mb-3">Improve UDS and HEDIS Scores</h3>
+                <p className="text-blue-700">
+                  Our comprehensive monitoring and care management services help centers achieve better 
+                  Uniform Data System (UDS) scores through improved patient outcomes and care quality metrics.
+                </p>
+              </div>
+
+              {/* Increase Patient Engagement */}
+              <div className="text-center p-6 bg-green-50 rounded-lg">
+                <CommunityIcon className="h-12 w-12 text-green-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-green-800 mb-3">Increase Patient Engagement</h3>
+                <p className="text-green-700">
+                  Through our remote patient monitoring and proactive care programs, we help centers 
+                  build stronger relationships with their patients and improve overall engagement levels.
+                </p>
+              </div>
+
+              {/* Create Revenue Growth */}
+              <div className="text-center p-6 bg-purple-50 rounded-lg">
+                <DollarIcon className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-purple-800 mb-3">Create Revenue Growth</h3>
+                <p className="text-purple-700">
+                  Our services create new revenue streams and opportunities for centers to expand 
+                  their offerings while maintaining financial stability and sustainability.
+                </p>
+              </div>
+            </div>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* Improve UDS Scores */}
-            <div className="text-center p-6 bg-blue-50 rounded-lg">
-              <ChartIcon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-blue-800 mb-3">Improve UDS Scores</h3>
-              <p className="text-blue-700">
-                Our comprehensive monitoring and care management services help centers achieve better 
-                Uniform Data System (UDS) scores through improved patient outcomes and care quality metrics.
-              </p>
-            </div>
-
-            {/* Increase Patient Engagement */}
-            <div className="text-center p-6 bg-green-50 rounded-lg">
-              <CommunityIcon className="h-12 w-12 text-green-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-green-800 mb-3">Increase Patient Engagement</h3>
-              <p className="text-green-700">
-                Through our remote patient monitoring and proactive care programs, we help centers 
-                build stronger relationships with their patients and improve overall engagement levels.
-              </p>
-            </div>
-
-            {/* Create Revenue Growth */}
-            <div className="text-center p-6 bg-purple-50 rounded-lg">
-              <DollarIcon className="h-12 w-12 text-purple-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-purple-800 mb-3">Create Revenue Growth</h3>
-              <p className="text-purple-700">
-                Our services create new revenue streams and opportunities for centers to expand 
-                their offerings while maintaining financial stability and sustainability.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </FadeInSection>
 
       {/* How We Help */}
-      <section className="py-16 bg-neutral-50">
+      <FadeInSection>
+        <section className="py-16 bg-neutral-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
             How We Support Your Center
@@ -195,10 +183,12 @@ export default function CommunityFirstPage() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </FadeInSection>
 
       {/* No Upfront Costs */}
-      <section className="py-16 bg-gray-50">
+      <FadeInSection>
+        <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-800 mb-6">
@@ -232,10 +222,12 @@ export default function CommunityFirstPage() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </FadeInSection>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary">
+      <FadeInSection>
+        <section className="py-20 bg-primary">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Partner With Us?
@@ -248,12 +240,13 @@ export default function CommunityFirstPage() {
             <Button href="/contact" size="lg" variant="secondary">
               Contact Us Today
             </Button>
-            <Button href="/services" size="lg" variant="outline">
+            <Button href="/contact" size="lg" variant="outline">
               Learn About Our Services
             </Button>
           </div>
         </div>
-      </section>
+        </section>
+      </FadeInSection>
     </>
   );
 }

@@ -1,5 +1,6 @@
 import Button from '@/components/Button';
 import CustomImage from '@/components/Image';
+import FadeInSection from '@/components/FadeInSection';
 import type { Metadata } from 'next';
 
 export default function AboutPage() {
@@ -20,27 +21,30 @@ export default function AboutPage() {
       </section>
       
       {/* Our Story */}
-      <section className="py-16 md:py-24 bg-neutral-50">
+      <FadeInSection>
+        <section className="py-16 md:py-24 bg-neutral-50">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">
             Our Why
           </h2>
           <div className="w-20 h-1 bg-accent mx-auto mb-8 rounded-full"></div>
           <div className="max-w-4xl mx-auto bg-white p-8 md:p-10 rounded-lg shadow-md border border-neutral-200 border-l-4 border-accent">
-            <p className="text-neutral-700 mb-6 text-lg">
+            <p className="text-neutral-700 mb-6 text-lg text-center">
             Founded in 2023, Advantis was born from a simple but overlooked truth: while technology continues to evolve, our nation's health continues to decline. In nearly every part of our lives, data drives better decisions, yet healthcare remains disconnected, reactive, and inefficient. We set out to change that.
             </p>
-            <p className="text-neutral-700 mb-6 text-lg">
-            We noticed that while many companies were eager to solve this problem, they often placed the burden of innovation on already overworked providers and their clinical teams. The solution needs to start at the foundation. Beginning with the patient. Today, patients tend to be left to fend for themselves post discharge. Leaving them overwhelmed and frustrated. Resulting in preventable reactive outcomes.       </p>
-            <p className="text-neutral-700 text-lg">
-            However, with Advantis, health systems and clinics are plugging the gap. No more patients left to fall between the cracks. By leveraging data and remote patient monitoring, we bring continuity, insight, and accountability to care delivered at home. It's time to take a more proactive, qualitative approach, because real healthcare happens between appointments.
+            <p className="text-neutral-700 mb-6 text-lg text-center">
+            We noticed that while many companies were eager to solve this problem, they often placed the burden of innovation on already overworked providers and their clinical teams. The solution needs to start at the foundation. Beginning with the patient. Today, patients tend to be left to fend for themselves post discharge. Leaving them overwhelmed and frustrated.      </p>
+            <p className="text-neutral-700 text-lg text-center">
+            However, with Advantis, health systems and centers are plugging the gap. Patients are no longer left to fall between the cracks. By leveraging data and remote patient monitoring, we bring continuity, insight, and accountability to care delivered at home. It's time to take a more proactive, qualitative approach, because real healthcare happens between appointments.
             </p>
           </div>
         </div>
-      </section>
+        </section>
+      </FadeInSection>
       
       {/* Our Values */}
-      <section className="py-16 md:py-24 bg-neutral-50">
+      <FadeInSection>
+        <section className="py-16 md:py-24 bg-neutral-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -72,7 +76,7 @@ export default function AboutPage() {
             
             <ValueCard 
               title="Collaboration"
-              description="We work closely with healthcare providers, patients, and caregivers to create integrated solutions that benefit everyone."
+              description="We work closely with community health centers, health systems, IPAs, and value based care centers to create tailored solutions."
               icon="team"
             />
             
@@ -89,10 +93,12 @@ export default function AboutPage() {
             />
           </div>
         </div>
-      </section>
+        </section>
+      </FadeInSection>
       
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-primary via-primary to-blue-900 text-white relative overflow-hidden">
+      <FadeInSection>
+        <section className="py-16 md:py-24 bg-gradient-to-br from-primary via-primary to-blue-900 text-white relative overflow-hidden">
         {/* Add decorative elements */}
         <div className="absolute -left-20 -top-20 w-80 h-80 rounded-full bg-white/5"></div>
         <div className="absolute right-40 top-20 w-40 h-40 rounded-full bg-white/5"></div>
@@ -117,7 +123,8 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </FadeInSection>
     </>
   );
 }

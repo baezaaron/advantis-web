@@ -1,5 +1,6 @@
 import { HeartPulseIcon, SupportIcon } from '@/components/icons';
 import Button from '@/components/Button';
+import FadeInSection from '@/components/FadeInSection';
 import type { Metadata } from 'next';
 
 // Inline shield icon for Preventative Care
@@ -65,7 +66,8 @@ export default function ServicesPage() {
         </div>
       </section>
     
-      <section className="pt-28 pb-12 bg-neutral-50">
+      <FadeInSection>
+        <section className="pt-28 pb-12 bg-neutral-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-primary text-center mb-12">
             Our Services & Specialities
@@ -78,7 +80,7 @@ export default function ServicesPage() {
                   Remote Patient Monitoring
                 </h3>
                 <p className="text-lg text-neutral-700">
-                  24/7 monitoring of vital signs and health metrics from the comfort of home, with real-time alerts.
+                  24/7 monitoring of vital signs and health metrics from the comfort of the patient's home, with real-time alerts.
                 </p>
               </div>
               <HeartPulseIcon className="h-16 w-16 text-accent" />
@@ -111,13 +113,13 @@ export default function ServicesPage() {
             </div>
 
             {/* Community First Initiative */}
-            <div id="community-first-initiative" className="scroll-mt-20 bg-gradient-to-r from-blue-50 to-green-50 rounded-lg p-8 shadow flex items-center justify-between border-l-4 border-accent">
+            <div id="community-first-initiative" className="scroll-mt-20 bg-neutral-100 rounded-lg p-8 shadow flex items-center justify-between">
               <div className="max-w-xl">
                 <h3 className="text-2xl font-semibold text-primary mb-4">
                   Community First Initiative
                 </h3>
                 <p className="text-lg text-neutral-700 mb-4">
-                  Supporting community health centers through challenging times with no upfront costs. 
+                  Supporting community health centers with no upfront costs. 
                   Improve UDS scores, increase patient engagement, and create revenue growth opportunities.
                 </p>
                 <Button href="/services/community-first" size="sm" variant="primary">
@@ -133,9 +135,11 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </FadeInSection>
       {/* CTA Section */}
-      <section className="py-20 bg-primary">
+      <FadeInSection>
+        <section className="py-20 bg-primary">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to learn more?
@@ -147,7 +151,8 @@ export default function ServicesPage() {
             Contact Us
           </Button>
         </div>
-      </section>
+        </section>
+      </FadeInSection>
     </>
   );
 } 
