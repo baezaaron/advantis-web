@@ -159,7 +159,7 @@ export default function CommunityFirstPage() {
                       SDOH Navigation & Resource Mobilization
                     </h3>
                     <p className="text-lg text-gray-700 mb-4">
-                      We incorporate structured SDOH screening using validated assessments such as <span className="font-semibold">PRAPARE</span>, 
+                      We incorporate structured SDOH screening aligned with recognized models (e.g., <span className="font-semibold">PRAPARE</span>), 
                       then assist in mobilizing transportation, food, utilities, housing, and other community resources to reduce barriers to care.
                     </p>
                     <ul className="space-y-2 text-gray-700">
@@ -167,7 +167,7 @@ export default function CommunityFirstPage() {
                         <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
-                        <span>Structured PRAPARE screening and assessment</span>
+                        <span>Structured SDOH screening and assessment</span>
                       </li>
                       <li className="flex items-start">
                         <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

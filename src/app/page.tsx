@@ -103,7 +103,7 @@ function FAQSection() {
     {
       id: 'faq-sdoh',
       question: 'What SDOH services do you provide?',
-      answer: 'We incorporate structured SDOH screening using validated tools such as PRAPARE, then mobilize transportation, food, utilities, housing, and other community resources to reduce barriers to care. Our team conducts assessments, connects patients with appropriate resources, and tracks outcomes to support whole-person care delivery.'
+      answer: 'We incorporate structured SDOH screening aligned with recognized models (e.g., PRAPARE), then mobilize transportation, food, utilities, housing, and other community resources to reduce barriers to care. Our team conducts assessments, connects patients with appropriate resources, and tracks outcomes to support whole-person care delivery.'
     },
     {
       id: 'faq-data',
@@ -554,7 +554,7 @@ export default function Home() {
 
             <ServiceCard
               title="SDOH Navigation & Care Coordination"
-              description=" Scheduling assistance, structured SDOH screening using PRAPARE, mobilization of transportation, food, utilities, housing, and community resources to reduce barriers to care."
+              description=" Scheduling assistance, structured SDOH screening aligned with recognized models (e.g., PRAPARE), mobilization of transportation, food, utilities, housing, and community resources to reduce barriers to care."
               icon={<UsersIcon className="h-7 w-7 text-accent" />}
               link="/services#advanced-primary-care-management"
             />
