@@ -35,7 +35,7 @@ export default function AboutPage() {
             <p className="text-neutral-700 mb-6 text-lg text-center">
             We noticed that while many companies were eager to solve this problem, they often placed the burden of innovation on already overworked providers and their clinical teams. The solution needs to start at the foundation. Beginning with the patient. Today, patients tend to be left to fend for themselves post discharge. Leaving them overwhelmed and frustrated.      </p>
             <p className="text-neutral-700 text-lg text-center">
-            However, with Advantis, health systems and centers are plugging the gap. Patients are no longer left to fall between the cracks. By leveraging data and remote patient monitoring, we bring continuity, insight, and accountability to care delivered at home. It's time to take a more proactive, qualitative approach, because real healthcare happens between appointments.
+            However, with Advantis, health plans, health systems, and community health centers are plugging the gap. Patients are no longer left to fall between the cracks. By serving as an extension of care through care coordination, SDOH navigation, leveraging data and remote patient monitoring, we bring continuity, insight, and accountability to care delivered at home. It's time to take a more proactive, qualitative approach.
             </p>
           </div>
         </div>
@@ -98,29 +98,31 @@ export default function AboutPage() {
       
       {/* CTA Section */}
       <FadeInSection>
-        <section className="py-16 md:py-24 bg-gradient-to-br from-primary via-primary to-blue-900 text-white relative overflow-hidden">
-        {/* Add decorative elements */}
-        <div className="absolute -left-20 -top-20 w-80 h-80 rounded-full bg-white/5"></div>
-        <div className="absolute right-40 top-20 w-40 h-40 rounded-full bg-white/5"></div>
-        <div className="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-white/5"></div>
+        <section className="py-20 md:py-28 bg-primary relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute top-0 right-0 w-1/3 h-full opacity-10">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="white">
+            <path d="M39.5,-65.6C50.9,-56.3,59.5,-44.7,65.4,-31.9C71.3,-19.1,74.4,-5.2,71.7,7.1C69,19.4,60.4,30.1,51.3,39.9C42.2,49.7,32.6,58.4,21.2,63.6C9.7,68.8,-3.5,70.4,-17.6,68.8C-31.7,67.1,-46.7,62.3,-58.1,52.6C-69.4,42.9,-77.1,28.3,-79.1,13C-81.1,-2.3,-77.3,-18.2,-69.3,-31.3C-61.3,-44.4,-49.1,-54.8,-36.2,-63.4C-23.3,-72,-11.7,-78.9,1.2,-80.8C14,-82.7,28,-74.8,39.5,-65.6Z" transform="translate(100 100)" />
+          </svg>
+        </div>
+        <div className="absolute bottom-0 left-0 w-1/3 h-full opacity-10">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="white">
+            <path d="M45.3,-77.5C59.6,-69.9,72.8,-59.5,79.4,-45.8C86,-32.1,85.9,-16,83.1,-1.6C80.3,12.8,74.7,25.6,67.8,38.3C60.9,50.9,52.5,63.3,41,71C29.5,78.7,14.7,81.5,0.2,81.2C-14.4,80.9,-28.8,77.4,-41.6,70.1C-54.4,62.8,-65.7,51.8,-73.6,38.5C-81.5,25.2,-86.1,9.6,-85.9,-5.9C-85.7,-21.4,-80.8,-36.8,-71.2,-48.3C-61.7,-59.9,-47.5,-67.7,-33.5,-75.3C-19.5,-82.9,-5.7,-90.3,7.2,-89.6C20.1,-88.9,31,-85.1,45.3,-77.5Z" transform="translate(100 100)" />
+          </svg>
+        </div>
         
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white drop-shadow-sm">
-              Join the Advantis Community
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Ready to extend your reach?
             </h2>
-            <div className="w-20 h-1 bg-white/50 mx-auto mb-8 rounded-full"></div>
-            <p className="text-xl mb-10 text-white/90">
-              Whether you're a healthcare provider looking to expand your services or a patient seeking better care options, we're here to help.
+            <p className="text-xl text-white/90 mb-10 leading-relaxed">
+              Discover how Advantis Care can serve as your value-based extension-of-care service provider, 
+              improving patient outcomes and generating new revenue streams, all without adding internal staff.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button href="/contact" size="lg" variant="secondary" className="px-8 py-4">
-                Contact Us
-              </Button>
-              <Button href="/resources" size="lg" variant="outline" className="px-8 py-4 border-white text-white hover:bg-white/10">
-                Explore Resources
-              </Button>
-            </div>
+            <Button href="/contact" size="lg" variant="secondary" className="px-10 py-4">
+              Get Started Today
+            </Button>
           </div>
         </div>
         </section>

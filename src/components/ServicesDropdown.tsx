@@ -45,7 +45,7 @@ export default function ServicesDropdown() {
               role="menuitem"
               onClick={() => setIsOpen(false)}
             >
-              For Community Health Centers
+              Community Health Centers
             </Link>
             <Link
               href="/services#health-plans"
@@ -53,7 +53,7 @@ export default function ServicesDropdown() {
               role="menuitem"
               onClick={() => setIsOpen(false)}
             >
-              For Health Plans
+              Health Plans
             </Link>
             <Link
               href="/services#health-systems"
@@ -61,7 +61,7 @@ export default function ServicesDropdown() {
               role="menuitem"
               onClick={() => setIsOpen(false)}
             >
-              For Health Systems & IPAs
+              Health Systems & IPAs
             </Link>
             <Link
               href="/services/community-first"

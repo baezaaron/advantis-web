@@ -18,7 +18,7 @@ export default function Hero() {
             <span className="bg-gradient-to-r from-white to-accent/90 bg-clip-text text-transparent">Extend Your Care</span>
           </h1>
           <p className="text-2xl md:text-3xl mb-10 text-white/90 font-light">
-            A high-touch clinical and administrative extension-of-care platform for FQHCs, health systems, IPAs, and health plans
+            A high-touch clinical and administrative extension-of-care service for FQHCs, health systems, IPAs, and health plans
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/contact" size="lg" variant="secondary" className="px-8 py-4 text-base">

@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Our Services | Extension-of-Care Platform for Healthcare Organizations | Advantis',
-  description: 'Advantis Care provides extension-of-care solutions for FQHCs, health plans, and health systems. Integrated RPM, CCM, SDOH navigation, and preventive care support.',
+  description: 'Advantis Care provides value-based extension-of-care solutions for FQHCs, health plans, and health systems. Integrated RPM, CCM, SDOH navigation, and preventive care support.',
   keywords: [
     'FQHC services',
     'health plan services',
@@ -15,7 +15,8 @@ export const metadata: Metadata = {
     'SDOH navigation',
     'RPM for health centers',
     'healthcare extension services',
-    'population health management'
+    'population health management',
+    'value-based care'
   ],
   openGraph: {
     title: 'Our Services | Extension-of-Care Platform for Healthcare Organizations | Advantis',
@@ -61,7 +62,7 @@ export default function ServicesPage() {
               Solutions for Every Partner Type
             </h2>
             <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
-              Our integrated platform adapts to meet the unique needs of FQHCs, health plans, and health systems
+              Our value-based platform adapts to meet the unique needs of FQHCs, health plans, and health systems
             </p>
           </div>
 

@@ -15,7 +15,7 @@ export default function CareersClientSection() {
               Join Our Team
             </h1>
             <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
-              At Advantis, we're on a mission to transform healthcare through innovative technology and compassionate care. We're looking for talented individuals who want to make a real impact on patient outcomes and help make quality healthcare accessible to all. If you're passionate about making a difference, please apply below or explore our Healthcare Advocacy Program. Feel free to also reach out to <a href="mailto:info@advantis.care" className="underline text-primary">info@advantis.care</a> to discuss how you could be a part of the Advantis team.
+              At Advantis, we're on a mission to transform healthcare through innovative technology and compassionate care. We're looking for talented individuals who want to make a real impact on patient outcomes and help make quality healthcare accessible to all. If you're passionate about making a difference, please apply below. Feel free to also reach out to <a href="mailto:info@advantis.care" className="underline text-primary">info@advantis.care</a> to discuss how you could be a part of the Advantis team.
             </p>
           </div>
         </div>

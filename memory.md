@@ -139,6 +139,10 @@
       - ✅ "How It Works": Updated 4 steps to reflect B2B partnership model
       - ✅ FAQ: Updated 10 questions to address B2B concerns (pricing models, platform integration, SDOH services, data/analytics, etc.)
       - ✅ CTA: Updated to B2B-focused messaging
+    - **About Page Updates**:
+      - ✅ CTA Section: Updated to align with extension-of-care messaging, matching home page style ("Ready to extend your reach?" with B2B value proposition)
+      - Removed B2C language ("patient seeking better care options")
+      - Focused on healthcare organizations (FQHCs, health plans, health systems) as extension-of-care service provider
     - **Next Steps (Phase 2)**:
       - Partner-specific pages for FQHCs, Health Plans, Health Systems
       - Update About page with "Our Platform" and "Data Advantage" sections

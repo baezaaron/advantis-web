@@ -500,7 +500,7 @@ export default function Home() {
               
               {/* Main Mission Statement */}
               <h2 className="text-1xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-primary mb-6 leading-tight">
-                A vertically-integrated extension-of-care service that improves patient outcomes and expands care capacity
+                A value-based extension-of-care service that improves patient outcomes and expands care capacity
               </h2>
               
               {/* Body Text with Highlighted Portion */}
