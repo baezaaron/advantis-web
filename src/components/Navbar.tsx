@@ -60,9 +60,10 @@ export default function Navbar() {
             <div className="py-2">
               <div className="text-neutral-700 font-medium mb-2">Services</div>
               <div className="pl-4 space-y-2">
-                <MobileNavLink href="/services/" onClick={() => setMobileOpen(false)}>For Providers</MobileNavLink>
-                <MobileNavLink href="/private-services/" onClick={() => setMobileOpen(false)}>Private Services</MobileNavLink>
-                <MobileNavLink href="/services/community-first" onClick={() => setMobileOpen(false)}>Community First Initiative</MobileNavLink>
+                <MobileNavLink href="/services#fqhcs" onClick={() => setMobileOpen(false)}>For FQHCs & CHCs</MobileNavLink>
+                <MobileNavLink href="/services#health-plans" onClick={() => setMobileOpen(false)}>For Health Plans</MobileNavLink>
+                <MobileNavLink href="/services#health-systems" onClick={() => setMobileOpen(false)}>For Health Systems & IPAs</MobileNavLink>
+                <MobileNavLink href="/services/community-first" onClick={() => setMobileOpen(false)}>Community Health Centers</MobileNavLink>
               </div>
             </div>
             <MobileNavLink href="/resources/" onClick={() => setMobileOpen(false)}>Resources</MobileNavLink>

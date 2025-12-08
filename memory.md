@@ -119,4 +119,27 @@
 8. **Services Page**: Explored timeline, 3-col grid, then full-width service boxes; removed "Learn More" links, enlarged icons, increased text sizes, focused on three core services, added CTA.
 9. **Icon Library**: Added `HeartPulseIcon` and replaced remote monitoring icons on home and services pages.
 10. **Careers Page**: Created `/careers/page.tsx` with centered header, description, email link; adjusted padding below navbar.
-11. **Contact Page & Footer Form**: In `src/app/contact/page.tsx` and `Footer.tsx`, imported Next.js `Script`, loaded reCAPTCHA API, and inserted `<div class="g-recaptcha" data-sitekey="…"></div>` below submit buttons. 
+11. **Contact Page & Footer Form**: In `src/app/contact/page.tsx` and `Footer.tsx`, imported Next.js `Script`, loaded reCAPTCHA API, and inserted `<div class="g-recaptcha" data-sitekey="…"></div>` below submit buttons.
+
+12. **Business Model Alignment (Phase 1 Complete)**: Advantis Care has shifted to a B2B extension-of-care platform model serving three partner types:
+    - **FQHCs/CHCs**: Revenue share model (20% retention), full-service RPM/CCM operation, billing under FQHC umbrella
+    - **Health Plans**: PMPM model, HEDIS/STAR ratings focus, risk adjustment, AWV support
+    - **Health Systems/IPAs**: PMPM or episodic bundles, post-discharge stabilization, readmission reduction
+    - Created comprehensive website update plan in `WEBSITE_UPDATE_PLAN.md` outlining:
+      - Current state analysis
+      - Required messaging changes (B2B focus, platform approach)
+      - Service restructuring (integrated platform vs. individual services)
+      - New partner-specific pages needed
+      - Implementation phases
+    - **Phase 1 Changes Completed (Homepage)**:
+      - ✅ Hero: Updated to "Extend Your Care Without Adding Staff" with B2B value proposition
+      - ✅ Mission: Emphasized platform approach and integrated services
+      - ✅ Services: Restructured to show 4 integrated platform components (RPM+CCM, SDOH Navigation, Preventive Care, Data & Analytics)
+      - ✅ Added "Who We Serve" section with three partner types (FQHCs/CHCs, Health Plans, Health Systems/IPAs)
+      - ✅ "How It Works": Updated 4 steps to reflect B2B partnership model
+      - ✅ FAQ: Updated 10 questions to address B2B concerns (pricing models, platform integration, SDOH services, data/analytics, etc.)
+      - ✅ CTA: Updated to B2B-focused messaging
+    - **Next Steps (Phase 2)**:
+      - Partner-specific pages for FQHCs, Health Plans, Health Systems
+      - Update About page with "Our Platform" and "Data Advantage" sections
+      - Navigation updates to include partner-specific sections 

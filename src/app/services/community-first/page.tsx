@@ -32,8 +32,8 @@ function DollarIcon({ className = 'h-8 w-8' }) {
 }
 
 export const metadata: Metadata = {
-  title: 'Community First Initiative | Supporting Community Health Centers | Advantis',
-  description: 'Learn how Advantis Community First Initiative helps community health centers improve UDS scores, increase patient engagement, and create revenue growth opportunities with no upfront costs.',
+  title: 'Community Health Centers | Supporting Community Health Centers | Advantis',
+  description: 'Learn how Advantis helps community health centers improve UDS scores, increase patient engagement, and create revenue growth opportunities with no upfront costs.',
   keywords: [
     'community health centers',
     'FQHC support',
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
     'no upfront costs healthcare'
   ],
   openGraph: {
-    title: 'Community First Initiative | Supporting Community Health Centers | Advantis',
-    description: 'Learn how Advantis Community First Initiative helps community health centers improve UDS scores, increase patient engagement, and create revenue growth opportunities with no upfront costs.',
+    title: 'Community Health Centers | Supporting Community Health Centers | Advantis',
+    description: 'Learn how Advantis helps community health centers improve UDS scores, increase patient engagement, and create revenue growth opportunities with no upfront costs.',
     url: 'https://advantis.care/services/community-first',
     siteName: 'Advantis',
     images: [
@@ -64,8 +64,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Community First Initiative | Supporting Community Health Centers | Advantis',
-    description: 'Learn how Advantis Community First Initiative helps community health centers improve UDS scores, increase patient engagement, and create revenue growth opportunities with no upfront costs.',
+    title: 'Community Health Centers | Supporting Community Health Centers | Advantis',
+    description: 'Learn how Advantis helps community health centers improve UDS scores, increase patient engagement, and create revenue growth opportunities with no upfront costs.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },
@@ -88,11 +88,12 @@ export default function CommunityFirstPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                Our Community First Initiative
+                Supporting Community Health Centers
               </h2>
               <p className="text-lg text-gray-700 mb-8">
-                Advantis Healthcare is committed to serving as an extension to community health centers, 
-                providing high-quality care and support to help them not just survive, but thrive.
+                Advantis Care serves as a <span className="font-semibold text-primary">clinical and administrative extension-of-care platform</span> for community health centers. 
+                We provide full-service RPM, CCM, SDOH navigation, and care coordination—handling all clinical and administrative execution 
+                while your center bills for eligible CPT codes.
               </p>
             </div>
 
@@ -112,7 +113,7 @@ export default function CommunityFirstPage() {
                 <CommunityIcon className="h-12 w-12 text-green-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-green-800 mb-3">Increase Patient Engagement</h3>
                 <p className="text-green-700">
-                  Through our remote patient monitoring and proactive care programs, we help centers 
+                  Through our high-touch case management, we help centers 
                   build stronger relationships with their patients and improve overall engagement levels.
                 </p>
               </div>
@@ -135,52 +136,184 @@ export default function CommunityFirstPage() {
       <FadeInSection>
         <section className="py-16 bg-neutral-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
-            How We Support Your Center
-          </h2>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-4">
+              How We Support Your Center
+            </h2>
+            <p className="text-lg text-neutral-700 text-center mb-12 max-w-2xl mx-auto">
+              As your extension-of-care partner, we handle the complete clinical and administrative execution 
+              while you focus on what you do best, serving your community.
+            </p>
           
-          <div className="space-y-8 max-w-4xl mx-auto">
-            {/* Remote Patient Monitoring */}
-            <div className="bg-white rounded-lg p-8 shadow flex items-center justify-between">
-              <div className="max-w-xl">
-                <h3 className="text-2xl font-semibold text-primary mb-4">
-                  Remote Patient Monitoring (RPM)
-                </h3>
-                <p className="text-lg text-gray-700">
-                  Provide continuous monitoring of your patients' vital signs and health metrics, 
-                  enabling early intervention and improved outcomes.
-                </p>
+            <div className="space-y-8">
+              {/* SDOH Navigation - Featured First */}
+              <div className="bg-white rounded-lg p-8 md:p-10 shadow-lg">
+                <div className="flex flex-col md:flex-row items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <svg className="h-16 w-16 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+                      SDOH Navigation & Resource Mobilization
+                    </h3>
+                    <p className="text-lg text-gray-700 mb-4">
+                      We incorporate structured SDOH screening using validated assessments such as <span className="font-semibold">PRAPARE</span>, 
+                      then assist in mobilizing transportation, food, utilities, housing, and other community resources to reduce barriers to care.
+                    </p>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-start">
+                        <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Structured PRAPARE screening and assessment</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Transportation assistance coordination</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Food security and nutrition resources</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Housing and utilities support</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Community resource connections and follow-up</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <HeartPulseIcon className="h-16 w-16 text-accent" />
-            </div>
 
-            {/* Care Management */}
-            <div className="bg-white rounded-lg p-8 shadow flex items-center justify-between">
-              <div className="max-w-xl">
-                <h3 className="text-2xl font-semibold text-primary mb-4">
-                  Advanced Care Management (APCM)
-                </h3>
-                <p className="text-lg text-gray-700">
-                  Comprehensive care coordination and treatment planning to help your patients 
-                  stay healthier and reduce hospital readmissions.
-                </p>
+              {/* RPM + CCM Combined */}
+              <div className="bg-white rounded-lg p-8 md:p-10 shadow-lg">
+                <div className="flex flex-col md:flex-row items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <HeartPulseIcon className="h-16 w-16 text-accent" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+                      Remote Patient Monitoring & Chronic Care Management
+                    </h3>
+                    <p className="text-lg text-gray-700 mb-4">
+                      Full-service RPM and CCM operation including device provisioning, patient onboarding, daily monitoring, 
+                      clinical review of physiological data, nurse-led interactions, and complete documentation. All handled by our team.
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <h4 className="font-semibold text-primary mb-2">RPM Services</h4>
+                        <ul className="space-y-2 text-gray-700 text-sm">
+                          <li className="flex items-start">
+                            <svg className="h-4 w-4 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Device provisioning and setup</span>
+                          </li>
+                          <li className="flex items-start">
+                            <svg className="h-4 w-4 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Daily monitoring of vital signs</span>
+                          </li>
+                          <li className="flex items-start">
+                            <svg className="h-4 w-4 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Real-time alerts and interventions</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-primary mb-2">CCM Services</h4>
+                        <ul className="space-y-2 text-gray-700 text-sm">
+                          <li className="flex items-start">
+                            <svg className="h-4 w-4 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Chronic condition management</span>
+                          </li>
+                          <li className="flex items-start">
+                            <svg className="h-4 w-4 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Nurse-led patient interactions</span>
+                          </li>
+                          <li className="flex items-start">
+                            <svg className="h-4 w-4 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Clinical documentation and reporting</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <SupportIcon className="h-16 w-16 text-accent" />
-            </div>
 
-            {/* Chronic Care Management */}
-            <div className="bg-white rounded-lg p-8 shadow flex items-center justify-between">
-              <div className="max-w-xl">
-                <h3 className="text-2xl font-semibold text-primary mb-4">
-                  Chronic Care Management (CCM)
-                </h3>
-                <p className="text-lg text-gray-700">
-                  Specialized programs for managing chronic conditions, helping patients 
-                  maintain better health and reducing overall healthcare costs.
-                </p>
+              {/* Care Coordination */}
+              <div className="bg-white rounded-lg p-8 md:p-10 shadow-lg">
+                <div className="flex flex-col md:flex-row items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <SupportIcon className="h-16 w-16 text-accent" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+                      Care Coordination & Administrative Support
+                    </h3>
+                    <p className="text-lg text-gray-700 mb-4">
+                      Our nursing team supports Annual Wellness Visits, chronic condition reviews, medication reconciliation, 
+                      appointment scheduling, and care-gap closure.
+                    </p>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-start">
+                        <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Annual Wellness Visit (AWV) support and preparation</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Appointment scheduling and coordination</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Medication reconciliation and adherence management</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Care-gap closure and preventive care coordination</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Chronic condition reviews and care plan updates</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <CommunityIcon className="h-16 w-16 text-accent" />
-            </div>
+            </div> 
           </div>
         </div>
         </section>
@@ -195,28 +328,27 @@ export default function CommunityFirstPage() {
               Start With No Upfront Costs
             </h2>
             <p className="text-lg text-primary-700 mb-8">
-              We understand the financial pressures facing community health centers. That's why we've designed 
-              our Community First Initiative to begin with no upfront costs, making it simple 
-              for centers to get started and immediately serviceable.
+              We understand the financial pressures facing community health centers. As your extension-of-care partner, 
+              we operate on a revenue share model with <span className="font-semibold">no upfront costs or out-of-pocket fees</span>. 
             </p>
             <div className="bg-white rounded-lg p-8 shadow-lg">
-              <h3 className="text-2xl font-semibold text-primary-800 mb-4">Our Commitment to You</h3>
+              <h3 className="text-2xl font-semibold text-primary-800 mb-4">Our Extension-of-Care Model</h3>
               <ul className="text-left text-lg text-primary-700 space-y-3">
                 <li className="flex items-start">
                   <span className="text-green-600 mr-3">✓</span>
-                  <span>No upfront investment required</span>
+                  <span><span className="font-semibold">No upfront investment required</span>—we handle all device provisioning and setup</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-3">✓</span>
-                  <span>Immediate implementation and service delivery</span>
+                  <span><span className="font-semibold">Complete clinical execution</span>—we handle monitoring, interventions, and documentation</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-3">✓</span>
-                  <span>Flexible payment options that work with your budget</span>
+                  <span><span className="font-semibold">No additional staffing needed</span>—our team serves as your extension</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-3">✓</span>
-                  <span>Dedicated support team to ensure your success</span>
+                  <span><span className="font-semibold">Immediate implementation</span>—seamless onboarding and interoperable with all major EHRs</span>
                 </li>
               </ul>
             </div>
@@ -233,7 +365,7 @@ export default function CommunityFirstPage() {
             Ready to Partner With Us?
           </h2>
           <p className="text-white/90 mb-8">
-            Join the Community First Initiative and help us ensure that community health centers 
+            Partner with Advantis and help us ensure that community health centers 
             can continue serving their communities without having to remove essential services or shut down.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

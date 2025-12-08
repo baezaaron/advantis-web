@@ -15,12 +15,10 @@ export default function Hero() {
       <div className="container mx-auto px-4 md:px-6 relative z-10 py-16 md:py-24">
         <div className="max-w-2xl text-white">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight drop-shadow-md">
-            <span className="text-white">Care that</span>
-            <br />
-            <span className="bg-gradient-to-r from-white to-accent/90 bg-clip-text text-transparent">moves with you</span>
+            <span className="bg-gradient-to-r from-white to-accent/90 bg-clip-text text-transparent">Extend Your Care</span>
           </h1>
           <p className="text-2xl md:text-3xl mb-10 text-white/90 font-light">
-            Technology-enabled care for patients at home
+            A high-touch clinical and administrative extension-of-care platform for FQHCs, health systems, IPAs, and health plans
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/contact" size="lg" variant="secondary" className="px-8 py-4 text-base">

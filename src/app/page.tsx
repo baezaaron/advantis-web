@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, ReactNode, useCallback } from 'react';
 import Hero from '@/components/Hero';
 import ServiceCard from '@/components/ServiceCard';
 import Button from '@/components/Button';
-import { HeartPulseIcon, TechIcon, SupportIcon, EducationIcon } from '@/components/icons';
+import { HeartPulseIcon, TechIcon, SupportIcon, EducationIcon, UsersIcon } from '@/components/icons';
 import CustomImage from '@/components/Image';
 import FadeInSection from '@/components/FadeInSection';
 
@@ -51,26 +51,26 @@ interface Step {
 const steps: Step[] = [
   {
     number: '01',
-    title: 'Initial Assessment & Setup',
-    description: 'We work health centers to identify patients who would benefit from remote monitoring. Once identified, our services are prescribed and we begin the onboarding process.',
+    title: 'Partnership Setup & Integration',
+    description: 'We work with your organization to establish the partnership model, integrate with your EHR system, and identify high-risk, high-need patients who would benefit from our services.',
     icon: <SetupIcon />,
   },
   {
     number: '02',
-    title: 'Onboarding',
-    description: 'Our team onboards each patient individually. We review the selected patients\' care plans/records and determine which devices will be deployed directly to the patient.',
+    title: 'Patient Identification & Onboarding',
+    description: 'Our team reviews patient records and care plans to determine appropriate services. We handle device provisioning, patient onboarding, and setup—all managed by our clinical and administrative staff.',
     icon: <MonitorIcon />,
   },
   {
     number: '03',
-    title: 'Clinical Review & Alerts',
-    description: 'Our licensed clinicians then reach out to the patient to walk through their care plan and build out their profile. They review all patient data daily. When readings fall outside normal parameters, we intervene and escalate when appropriate.',
+    title: 'Clinical Monitoring & Engagement',
+    description: 'Our licensed clinicians review patient data daily, conduct nurse-led interactions, perform SDOH screenings, mobilize community resources, and assist in coordinating care. We intervene when readings fall outside normal parameters and escalate appropriately.',
     icon: <AlertIcon />,
   },
   {
     number: '04',
-    title: 'Proactive Care & Outcomes',
-    description: 'Through continuous monitoring and engagement, we reduce hospitalizations and ED visits, educate patients on their conditions, minimize leakage, and decrease the likelihood of worsening conditions. Resulting in a new stream of revenue and imrpoved UDS and HEDIS scores.',
+    title: 'Outcomes & Revenue Generation',
+    description: 'Through continuous monitoring and high-frequency engagement, we reduce hospitalizations and ED visits, improve quality metrics (UDS, HEDIS, STAR ratings), and generate new revenue streams/cost savings. You receive structured data insights and documentation for billing.',
     icon: <CareIcon />,
   },
 ];
@@ -81,54 +81,54 @@ function FAQSection() {
 
   const faqs = [
     {
-      id: 'faq-cost',
-      question: 'How much does it cost the center?',
-      answer: 'Advantis offers flexible pricing models specific to the type of entity. For CHCs, there are no upfront costs or out of pocket fees.'
+      id: 'faq-pricing',
+      question: 'What are your pricing models?',
+      answer: 'We offer flexible pricing models tailored to each partner type. For CHCs, there are no upfront costs or out of pocket fees. For health plans and health systems, we offer PMPM (per member per month) models or episodic bundled arrangements. Contact us to discuss which model works best for your organization.'
     },
     {
       id: 'faq-ehr',
       question: 'How do you integrate with our EHR?',
-      answer: 'We integrate seamlessly with major EHR systems through secure, HIPAA-compliant APIs. Our team works directly with your IT department to ensure smooth integration, allowing patient data to flow automatically between systems. We support most major EHR platforms and can customize integration to meet your specific workflow needs.'
-    },
-    {
-      id: 'faq-documentation',
-      question: 'What documentation will be provided to demonstrate compliance with HRSA, CMS, and OIG guidance?',
-      answer: 'We provide a comprehensive audit trail within our platform that is readily available for export and sharing. This includes detailed service logs, patient interaction records, clinical documentation, billing compliance reports.'
-    },
-    {
-      id: 'faq-continuity',
-      question: 'How is continuity of care ensured between Advantis\'s team and our primary care providers?',
-      answer: 'We maintain open, continuous communication channels with your primary care team. All patient data, alerts, and interventions are shared in real-time through your EHR and direct communication protocols. Our clinicians coordinate closely with your providers, ensuring seamless handoffs and collaborative care planning.'
+      answer: 'We integrate seamlessly with major EHR systems through secure, HIPAA-compliant APIs. Our team works directly with your IT department to ensure smooth integration, allowing patient data, alerts, and interventions to flow automatically between systems. We support most major EHR platforms and can customize integration to meet your specific workflow needs.'
     },
     {
       id: 'faq-staffing',
-      question: 'What staffing does a center need?',
-      answer: 'No additional staffing is required. Advantis provides the clinical monitoring team, care coordinators, and support staff. Your center solely handles the billing process. We handle the day-to-day monitoring and intervention work.'
+      question: 'What staffing does our organization need?',
+      answer: 'No additional staffing is required. Advantis provides the complete clinical monitoring team, care coordinators, SDOH navigators, and administrative support staff. We handle device provisioning, patient onboarding, daily monitoring, clinical review, documentation, and patient engagement. For CHCs, your organization solely handles the billing process.'
     },
     {
-      id: 'faq-language',
-      question: 'Is the service language-inclusive?',
-      answer: 'Yes, we offer multilingual support to serve diverse patient populations. Our team is made up of multi-lingual clinicians, and we provide materials and communication in multiple languages. We work with you to identify the languages most needed in your community.'
+      id: 'faq-platform',
+      question: 'How does your platform replace multiple vendors?',
+      answer: 'Advantis functions as a single, vertically-integrated engagement engine that combines remote patient monitoring, chronic care management, SDOH navigation (including PRAPARE screening), care coordination, preventive-care support, medication reconciliation, and appointment scheduling into one coordinated workflow. This eliminates the need to manage multiple fragmented vendors and creates a unified infrastructure for engaging high-risk patients.'
     },
     {
-      id: 'faq-financial',
-      question: 'How does partnering with Advantis impact our long-term financial sustainability?',
-      answer: 'Our partnership is designed to improve your financial health through new revenue streams, reduced leakage, and improved UDS/HEDIS scores. We help you capture billable services that might otherwise be missed, reduce emergency department utilization, and improve quality metrics that impact reimbursement.'
+      id: 'faq-sdoh',
+      question: 'What SDOH services do you provide?',
+      answer: 'We incorporate structured SDOH screening using validated tools such as PRAPARE, then mobilize transportation, food, utilities, housing, and other community resources to reduce barriers to care. Our team conducts assessments, connects patients with appropriate resources, and tracks outcomes to support whole-person care delivery.'
     },
     {
-      id: 'faq-engagement',
-      question: 'How do you ensure engagement among high-barrier patients (e.g., low literacy, poor tech access)?',
-      answer: 'We use a multi-faceted approach including low-tech device options, phone-based support, in-person visits when needed, culturally competent communication, and simplified educational materials. Our team is trained to work with patients facing various barriers and adapts our approach to meet each patient where they are.'
+      id: 'faq-data',
+      question: 'What kind of data and analytics do you provide?',
+      answer: 'We collect highly structured, high-frequency patient-level data across clinical, behavioral, and SDOH domains. This multi-dimensional dataset enables predictive modeling, early-intervention triggers, and population-risk stratification. We provide regular reporting and structured insights that support value-based contracts, quality metric improvement, and population health management.'
+    },
+    {
+      id: 'faq-documentation',
+      question: 'What documentation will be provided for compliance and billing?',
+      answer: 'We provide a comprehensive audit trail within our platform that is readily available for export and sharing. This includes detailed service logs, patient interaction records, clinical documentation, billing compliance reports, and all necessary documentation for HRSA, CMS, and OIG compliance. All documentation is structured to support your billing processes.'
+    },
+    {
+      id: 'faq-continuity',
+      question: 'How is continuity of care ensured between your team and our providers?',
+      answer: 'We maintain open, continuous communication channels with your primary care team. All patient data, alerts, and interventions are shared in real-time through your EHR and direct communication protocols. Our clinicians coordinate closely with your providers, ensuring seamless handoffs and collaborative care planning. We function as an extension of your care team, not a replacement.'
+    },
+    {
+      id: 'faq-outcomes',
+      question: 'What outcomes can we expect?',
+      answer: 'Our platform is designed to improve patient outcomes, enhance quality performance (UDS, HEDIS, STAR ratings), and expand care capacity without increasing internal staffing. Typical outcomes include reduced hospitalizations and ED visits, improved medication adherence, better chronic disease management, reduced readmissions, and new revenue streams from billable services.'
     },
     {
       id: 'faq-scale',
-      question: 'Can we scale the program down or up depending on performance and need?',
-      answer: 'Absolutely. Our programs are designed to be flexible and scalable. You can adjust patient volume, add or remove services, and modify the scope of engagement based on your needs and performance metrics. We provide regular reporting to help you make informed decisions about scaling.'
-    },
-    {
-      id: 'faq-devices',
-      question: 'What types of remote monitoring devices do you provide?',
-      answer: 'We provide a range of FDA-approved devices including blood pressure monitors, weight scales, glucometers, pulse oximeters, and more. Device selection is customized based on each patient\'s condition and care plan. All devices are user-friendly and include setup support.'
+      question: 'Can we scale the program based on performance and need?',
+      answer: 'Absolutely. Our programs are designed to be flexible and scalable. You can adjust patient volume, add or remove services, and modify the scope of engagement based on your needs and performance metrics. We provide regular reporting to help you make informed decisions about scaling and can quickly adapt to your changing requirements.'
     },
   ];
 
@@ -500,12 +500,12 @@ export default function Home() {
               
               {/* Main Mission Statement */}
               <h2 className="text-1xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-primary mb-6 leading-tight">
-                Extend quality healthcare in between visits to underserved communities through proactive, data-informed care
+                A vertically-integrated extension-of-care service that improves patient outcomes and expands care capacity
               </h2>
               
               {/* Body Text with Highlighted Portion */}
               <p className="text-base md:text-lg lg:text-xl text-neutral-700 mb-8 leading-relaxed">
-                Advantis will serve as <span className="text-accent font-semibold">an extension of care</span> that improves patient engagement, reduces total costs, and enables more streamlined, coordinated care.
+                Advantis Care integrates <span className="text-accent font-semibold">remote patient monitoring, chronic care management, SDOH navigation, care coordination, and preventive-care support</span> into a unified infrastructure designed to engage and stabilize high-risk, high-need patients at scale without requiring additional internal staffing.
               </p>
               
               <Button href="/about" variant="outline" className="px-8">
@@ -537,32 +537,31 @@ export default function Home() {
         <div className="container">
           <div className="section-header">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              What We Do
+              Our Integrated Platform
             </h2>
             <p className="text-lg text-neutral-700 max-w-2xl mx-auto">
-              Our comprehensive approach combines technology with compassionate
-              care to address the unique needs of each patient.
+              A unified infrastructure that combines remote monitoring, care management, SDOH navigation, and preventive care into one coordinated workflow.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
             <ServiceCard
-              title="Remote Patient Monitoring"
-              description="Continuous monitoring of vital signs and health metrics from the comfort of home, with real-time alerts managed by our clinicians."
+              title="RPM + Chronic Care Management"
+              description="Full-service operation including device provisioning, patient onboarding, daily monitoring, clinical review, and nurse-led interactions. All handled by our team."
               icon={<HeartPulseIcon className="h-7 w-7 text-accent" />}
               link="/services#remote-patient-monitoring"
             />
 
             <ServiceCard
-              title="Advanced Primary Care Management"
-              description="Proactive care coordination and personalized treatment plans to keep patients healthier longer."
-              icon={<SupportIcon className="h-7 w-7 text-accent" />}
+              title="SDOH Navigation & Care Coordination"
+              description=" Scheduling assistance, structured SDOH screening using PRAPARE, mobilization of transportation, food, utilities, housing, and community resources to reduce barriers to care."
+              icon={<UsersIcon className="h-7 w-7 text-accent" />}
               link="/services#advanced-primary-care-management"
             />
 
             <ServiceCard
-              title="Chronic Care Management"
-              description="Education, screenings, and care plans designed to prevent illness and detect health issues early."
+              title="Preventive Care & Care-Gap Closure"
+              description="Annual Wellness Visit support, HRA completion, chronic condition reviews, medication reconciliation, appointment scheduling, and care-gap closure under your billing umbrella."
               icon={
                 <svg className="h-7 w-7 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2l8 4v6c0 5-3 9-8 11-5-2-8-6-8-11V6l8-4z" />
@@ -570,6 +569,148 @@ export default function Home() {
               }
               link="/services#preventative-care"
             />
+
+            <ServiceCard
+              title="Data & Analytics"
+              description="Multi-dimensional data collection across clinical, behavioral, and SDOH domains enabling predictive modeling, early-intervention triggers, and population-risk stratification."
+              icon={<TechIcon className="h-7 w-7 text-accent" />}
+              link="/services"
+            />
+          </div>
+        </div>
+      </section>
+      </FadeInSection>
+      
+      {/* Who We Serve Section */}
+      <FadeInSection>
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-12">
+            <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+              Our Partners
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+              Who We Serve
+            </h2>
+            <p className="text-lg text-neutral-700 max-w-2xl mx-auto">
+              We provide extension-of-care solutions tailored to the unique needs of each partner type
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 mt-12">
+            {/* FQHCs/CHCs Card */}
+            <div className="bg-neutral-50 rounded-lg p-8 shadow-sm border border-neutral-200 hover:shadow-md transition-shadow">
+              <div className="mb-6">
+                <svg className="h-12 w-12 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-4">
+                Community Health Centers
+              </h3>
+              <p className="text-neutral-700 mb-4 leading-relaxed">
+                Full-service RPM and CCM operation with device provisioning, patient onboarding, daily monitoring, and clinical documentation. High-touch case management assisting with SDOH navigation and care coordination.
+              </p>
+              <ul className="text-sm text-neutral-600 space-y-2 mb-6">
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>No upfront costs or out-of-pocket fees</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Improved UDS and HEDIS scores</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>SDOH screening and navigation</span>
+                </li>
+              </ul>
+              <Button href="/contact" variant="outline" size="sm" className="w-full">
+                Learn More
+              </Button>
+            </div>
+
+            {/* Health Plans Card */}
+            <div className="bg-neutral-50 rounded-lg p-8 shadow-sm border border-neutral-200 hover:shadow-md transition-shadow">
+              <div className="mb-6">
+                <svg className="h-12 w-12 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-4">
+                Health Plans
+              </h3>
+              <p className="text-neutral-700 mb-4 leading-relaxed">
+                High-frequency engagement, RPM + CCM for members with chronic conditions, SDOH assessments, and preventive-care coordination tied to HEDIS, STAR ratings, and risk adjustment accuracy.
+              </p>
+              <ul className="text-sm text-neutral-600 space-y-2 mb-6">
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>HEDIS and STAR ratings improvement</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>AWV and HRA completion</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Reduction in costs across the continuum of care</span>
+                </li>
+              </ul>
+              <Button href="/contact" variant="outline" size="sm" className="w-full">
+                Learn More
+              </Button>
+            </div>
+
+            {/* Health Systems/IPAs Card */}
+            <div className="bg-neutral-50 rounded-lg p-8 shadow-sm border border-neutral-200 hover:shadow-md transition-shadow">
+              <div className="mb-6">
+                <svg className="h-12 w-12 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-4">
+                Health Systems & IPAs
+              </h3>
+              <p className="text-neutral-700 mb-4 leading-relaxed">
+                Chronic care support, RPM deployment, HEDIS/SDOH workforce augmentation, and post-discharge stabilization to reduce readmissions.
+              </p>
+              <ul className="text-sm text-neutral-600 space-y-2 mb-6">
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Post-discharge stabilization</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Reduced readmissions</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Value-based contract support</span>
+                </li>
+              </ul>
+              <Button href="/contact" variant="outline" size="sm" className="w-full">
+                Learn More
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -597,11 +738,11 @@ export default function Home() {
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to transform patient care?
+              Ready to extend your reach?
             </h2>
             <p className="text-xl text-white/90 mb-10 leading-relaxed">
-            Get in touch to discover how Advantis can extend your care beyond the 
-            four walls of your facility.
+            Discover how Advantis Care can serve as your extension-of-care service provider, 
+            improving patient outcomes and generating new revenue streams, all without adding internal staff.
             </p>
             <Button href="/contact" size="lg" variant="secondary" className="px-10 py-4">
               Get Started Today
