@@ -31,7 +31,7 @@ The website needs to be restructured to reflect Advantis Care's new B2B business
 - **Current**: Generic RPM, CCM, Preventative Care
 - **New**: Integrated platform including:
   - RPM + CCM (full-service operation)
-  - SDOH navigation (PRAPARE screening, resource mobilization)
+  - SDOH navigation (PRAPARE and HRSN screening, resource mobilization)
   - Care coordination
   - Preventive-care support
   - Annual Wellness Visit support
@@ -74,7 +74,7 @@ Need distinct sections/pages for:
 - **Current**: Three generic service cards
 - **New**: Show integrated platform components:
   1. **Remote Patient Monitoring + Chronic Care Management** (full-service operation)
-  2. **SDOH Navigation & Care Coordination** (PRAPARE screening, resource mobilization)
+  2. **SDOH Navigation & Care Coordination** (PRAPARE and HRSN screening, resource mobilization)
   3. **Preventive Care & Care-Gap Closure** (AWV support, medication reconciliation, appointment scheduling)
   4. **Data & Analytics** (predictive modeling, risk stratification)
 
@@ -128,7 +128,7 @@ Each with brief value proposition and link to detailed page
    - Clinical supervision
 
 2. **SDOH Navigation & Care Coordination**
-   - PRAPARE screening
+   - PRAPARE and HRSN screening
    - Resource mobilization (transportation, food, utilities, housing)
    - Barrier reduction
    - Community resource connections

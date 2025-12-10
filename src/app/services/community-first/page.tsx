@@ -159,7 +159,7 @@ export default function CommunityFirstPage() {
                       SDOH Navigation & Resource Mobilization
                     </h3>
                     <p className="text-lg text-gray-700 mb-4">
-                      We incorporate structured SDOH screening aligned with recognized models (e.g., <span className="font-semibold">PRAPARE</span>), 
+                      We incorporate structured SDOH screening aligned with recognized models (e.g., <span className="font-semibold">PRAPARE and HRSN</span>), 
                       then assist in mobilizing transportation, food, utilities, housing, and other community resources to reduce barriers to care.
                     </p>
                     <ul className="space-y-2 text-gray-700">

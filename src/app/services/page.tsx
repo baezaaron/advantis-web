@@ -107,7 +107,7 @@ export default function ServicesPage() {
                           <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
-                          <span>SDOH screening aligned with recognized models (e.g., PRAPARE) and navigation</span>
+                          <span>SDOH screening aligned with recognized models (e.g., PRAPARE and HRSN) and navigation</span>
                         </li>
                         <li className="flex items-start">
                           <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
