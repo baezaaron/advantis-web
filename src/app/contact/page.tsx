@@ -3,21 +3,21 @@ import { MedicalIcon, SupportIcon } from '@/components/icons';
 import ContactForm from './ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Contact Advantis | Remote Patient Monitoring & Senior Care Questions',
-  description: 'Contact Advantis for questions about remote patient monitoring (RPM), senior care at home, and alternatives to nursing homes. Get support and learn more today.',
+  title: 'Contact Advantis | Extension-of-Care Services',
+  description: 'Contact Advantis to learn how our value-based extension-of-care services can improve patient outcomes and expand care capacity for your healthcare organization.',
   keywords: [
     'contact Advantis',
-    'remote patient monitoring',
-    'RPM support',
-    'senior care questions',
-    'alternatives to nursing homes',
-    'home health technology',
-    'RPM as a service',
-    'HIPAA compliant RPM'
+    'extension-of-care services',
+    'value-based care',
+    'FQHC services',
+    'health plan services',
+    'health system services',
+    'healthcare partnerships',
+    'extension-of-care support'
   ],
   openGraph: {
-    title: 'Contact Advantis | Remote Patient Monitoring & Senior Care Questions',
-    description: 'Contact Advantis for questions about remote patient monitoring (RPM), senior care at home, and alternatives to nursing homes. Get support and learn more today.',
+    title: 'Contact Advantis | Extension-of-Care Services',
+    description: 'Contact Advantis to learn how our value-based extension-of-care services can improve patient outcomes and expand care capacity for your healthcare organization.',
     url: 'https://advantis.care/contact',
     siteName: 'Advantis',
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: '/images/og-advantis.png',
         width: 1200,
         height: 630,
-        alt: 'Contact Advantis Remote Patient Monitoring',
+        alt: 'Contact Advantis Extension-of-Care Services',
       },
     ],
     locale: 'en_US',
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Advantis | Remote Patient Monitoring & Senior Care Questions',
-    description: 'Contact Advantis for questions about remote patient monitoring (RPM), senior care at home, and alternatives to nursing homes. Get support and learn more today.',
+    title: 'Contact Advantis | Extension-of-Care Services',
+    description: 'Contact Advantis to learn how our value-based extension-of-care services can improve patient outcomes and expand care capacity for your healthcare organization.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },

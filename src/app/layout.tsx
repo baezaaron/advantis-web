@@ -20,8 +20,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Advantis | Data-Driven Remote Care",
-  description: "Advantis provides technology-enabled support for patients at home, revolutionizing healthcare delivery with innovative solutions.",
+  title: "Advantis | Value-Based Extension-of-Care Services",
+  description: "Advantis provides value-based extension-of-care services for healthcare organizations, improving patient outcomes and expanding care capacity without additional staffing.",
   icons: {
     icon: [
       { url: "/favicon.ico" }

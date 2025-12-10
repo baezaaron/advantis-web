@@ -2,23 +2,23 @@ import type { Metadata } from 'next';
 import CareersClientSection from './CareersClientSection';
 
 export const metadata: Metadata = {
-  title: 'Careers at Advantis | Healthcare & Remote Patient Monitoring Jobs',
-  description: 'Join Advantis and help transform healthcare. Explore careers in remote patient monitoring (RPM), healthcare technology, and senior care innovation.',
+  title: 'Careers at Advantis | Value-Based Care & Extension-of-Care',
+  description: 'Join Advantis and help transform healthcare. Explore careers in value-based care, extension-of-care services, and healthcare innovation for FQHCs, health plans, and health systems.',
   keywords: [
     'careers at Advantis',
     'healthcare careers',
-    'RPM jobs',
-    'remote patient monitoring careers',
+    'value-based care jobs',
+    'extension-of-care careers',
     'join Advantis',
-    'senior care jobs',
+    'healthcare technology jobs',
     'health tech jobs',
-    'RPM as a service',
-    'best RPM company',
-    'HIPAA compliant RPM'
+    'FQHC careers',
+    'health plan careers',
+    'health system careers'
   ],
   openGraph: {
-    title: 'Careers at Advantis | Healthcare & Remote Patient Monitoring Jobs',
-    description: 'Join Advantis and help transform healthcare. Explore careers in remote patient monitoring (RPM), healthcare technology, and senior care innovation.',
+    title: 'Careers at Advantis | Value-Based Care & Extension-of-Care',
+    description: 'Join Advantis and help transform healthcare. Explore careers in value-based care, extension-of-care services, and healthcare innovation for FQHCs, health plans, and health systems.',
     url: 'https://advantis.care/careers',
     siteName: 'Advantis',
     images: [
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Careers at Advantis | Healthcare & Remote Patient Monitoring Jobs',
-    description: 'Join Advantis and help transform healthcare. Explore careers in remote patient monitoring (RPM), healthcare technology, and senior care innovation.',
+    title: 'Careers at Advantis | Value-Based Care & Extension-of-Care',
+    description: 'Join Advantis and help transform healthcare. Explore careers in value-based care, extension-of-care services, and healthcare innovation for FQHCs, health plans, and health systems.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },

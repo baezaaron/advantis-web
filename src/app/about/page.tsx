@@ -197,24 +197,24 @@ function renderIcon(icon: string) {
 }
 
 export const metadata: Metadata = {
-  title: 'About Advantis | Remote Patient Monitoring & Healthcare Innovation',
-  description: 'Learn about Advantis: our mission to provide remote patient monitoring (RPM), innovative healthcare, and alternatives to nursing homes for seniors and families.',
+  title: 'About Advantis | Value-Based Extension-of-Care Platform',
+  description: 'Learn about Advantis: our mission to provide value-based extension-of-care services that improve patient outcomes and expand care capacity for healthcare organizations.',
   keywords: [
     'about Advantis',
-    'remote patient monitoring',
-    'RPM',
+    'extension-of-care platform',
+    'value-based care',
     'healthcare innovation',
-    'alternatives to nursing homes',
-    'senior care at home',
-    'chronic care',
-    'elderly health monitoring',
-    'proactive care',
-    'best RPM service',
-    'HIPAA compliant RPM'
+    'FQHC services',
+    'health plan services',
+    'health system services',
+    'chronic care management',
+    'SDOH navigation',
+    'care coordination',
+    'value-based healthcare'
   ],
   openGraph: {
-    title: 'About Advantis | Remote Patient Monitoring & Healthcare Innovation',
-    description: 'Learn about Advantis: our mission to provide remote patient monitoring (RPM), innovative healthcare, and alternatives to nursing homes for seniors and families.',
+    title: 'About Advantis | Value-Based Extension-of-Care Platform',
+    description: 'Learn about Advantis: our mission to provide value-based extension-of-care services that improve patient outcomes and expand care capacity for healthcare organizations.',
     url: 'https://advantis.care/about',
     siteName: 'Advantis',
     images: [
@@ -222,7 +222,7 @@ export const metadata: Metadata = {
         url: '/images/og-advantis.png',
         width: 1200,
         height: 630,
-        alt: 'About Advantis Remote Patient Monitoring',
+        alt: 'About Advantis Extension-of-Care Platform',
       },
     ],
     locale: 'en_US',
@@ -230,8 +230,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Advantis | Remote Patient Monitoring & Healthcare Innovation',
-    description: 'Learn about Advantis: our mission to provide remote patient monitoring (RPM), innovative healthcare, and alternatives to nursing homes for seniors and families.',
+    title: 'About Advantis | Value-Based Extension-of-Care Platform',
+    description: 'Learn about Advantis: our mission to provide value-based extension-of-care services that improve patient outcomes and expand care capacity for healthcare organizations.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },

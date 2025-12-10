@@ -1,22 +1,22 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Advantis Remote Patient Monitoring',
-  description: 'Review the Advantis terms of service: guidelines for using our remote patient monitoring (RPM) and healthcare support services. Learn your rights and responsibilities.',
+  title: 'Terms of Service | Advantis Extension-of-Care Services',
+  description: 'Review the Advantis terms of service: guidelines for using our value-based extension-of-care platform and healthcare support services. Learn your rights and responsibilities.',
   keywords: [
     'terms of service',
     'Advantis terms',
-    'RPM service terms',
+    'extension-of-care services terms',
     'healthcare service agreement',
-    'remote patient monitoring',
-    'RPM',
-    'senior care terms',
-    'HIPAA compliant RPM',
-    'RPM as a service'
+    'value-based care',
+    'extension-of-care services',
+    'healthcare platform terms',
+    'HIPAA compliant services',
+    'healthcare partnership agreement'
   ],
   openGraph: {
-    title: 'Terms of Service | Advantis Remote Patient Monitoring',
-    description: 'Review the Advantis terms of service: guidelines for using our remote patient monitoring (RPM) and healthcare support services. Learn your rights and responsibilities.',
+    title: 'Terms of Service | Advantis Extension-of-Care Services',
+    description: 'Review the Advantis terms of service: guidelines for using our value-based extension-of-care platform and healthcare support services. Learn your rights and responsibilities.',
     url: 'https://advantis.care/terms-of-service',
     siteName: 'Advantis',
     images: [
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Terms of Service | Advantis Remote Patient Monitoring',
-    description: 'Review the Advantis terms of service: guidelines for using our remote patient monitoring (RPM) and healthcare support services. Learn your rights and responsibilities.',
+    title: 'Terms of Service | Advantis Extension-of-Care Pl  atform',
+    description: 'Review the Advantis terms of service: guidelines for using our value-based extension-of-care platform and healthcare support services. Learn your rights and responsibilities.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },

@@ -143,6 +143,16 @@
       - ✅ CTA Section: Updated to align with extension-of-care messaging, matching home page style ("Ready to extend your reach?" with B2B value proposition)
       - Removed B2C language ("patient seeking better care options")
       - Focused on healthcare organizations (FQHCs, health plans, health systems) as extension-of-care service provider
+    - **Metadata & SEO Updates (Value-Based Care Focus)**:
+      - ✅ Updated all page titles and descriptions to emphasize "value-based care" and "extension-of-care" messaging
+      - ✅ Main site title: Changed from "Advantis | Data-Driven Remote Care" to "Advantis | Value-Based Extension-of-Care Platform"
+      - ✅ About page: "About Advantis | Value-Based Extension-of-Care Platform"
+      - ✅ Contact page: "Contact Advantis | Extension-of-Care Platform"
+      - ✅ Careers page: "Careers at Advantis | Value-Based Care & Extension-of-Care"
+      - ✅ Privacy Policy: "Privacy Policy | Advantis Extension-of-Care Platform"
+      - ✅ Terms of Service: "Terms of Service | Advantis Extension-of-Care Platform"
+      - ✅ Removed "Remote Patient Monitoring" and "Senior Care" language from titles/descriptions
+      - ✅ Updated keywords to focus on extension-of-care, value-based care, FQHC services, health plan services, health system services
     - **Next Steps (Phase 2)**:
       - Partner-specific pages for FQHCs, Health Plans, Health Systems
       - Update About page with "Our Platform" and "Data Advantage" sections
