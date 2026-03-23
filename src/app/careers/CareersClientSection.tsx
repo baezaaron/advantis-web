@@ -15,7 +15,7 @@ export default function CareersClientSection() {
               Join Our Team
             </h1>
             <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
-              At Advantis, we're on a mission to transform healthcare through innovative technology and compassionate care. We're looking for talented individuals who want to make a real impact on patient outcomes and help make quality healthcare accessible to all. If you're passionate about making a difference, please apply below. Feel free to also reach out to <a href="mailto:info@advantis.care" className="underline text-primary">info@advantis.care</a> to discuss how you could be a part of the Advantis team.
+              At Advantis, we're on a mission to transform healthcare through innovative technology and compassionate care. We're looking for talented individuals who want to make a real impact on patient outcomes and help make quality healthcare accessible to all. If you're passionate about making a difference, please apply below. Feel free to also reach out to <a href="mailto:abaez@advantis.care" className="underline text-primary">info@advantis.care</a> to discuss how you could be a part of the Advantis team.
             </p>
           </div>
         </div>
@@ -31,7 +31,7 @@ export default function CareersClientSection() {
               className="absolute top-4 right-4 text-neutral-500 hover:text-accent text-2xl font-bold focus:outline-none"
               aria-label="Close form"
             >
-              ×
+              X
             </button>
             <h3 className="text-2xl font-semibold text-primary mb-4 text-center">Apply to Advantis</h3>
             <form action="https://formspree.io/f/xkgbrjlw" method="POST" encType="multipart/form-data" className="space-y-6">

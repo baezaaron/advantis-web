@@ -40,14 +40,6 @@ export default function ServicesDropdown() {
         <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
           <div className="py-1" role="menu" aria-orientation="vertical">
             <Link
-              href="/services#fqhcs"
-              className="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50 hover:text-accent transition-colors duration-200"
-              role="menuitem"
-              onClick={() => setIsOpen(false)}
-            >
-              Community Health Centers
-            </Link>
-            <Link
               href="/services#health-plans"
               className="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50 hover:text-accent transition-colors duration-200"
               role="menuitem"
@@ -62,14 +54,6 @@ export default function ServicesDropdown() {
               onClick={() => setIsOpen(false)}
             >
               Health Systems & IPAs
-            </Link>
-            <Link
-              href="/services/community-first"
-              className="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50 hover:text-accent transition-colors duration-200 border-t border-neutral-100"
-              role="menuitem"
-              onClick={() => setIsOpen(false)}
-            >
-              Community First Initiative
             </Link>
           </div>
         </div>

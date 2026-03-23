@@ -156,4 +156,23 @@
     - **Next Steps (Phase 2)**:
       - Partner-specific pages for FQHCs, Health Plans, Health Systems
       - Update About page with "Our Platform" and "Data Advantage" sections
-      - Navigation updates to include partner-specific sections 
+      - Navigation updates to include partner-specific sections
+
+## 2026-03-22 — Messaging audit (pivot: engagement → care completion)
+- User requested strategic comparison of live copy (advantis.care) vs pivot toward patient engagement and **care completion** for providers/plans; ops/logistics positioning vs tech-first; optional long-term vision (owned sites) TBD.
+- Deliverable: written recommendations only (homepage, About, Services, LinkedIn, proof points, tone, optional pages/CTAs) plus brief business-model reflection.
+
+## 2026-03-22 — Site copy implementation: FQHC deprioritization, plans/systems focus
+- **Pivot reflected in code**: Primary buyers are **health plans** and **health systems/IPAs**; emphasis on owning member outreach, **resource navigation**, **preventive screening / gap completion**, and **Medicare RPM/CCM when in scope** (not CHC/FQHC-led positioning).
+- **Removed** CHC card from home “Who We Serve”; **Services** page dropped FQHC section and Community First CTA block; **nav / Services dropdown** no longer links to CHC-specific anchors or Community First as a product line.
+- **`/services/community-first/`** replaced with a short “program focus update” page (`robots: noindex`) pointing to `/services/` and contact.
+- **Resources routes removed** (`/resources`, `/resources/[slug]`) and `src/data/blog-posts.ts` deleted; static articles that lived there are gone. Footer “Blog” now links to `/blog/`. **AWV/HRA** language removed sitewide in favor of **closed-loop** completion messaging.
+- **Global metadata** (`layout.tsx`) and **About**, **Contact**, **Careers**, **Services** metadata updated to match. 
+
+## 2026-03-22 — Homepage/About refinement and content tone update
+- Restored homepage hero to **"Extend Your Care"** with subtitle: "A high-touch clinical and administrative extension-of-care service."
+- Updated home **Our Mission** paragraph to user-specified copy focused on foundational barriers, screening completion, and closed-loop documentation.
+- Updated About header subtitle to: **"Turning member engagement into completed care"**.
+- Rewrote **Our Why** to emphasize patient outcomes, preventive care urgency, and SDOH barriers (without Medicare/RPM mentions).
+- Added a new **impact statistics** section between **Our Why** and **Our Values** with short source attribution copy.
+- Removed em-dash characters from site copy under `src/` and validated no remaining matches.

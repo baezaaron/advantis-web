@@ -23,7 +23,6 @@ export default function Navbar() {
           <Link href="/">Home</Link>
           <Link href="/about/">About</Link>
           <ServicesDropdown />
-          <Link href="/resources/">Resources</Link>
           <Link href="/careers/">Careers</Link>
         </div>
 
@@ -60,13 +59,10 @@ export default function Navbar() {
             <div className="py-2">
               <div className="text-neutral-700 font-medium mb-2">Services</div>
               <div className="pl-4 space-y-2">
-                <MobileNavLink href="/services#fqhcs" onClick={() => setMobileOpen(false)}>For FQHCs & CHCs</MobileNavLink>
                 <MobileNavLink href="/services#health-plans" onClick={() => setMobileOpen(false)}>For Health Plans</MobileNavLink>
                 <MobileNavLink href="/services#health-systems" onClick={() => setMobileOpen(false)}>For Health Systems & IPAs</MobileNavLink>
-                <MobileNavLink href="/services/community-first" onClick={() => setMobileOpen(false)}>Community Health Centers</MobileNavLink>
               </div>
             </div>
-            <MobileNavLink href="/resources/" onClick={() => setMobileOpen(false)}>Resources</MobileNavLink>
             <MobileNavLink href="/careers/" onClick={() => setMobileOpen(false)}>Careers</MobileNavLink>
             <MobileNavLink href="/contact/" onClick={() => setMobileOpen(false)}>
               <span className="block bg-accent text-white text-center rounded-md py-2 mt-2">Contact Us</span>

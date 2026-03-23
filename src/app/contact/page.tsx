@@ -3,21 +3,21 @@ import { MedicalIcon, SupportIcon } from '@/components/icons';
 import ContactForm from './ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Contact Advantis | Extension-of-Care Services',
-  description: 'Contact Advantis to learn how our value-based extension-of-care services can improve patient outcomes and expand care capacity for your healthcare organization.',
+  title: 'Contact Advantis | Partnerships',
+  description: 'Contact Advantis about member engagement, preventive screening completion, resource navigation, care-gap closure, and Medicare RPM/CCM programs for health plans and health systems.',
   keywords: [
     'contact Advantis',
-    'extension-of-care services',
+    'member engagement',
     'value-based care',
-    'FQHC services',
+    'care gap closure',
     'health plan services',
     'health system services',
     'healthcare partnerships',
-    'extension-of-care support'
+    'RPM CCM Medicare'
   ],
   openGraph: {
-    title: 'Contact Advantis | Extension-of-Care Services',
-    description: 'Contact Advantis to learn how our value-based extension-of-care services can improve patient outcomes and expand care capacity for your healthcare organization.',
+    title: 'Contact Advantis | Partnerships',
+    description: 'Contact Advantis about member engagement, preventive screening completion, resource navigation, care-gap closure, and Medicare RPM/CCM programs for health plans and health systems.',
     url: 'https://advantis.care/contact',
     siteName: 'Advantis',
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: '/images/og-advantis.png',
         width: 1200,
         height: 630,
-        alt: 'Contact Advantis Extension-of-Care Services',
+        alt: 'Contact Advantis',
       },
     ],
     locale: 'en_US',
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Advantis | Extension-of-Care Services',
-    description: 'Contact Advantis to learn how our value-based extension-of-care services can improve patient outcomes and expand care capacity for your healthcare organization.',
+    title: 'Contact Advantis | Partnerships',
+    description: 'Contact Advantis about member engagement, preventive screening completion, resource navigation, care-gap closure, and Medicare RPM/CCM programs for health plans and health systems.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },

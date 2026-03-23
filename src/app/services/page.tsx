@@ -3,24 +3,24 @@ import FadeInSection from '@/components/FadeInSection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Our Services | Extension-of-Care Platform for Healthcare Organizations | Advantis',
-  description: 'Advantis Care provides value-based extension-of-care solutions for FQHCs, health plans, and health systems. Integrated RPM, CCM, SDOH navigation, and preventive care support.',
+  title: 'Our Services | Patient Engagement & Care Completion | Advantis',
+  description: 'Advantis partners with health plans and health systems on member engagement, preventive screening completion, resource navigation, care-gap closure, and Medicare RPM/CCM when in scope.',
   keywords: [
-    'FQHC services',
     'health plan services',
     'health system services',
-    'extension of care platform',
+    'care gap closure',
+    'member engagement',
+    'preventive screening outreach',
     'remote patient monitoring',
     'chronic care management',
     'SDOH navigation',
-    'RPM for health centers',
-    'healthcare extension services',
+    'HEDIS support',
     'population health management',
     'value-based care'
   ],
   openGraph: {
-    title: 'Our Services | Extension-of-Care Platform for Healthcare Organizations | Advantis',
-    description: 'Advantis Care provides extension-of-care solutions for FQHCs, health plans, and health systems. Integrated RPM, CCM, SDOH navigation, and preventive care support.',
+    title: 'Our Services | Patient Engagement & Care Completion | Advantis',
+    description: 'Advantis partners with health plans and health systems on member engagement, preventive screening completion, resource navigation, care-gap closure, and Medicare RPM/CCM when in scope.',
     url: 'https://advantis.care/services',
     siteName: 'Advantis',
     images: [
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Our Services | Extension-of-Care Platform for Healthcare Organizations | Advantis',
-    description: 'Advantis Care provides extension-of-care solutions for FQHCs, health plans, and health systems. Integrated RPM, CCM, SDOH navigation, and preventive care support.',
+    title: 'Our Services | Patient Engagement & Care Completion | Advantis',
+    description: 'Advantis partners with health plans and health systems on member engagement, preventive screening completion, resource navigation, care-gap closure, and Medicare RPM/CCM when in scope.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },
@@ -50,7 +50,7 @@ export default function ServicesPage() {
       <section className="bg-primary text-white py-20 md:py-28 page-header">
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <h1 className="page-title">Our Services</h1>
-          <p className="page-subtitle">Extension-of-care solutions tailored to your organization</p>
+          <p className="page-subtitle">Engagement and closed-loop completion programs for plans and systems</p>
         </div>
       </section>
     
@@ -59,110 +59,14 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-primary mb-4">
-              Solutions for Every Partner Type
+              How We Partner
             </h2>
             <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
-              Our value-based platform adapts to meet the unique needs of FQHCs, health plans, and health systems
+              Advantis focuses on health plans and health systems that need accountable member engagement - persistent follow-up until screenings and gaps are actually closed (or clinically handed off) - with optional Medicare RPM and CCM when that fits your strategy.
             </p>
           </div>
 
           <div className="space-y-12 mt-12">
-            {/* FQHCs & CHCs Section */}
-            <div id="fqhcs" className="scroll-mt-20 bg-white rounded-lg p-8 md:p-12 shadow-lg border border-neutral-200">
-              <div className="flex items-start gap-6 mb-6">
-                <svg className="h-12 w-12 text-accent flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-                <div className="flex-1">
-                  <h3 className="text-3xl font-bold text-primary mb-4">
-                    For Community Health Centers
-                  </h3>
-                  <p className="text-lg text-neutral-700 mb-6">
-                    Extension of care services including high-touch case management assisting with SDOH naviagation and care coordination. Along with a full-service RPM and CCM operation with device provisioning, patient onboarding, daily monitoring, and clinical documentation. 
-                  </p>
-                  
-                  <div className="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                      <h4 className="font-semibold text-primary mb-3">What We Provide</h4>
-                      <ul className="space-y-2 text-neutral-700">
-                        <li className="flex items-start">
-                          <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                          <span>Full-service RPM + CCM operation</span>
-                        </li>
-                        <li className="flex items-start">
-                          <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                          <span>Device provisioning and patient onboarding</span>
-                        </li>
-                        <li className="flex items-start">
-                          <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                          <span>Daily monitoring and clinical review</span>
-                        </li>
-                        <li className="flex items-start">
-                          <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                          <span>SDOH screening aligned with recognized models (e.g., AHC HRSN) and navigation</span>
-                        </li>
-                        <li className="flex items-start">
-                          <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                          <span>AWV support and care-gap closure</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-3">Benefits</h4>
-                      <ul className="space-y-2 text-neutral-700">
-                        <li className="flex items-start">
-                          <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                          <span>No upfront costs or out-of-pocket fees</span>
-                        </li>
-                        <li className="flex items-start">
-                          <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                          <span>Improved UDS and HEDIS scores</span>
-                        </li>
-                        <li className="flex items-start">
-                          <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                          <span>Improvement in grant funding opportunities</span>
-                        </li>
-                        <li className="flex items-start">
-                          <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                          <span>New revenue streams</span>
-                        </li>
-                        <li className="flex items-start">
-                          <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                          <span>Lower no-show rates</span>
-                        </li>
-                        <li className="flex items-start">
-                          <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                          <span>No additional staffing required</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Health Plans Section */}
             <div id="health-plans" className="scroll-mt-20 bg-white rounded-lg p-8 md:p-12 shadow-lg border border-neutral-200">
               <div className="flex items-start gap-6 mb-6">
@@ -174,7 +78,7 @@ export default function ServicesPage() {
                     For Health Plans
                   </h3>
                   <p className="text-lg text-neutral-700 mb-6">
-                    PMPM model providing high-frequency engagement, RPM + CCM for members, SDOH assessments, and preventive-care coordination tied to HEDIS, STAR ratings, and risk adjustment accuracy.
+                    High-touch outreach and navigation that converts member demand into completed preventive care - aligned to your HEDIS and STAR priorities. We connect people to community resources when barriers appear. For Medicare-eligible members with chronic conditions, we can operate RPM and chronic care management end-to-end when you include it in program scope.
                   </p>
                   
                   <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -203,7 +107,7 @@ export default function ServicesPage() {
                           <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
-                          <span>AWV and HRA completion</span>
+                          <span>Closed-loop gap and screening completion</span>
                         </li>
                         <li className="flex items-start">
                           <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -238,7 +142,7 @@ export default function ServicesPage() {
                           <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
-                          <span>LArger cost savings</span>
+                          <span>Larger cost savings</span>
                         </li>
                         <li className="flex items-start">
                           <svg className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -264,7 +168,7 @@ export default function ServicesPage() {
                     For Health Systems & IPAs
                   </h3>
                   <p className="text-lg text-neutral-700 mb-6">
-                    PMPM arrangements for chronic care support, RPM deployment, HEDIS/SDOH workforce augmentation, and post-discharge stabilization to reduce readmissions.
+                    Augment your population health and care-management teams with dedicated outreach, gap-closure campaigns, discharge follow-up, and resource navigation. Add RPM/CCM operations for attributed Medicare populations when your medical groups need scalable clinical monitoring support.
                   </p>
                   
                   <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -343,26 +247,6 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* Community Health Centers Section */}
-            <div id="community-health-centers" className="scroll-mt-20 bg-white rounded-lg p-8 md:p-12 shadow-lg border border-neutral-200">
-              <div className="flex items-start gap-6 mb-6">
-                <svg className="h-12 w-12 text-accent flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-                <div className="flex-1">
-                  <h3 className="text-3xl font-bold text-primary mb-4">
-                    Community First Initiative
-                  </h3>
-                  <p className="text-lg text-neutral-700 mb-6">
-                    Supporting community health centers with no upfront costs. Improve UDS scores, increase patient engagement, and create revenue growth opportunities.
-                  </p>
-                  <Button href="/services/community-first" size="md" variant="primary">
-                    Learn More About Our Community Health Center Program
-                  </Button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         </section>
@@ -375,7 +259,7 @@ export default function ServicesPage() {
             Ready to learn more?
           </h2>
           <p className="text-white/90 mb-8">
-            Contact us today to see how our services can support your facility's goals.
+            Contact us to design an engagement and completion program for your members and patients.
           </p>
           <Button href="/contact" size="lg" variant="secondary">
             Contact Us

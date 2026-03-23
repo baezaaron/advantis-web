@@ -70,7 +70,7 @@ export default function Footer() {
                   </div>
                 </Link>
                 <p className="text-neutral-300 mb-4">
-                Our lives run on data — healthcare should too.
+                Our lives run on data  -  healthcare should too.
                 </p>
                 <div className="flex space-x-4 mb-6">
                   <a href="mailto:info@advantis.care" aria-label="Email" className="text-white hover:text-accent transition-colors">
@@ -184,7 +184,7 @@ export default function Footer() {
                 <li><Link href="/about" className="text-neutral-300 hover:text-accent transition-colors">About Us</Link></li>
                 <li><Link href="/careers" className="text-neutral-300 hover:text-accent transition-colors">Careers</Link></li>
                 <li><Link href="/contact" className="text-neutral-300 hover:text-accent transition-colors">Contact Us</Link></li>
-                <li><Link href="/resources" className="text-neutral-300 hover:text-accent transition-colors">Blog</Link></li>
+                <li><Link href="/blog/" className="text-neutral-300 hover:text-accent transition-colors">Blog</Link></li>
               </ul>
             </div>
           </div>

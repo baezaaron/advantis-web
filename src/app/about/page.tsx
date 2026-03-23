@@ -14,7 +14,7 @@ export default function AboutPage() {
               About Advantis
             </h1>
             <p className="page-subtitle">
-            Bringing data-driven care to the people who need it most.
+            Turning member engagement into completed care
             </p>
           </div>
         </div>
@@ -30,15 +30,55 @@ export default function AboutPage() {
           <div className="w-20 h-1 bg-accent mx-auto mb-8 rounded-full"></div>
           <div className="max-w-4xl mx-auto bg-white p-8 md:p-10 rounded-lg shadow-md border border-neutral-200 border-l-4 border-accent">
             <p className="text-neutral-700 mb-6 text-lg text-center">
-            Founded in 2023, Advantis was born from a simple but overlooked truth: while technology continues to evolve, our nation's health continues to decline. In nearly every part of our lives, data drives better decisions, yet healthcare remains disconnected, reactive, and inefficient. We set out to change that.
+            Advantis was founded on a patient-centered conviction: too many people experience preventable suffering because screenings and follow-up care do not happen in time. The issue is not awareness alone. It is the gap between intent and completion.
             </p>
             <p className="text-neutral-700 mb-6 text-lg text-center">
-            We noticed that while many companies were eager to solve this problem, they often placed the burden of innovation on already overworked providers and their clinical teams. The solution needs to start at the foundation. Beginning with the patient. Today, patients tend to be left to fend for themselves post discharge. Leaving them overwhelmed and frustrated.      </p>
+            Preventive care is one of the most important levers in value-based care, but many patients still face real barriers such as transportation, unstable housing, food insecurity, and fragmented communication. These barriers delay diagnosis, accelerate chronic disease progression, and reduce quality of life.
+            </p>
             <p className="text-neutral-700 text-lg text-center">
-            However, with Advantis, health plans, health systems, and community health centers are plugging the gap. Patients are no longer left to fall between the cracks. By serving as an extension of care through care coordination, SDOH navigation, leveraging data and remote patient monitoring, we bring continuity, insight, and accountability to care delivered at home. It's time to take a more proactive, qualitative approach.
+            Our mission is to identify social determinants of health early, remove practical barriers, and help people complete the screenings and care steps that protect long-term health outcomes. We believe quality care starts with access, persistence, and follow-through.
             </p>
           </div>
         </div>
+        </section>
+      </FadeInSection>
+
+      {/* Impact Statistics */}
+      <FadeInSection>
+        <section className="py-8 md:py-12 bg-white">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="max-w-5xl mx-auto bg-neutral-50 border border-neutral-200 rounded-xl p-8 md:p-10">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary text-center mb-3">
+                Why preventive care and screening completion matter
+              </h3>
+              <p className="text-neutral-700 text-center mb-8">
+                Delayed screening and delayed follow-up are linked to higher mortality, more late-stage diagnoses, and significantly higher cost of care for families and systems.
+              </p>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white rounded-lg border border-neutral-200 p-6">
+                  <p className="text-3xl font-bold text-accent mb-2">~60%</p>
+                  <p className="text-neutral-700">
+                    Around 6 in 10 U.S. adults live with at least one chronic disease, with many conditions worsened by delayed preventive care and poor continuity.
+                  </p>
+                </div>
+                <div className="bg-white rounded-lg border border-neutral-200 p-6">
+                  <p className="text-3xl font-bold text-accent mb-2">~80%</p>
+                  <p className="text-neutral-700">
+                    Health outcomes are shaped mostly by non-medical factors such as housing stability, food access, transportation, and social context, which is why SDOH identification and navigation are essential to better outcomes.
+                  </p>
+                </div>
+                <div className="bg-white rounded-lg border border-neutral-200 p-6">
+                  <p className="text-3xl font-bold text-accent mb-2">~65%</p>
+                  <p className="text-neutral-700">
+                    Nearly 65% of adults aged 21 and older are not up to date on at least one routine cancer screening.
+                  </p>
+                </div>
+              </div>
+              <div className="mt-6 text-xs text-neutral-500 leading-relaxed">
+                Sources: National Academy of Medicine social determinants framework; U.S. preventive-care and cancer-screening adherence literature.
+              </div>
+            </div>
+          </div>
         </section>
       </FadeInSection>
       
@@ -63,8 +103,8 @@ export default function AboutPage() {
             />
             
             <ValueCard 
-              title="Innovation"
-              description="We continuously explore new technologies and approaches to solve healthcare challenges and improve patient experiences."
+              title="Operational Excellence"
+              description="We invest in playbooks, training, and quality oversight so programs run reliably at scale - not as one-off pilots."
               icon="lightbulb"
             />
             
@@ -76,7 +116,7 @@ export default function AboutPage() {
             
             <ValueCard 
               title="Collaboration"
-              description="We work closely with community health centers, health systems, IPAs, and value based care centers to create tailored solutions."
+              description="We align with health plans, health systems, IPAs, and medical groups so members experience one coordinated effort - not competing phone trees."
               icon="team"
             />
             
@@ -114,11 +154,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to extend your reach?
+              Ready to drive more completed care?
             </h2>
             <p className="text-xl text-white/90 mb-10 leading-relaxed">
-              Discover how Advantis Care can serve as your value-based extension-of-care service provider, 
-              improving patient outcomes and generating new revenue streams, all without adding internal staff.
+              Partner with Advantis on member engagement, screening completion, resource navigation, and care-gap closure.
             </p>
             <Button href="/contact" size="lg" variant="secondary" className="px-10 py-4">
               Get Started Today
@@ -197,14 +236,14 @@ function renderIcon(icon: string) {
 }
 
 export const metadata: Metadata = {
-  title: 'About Advantis | Value-Based Extension-of-Care Platform',
-  description: 'Learn about Advantis: our mission to provide value-based extension-of-care services that improve patient outcomes and expand care capacity for healthcare organizations.',
+  title: 'About Advantis | Patient Engagement & Care Completion',
+  description: 'Learn about Advantis: high-touch member engagement, preventive screening completion, resource navigation, and care-gap closure for health plans and health systems.',
   keywords: [
     'about Advantis',
-    'extension-of-care platform',
+    'patient engagement',
+    'care gap closure',
     'value-based care',
-    'healthcare innovation',
-    'FQHC services',
+    'healthcare operations',
     'health plan services',
     'health system services',
     'chronic care management',
@@ -213,8 +252,8 @@ export const metadata: Metadata = {
     'value-based healthcare'
   ],
   openGraph: {
-    title: 'About Advantis | Value-Based Extension-of-Care Platform',
-    description: 'Learn about Advantis: our mission to provide value-based extension-of-care services that improve patient outcomes and expand care capacity for healthcare organizations.',
+    title: 'About Advantis | Patient Engagement & Care Completion',
+    description: 'Learn about Advantis: high-touch member engagement, preventive screening completion, resource navigation, and care-gap closure for health plans and health systems.',
     url: 'https://advantis.care/about',
     siteName: 'Advantis',
     images: [
@@ -222,7 +261,7 @@ export const metadata: Metadata = {
         url: '/images/og-advantis.png',
         width: 1200,
         height: 630,
-        alt: 'About Advantis Extension-of-Care Platform',
+        alt: 'About Advantis',
       },
     ],
     locale: 'en_US',
@@ -230,8 +269,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Advantis | Value-Based Extension-of-Care Platform',
-    description: 'Learn about Advantis: our mission to provide value-based extension-of-care services that improve patient outcomes and expand care capacity for healthcare organizations.',
+    title: 'About Advantis | Patient Engagement & Care Completion',
+    description: 'Learn about Advantis: high-touch member engagement, preventive screening completion, resource navigation, and care-gap closure for health plans and health systems.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },

@@ -20,8 +20,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Advantis | Value-Based Extension-of-Care Services",
-  description: "Advantis provides value-based extension-of-care services for healthcare organizations, improving patient outcomes and expanding care capacity without additional staffing.",
+  title: "Advantis | Patient Engagement & Care Completion",
+  description: "Advantis helps health plans and health systems turn member outreach into completed preventive care, resource connections, and closed gaps - with RPM and chronic care management for eligible Medicare members.",
   icons: {
     icon: [
       { url: "/favicon.ico" }
