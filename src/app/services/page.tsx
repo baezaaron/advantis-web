@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Our Services | Patient Engagement & Care Completion | Advantis',
-  description: 'Advantis partners with health plans and health systems on member engagement, preventive screening completion, resource navigation, care-gap closure, and Medicare RPM/CCM when in scope.',
+  description: 'Advantis provides high-touch patient engagement, preventive screening completion, resource navigation, care-gap closure, and operational analytics for healthcare organizations.',
   keywords: [
     'health plan services',
     'health system services',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Our Services | Patient Engagement & Care Completion | Advantis',
-    description: 'Advantis partners with health plans and health systems on member engagement, preventive screening completion, resource navigation, care-gap closure, and Medicare RPM/CCM when in scope.',
+    description: 'Advantis provides high-touch patient engagement, preventive screening completion, resource navigation, care-gap closure, and operational analytics for healthcare organizations.',
     url: 'https://advantis.care/services',
     siteName: 'Advantis',
     images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Our Services | Patient Engagement & Care Completion | Advantis',
-    description: 'Advantis partners with health plans and health systems on member engagement, preventive screening completion, resource navigation, care-gap closure, and Medicare RPM/CCM when in scope.',
+    description: 'Advantis provides high-touch patient engagement, preventive screening completion, resource navigation, care-gap closure, and operational analytics for healthcare organizations.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },
@@ -62,7 +62,7 @@ export default function ServicesPage() {
               How We Partner
             </h2>
             <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
-              Advantis focuses on health plans and health systems that need accountable member engagement - persistent follow-up until screenings and gaps are actually closed (or clinically handed off) - with optional Medicare RPM and CCM when that fits your strategy.
+              Advantis supports health plans and health systems with accountable member engagement - persistent follow-up until screenings and gaps are actually closed (or clinically handed off) - and operational analytics that show where barriers exist, which cohorts need attention, and what actions are most likely to drive completion.
             </p>
           </div>
 

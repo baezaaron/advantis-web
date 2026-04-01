@@ -376,7 +376,7 @@ function HowItWorksTimelineSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 md:py-28 bg-white relative">
+    <section id="how-it-works" ref={sectionRef} className="py-20 md:py-28 bg-white relative">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -500,16 +500,16 @@ export default function Home() {
               
               {/* Main Mission Statement */}
               <h2 className="text-1xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-primary mb-6 leading-tight">
-                A patient engagement and care completion platform for hard-to-reach populations
+                A patient engagement and care completion service provider for hard-to-reach populations
               </h2>
               
               {/* Body Text with Highlighted Portion */}
               <p className="text-base md:text-lg lg:text-xl text-neutral-700 mb-8 leading-relaxed">
-                Advantis helps health systems, providers, and payers connect with hard-to-reach patients. We identify social needs and care gaps through HRSN screening and preventive health assessments, then guide patients to complete the care they need. By addressing social determinants of health and preventive screenings together, we provide foundational support and high-value care while improving outcomes, reducing care gaps, and increasing operational efficiency.
+                Advantis helps health systems, providers, and payers connect with hard-to-reach patients. We identify social needs and care gaps through HRSN screening and preventive health assessments, then guide patients to complete the care they need. We operate as a population health service with an analytics backbone, aggregating frontline engagement and screening data into clear operational signals that help teams prioritize next actions and close more gaps.
               </p>
               
-              <Button href="/about" variant="outline" className="px-8">
-                Learn About Our Approach
+              <Button href="/#how-it-works" variant="outline" className="px-8">
+                See Our Care Completion Model
               </Button>
             </div>
             
@@ -530,6 +530,40 @@ export default function Home() {
         </div>
       </section>
       </FadeInSection>
+
+      {/* Measurement Strip */}
+      <FadeInSection>
+      <section className="py-10 bg-primary/5 border-y border-primary/10">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-primary mb-2">
+              How we measure success
+            </h3>
+            <p className="text-neutral-700">
+              We report operational performance that quality and care-management teams can act on quickly.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="bg-white border border-neutral-200 rounded-lg p-5 shadow-sm">
+              <p className="text-sm font-semibold text-accent uppercase tracking-wide mb-2">Outreach</p>
+              <p className="text-neutral-700">Attempt rates, contact rates, and engagement by cohort.</p>
+            </div>
+            <div className="bg-white border border-neutral-200 rounded-lg p-5 shadow-sm">
+              <p className="text-sm font-semibold text-accent uppercase tracking-wide mb-2">Screening Completion</p>
+              <p className="text-neutral-700">Screenings and follow-ups completed versus still open.</p>
+            </div>
+            <div className="bg-white border border-neutral-200 rounded-lg p-5 shadow-sm">
+              <p className="text-sm font-semibold text-accent uppercase tracking-wide mb-2">Barrier Insights</p>
+              <p className="text-neutral-700">HRSN categories identified, referrals made, and resolution status.</p>
+            </div>
+            <div className="bg-white border border-neutral-200 rounded-lg p-5 shadow-sm">
+              <p className="text-sm font-semibold text-accent uppercase tracking-wide mb-2">Closed Loop</p>
+              <p className="text-neutral-700">Documented handoffs and completion visibility for partner teams.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      </FadeInSection>
       
       {/* Services Section */}
       <FadeInSection>
@@ -540,7 +574,7 @@ export default function Home() {
               What We Deliver
             </h2>
             <p className="text-lg text-neutral-700 max-w-2xl mx-auto">
-              We are the logistics and operational layer for care-gap closure: high-touch outreach, barrier resolution, and closed-loop documentation that turns intent into completed care.
+              We are the logistics and operational layer for care-gap closure: high-touch outreach, barrier resolution, and closed-loop documentation, plus actionable population-health analytics generated from real service delivery.
             </p>
           </div>
           
@@ -631,8 +665,8 @@ export default function Home() {
                   <span>Medicare RPM/CCM where clinically appropriate</span>
                 </li>
               </ul>
-              <Button href="/contact" variant="outline" size="sm" className="w-full">
-                Learn More
+              <Button href="/contact/?interest=health-plan#contact-form" variant="outline" size="sm" className="w-full">
+                Discuss Plan Partnership
               </Button>
             </div>
 
@@ -669,8 +703,8 @@ export default function Home() {
                   <span>Value-based contract support</span>
                 </li>
               </ul>
-              <Button href="/contact" variant="outline" size="sm" className="w-full">
-                Learn More
+              <Button href="/contact/?interest=provider-network#contact-form" variant="outline" size="sm" className="w-full">
+                Discuss Provider Partnership
               </Button>
             </div>
           </div>
@@ -705,8 +739,8 @@ export default function Home() {
             <p className="text-xl text-white/90 mb-10 leading-relaxed">
             Talk with us about standing up a high-touch engagement and completion program for your members - without building a large in-house outreach and navigation team overnight.
             </p>
-            <Button href="/contact" size="lg" variant="secondary" className="px-10 py-4">
-              Get Started Today
+            <Button href="/contact/?interest=partnership-call#contact-form" size="lg" variant="secondary" className="px-10 py-4">
+              Schedule a Partnership Call
             </Button>
           </div>
         </div>

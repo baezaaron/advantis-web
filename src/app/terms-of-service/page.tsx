@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Terms of Service | Advantis Extension-of-Care Services',
-  description: 'Review the Advantis terms of service: guidelines for using our value-based extension-of-care platform and healthcare support services. Learn your rights and responsibilities.',
+  description: 'Review the Advantis terms of service: guidelines for using our value-based healthcare support services. Learn your rights and responsibilities.',
   keywords: [
     'terms of service',
     'Advantis terms',
@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     'healthcare service agreement',
     'value-based care',
     'extension-of-care services',
-    'healthcare platform terms',
+    'healthcare service terms',
     'HIPAA compliant services',
     'healthcare partnership agreement'
   ],
   openGraph: {
     title: 'Terms of Service | Advantis Extension-of-Care Services',
-    description: 'Review the Advantis terms of service: guidelines for using our value-based extension-of-care platform and healthcare support services. Learn your rights and responsibilities.',
+    description: 'Review the Advantis terms of service: guidelines for using our value-based healthcare support services. Learn your rights and responsibilities.',
     url: 'https://advantis.care/terms-of-service',
     siteName: 'Advantis',
     images: [
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Terms of Service | Advantis Extension-of-Care Pl  atform',
-    description: 'Review the Advantis terms of service: guidelines for using our value-based extension-of-care platform and healthcare support services. Learn your rights and responsibilities.',
+    title: 'Terms of Service | Advantis Extension-of-Care Services',
+    description: 'Review the Advantis terms of service: guidelines for using our value-based healthcare support services. Learn your rights and responsibilities.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },

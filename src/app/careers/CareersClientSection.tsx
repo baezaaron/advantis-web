@@ -15,7 +15,7 @@ export default function CareersClientSection() {
               Join Our Team
             </h1>
             <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
-              At Advantis, we're on a mission to transform healthcare through innovative technology and compassionate care. We're looking for talented individuals who want to make a real impact on patient outcomes and help make quality healthcare accessible to all. If you're passionate about making a difference, please apply below. Feel free to also reach out to <a href="mailto:abaez@advantis.care" className="underline text-primary">info@advantis.care</a> to discuss how you could be a part of the Advantis team.
+              At Advantis, we're on a mission to transform healthcare through innovative technology and compassionate care. We're looking for talented individuals who want to make a real impact on patient outcomes and help make quality healthcare accessible to all. If you're passionate about making a difference, please apply below. Feel free to also reach out to <a href="mailto:abaez@advantis.care" className="underline text-primary">abaez@advantis.care</a> to discuss how you could be a part of the Advantis team.
             </p>
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function CareersClientSection() {
               </div>
               <button type="submit" className="mt-4 bg-accent text-white font-semibold px-8 py-3 rounded-lg hover:bg-accent/90 transition-colors">Submit Application</button>
             </form>
-            <div className="text-xs text-neutral-500 mt-2 text-center">*Feel free to send over your resume to <a href="mailto:info@advantis.care" className="underline text-primary">info@advantis.care</a></div>
+            <div className="text-xs text-neutral-500 mt-2 text-center">*Feel free to send over your resume to <a href="mailto:abaez@advantis.care" className="underline text-primary">info@advantis.care</a></div>
           </div>
         </div>
       )}

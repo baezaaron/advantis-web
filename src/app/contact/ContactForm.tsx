@@ -11,6 +11,7 @@ const RecaptchaWidget = dynamic(
 export default function ContactForm() {
   const searchParams = useSearchParams();
   const emailFromQuery = searchParams?.get('email') || '';
+  const interestFromQuery = searchParams?.get('interest') || '';
   const [formData, setFormData] = useState({
     name: '',
     email: emailFromQuery,
@@ -28,6 +29,25 @@ export default function ContactForm() {
       setFormData((prev) => ({ ...prev, email: emailFromQuery }));
     }
   }, [emailFromQuery]);
+
+  useEffect(() => {
+    if (!interestFromQuery) return;
+
+    const interestLabels: Record<string, string> = {
+      'partnerships': 'General partnership inquiry',
+      'health-plan': 'Health plan partnership',
+      'provider-network': 'Provider or network partnership',
+      'partnership-call': 'Schedule a partnership call',
+    };
+
+    const interestLabel = interestLabels[interestFromQuery] || 'Partnership inquiry';
+
+    setFormData((prev) => ({
+      ...prev,
+      serviceType: prev.serviceType || interestLabel,
+      message: prev.message || `Hello Advantis team, I would like to discuss: ${interestLabel}.`,
+    }));
+  }, [interestFromQuery]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;

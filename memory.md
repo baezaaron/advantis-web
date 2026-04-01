@@ -176,3 +176,15 @@
 - Rewrote **Our Why** to emphasize patient outcomes, preventive care urgency, and SDOH barriers (without Medicare/RPM mentions).
 - Added a new **impact statistics** section between **Our Why** and **Our Values** with short source attribution copy.
 - Removed em-dash characters from site copy under `src/` and validated no remaining matches.
+
+## 2026-03-23 — Population health service positioning (minimal copy pass)
+- User prefers **service provider** positioning (not platform-first) with lightweight mention of analytics.
+- Updated homepage mission header/body and "What We Deliver" intro to frame Advantis as population health operations + actionable analytics from service execution.
+- Updated services intro to include operational analytics outputs while avoiding broad platform claims.
+- Added one reinforcing sentence in About "Our Why" that analytics are derived from day-to-day care-completion work.
+
+## 2026-03-23 — UX/copy polish pass (no redesign)
+- Tightened hero-to-body continuity: hero subtitle now references gap closure and documented completion.
+- Updated key homepage CTAs for clearer buyer intent ("Talk to Partnerships", "See Our Care Completion Model", "Schedule a Partnership Call").
+- Added a compact homepage **"How we measure success"** strip with four operational proof categories (outreach, screening completion, barrier insights, closed loop).
+- Improved About stats aesthetics via equal-height cards and cleaner, centered source styling.

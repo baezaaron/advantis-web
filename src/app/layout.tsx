@@ -21,7 +21,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Advantis | Patient Engagement & Care Completion",
-  description: "Advantis helps health plans and health systems turn member outreach into completed preventive care, resource connections, and closed gaps - with RPM and chronic care management for eligible Medicare members.",
+  description: "Advantis helps healthcare organizations and community partners turn outreach into completed preventive care, resolved social barriers, and closed care gaps.",
   icons: {
     icon: [
       { url: "/favicon.ico" }

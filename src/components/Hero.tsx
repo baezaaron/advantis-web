@@ -18,14 +18,14 @@ export default function Hero() {
             <span className="bg-gradient-to-r from-white to-accent/90 bg-clip-text text-transparent">Extend Your Care</span>
           </h1>
           <p className="text-2xl md:text-3xl mb-10 text-white/90 font-light">
-            A high-touch clinical and administrative extension-of-care service
+            A high-touch clinical and administrative extension-of-care service focused on closing care gaps and documenting completion
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button href="/contact" size="lg" variant="secondary" className="px-8 py-4 text-base">
-              Get in Touch
+            <Button href="/contact/?interest=partnerships#contact-form" size="lg" variant="secondary" className="px-8 py-4 text-base">
+              Talk to Partnerships
             </Button>
-            <Button href="/about" variant="outline" size="lg" className="px-8 py-4 text-base border-white text-white hover:bg-white/10">
-              Learn More
+            <Button href="/#how-it-works" variant="outline" size="lg" className="px-8 py-4 text-base border-white text-white hover:bg-white/10">
+              See Our Care Completion Model
             </Button>
           </div>
         </div>

@@ -22,7 +22,7 @@ export default function AboutPage() {
       
       {/* Our Story */}
       <FadeInSection>
-        <section className="py-16 md:py-24 bg-neutral-50">
+        <section id="our-why" className="py-16 md:py-24 bg-neutral-50">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">
             Our Why
@@ -37,6 +37,9 @@ export default function AboutPage() {
             </p>
             <p className="text-neutral-700 text-lg text-center">
             Our mission is to identify social determinants of health early, remove practical barriers, and help people complete the screenings and care steps that protect long-term health outcomes. We believe quality care starts with access, persistence, and follow-through.
+            </p>
+            <p className="text-neutral-700 text-lg text-center mt-6">
+            We are a service provider first. Our analytics are built from this day-to-day work and help partners see which populations are being reached, where care stalls, and what interventions improve completion over time.
             </p>
           </div>
         </div>
@@ -55,26 +58,26 @@ export default function AboutPage() {
                 Delayed screening and delayed follow-up are linked to higher mortality, more late-stage diagnoses, and significantly higher cost of care for families and systems.
               </p>
               <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-white rounded-lg border border-neutral-200 p-6">
+                <div className="bg-white rounded-lg border border-neutral-200 p-6 h-full">
                   <p className="text-3xl font-bold text-accent mb-2">~60%</p>
                   <p className="text-neutral-700">
                     Around 6 in 10 U.S. adults live with at least one chronic disease, with many conditions worsened by delayed preventive care and poor continuity.
                   </p>
                 </div>
-                <div className="bg-white rounded-lg border border-neutral-200 p-6">
+                <div className="bg-white rounded-lg border border-neutral-200 p-6 h-full">
                   <p className="text-3xl font-bold text-accent mb-2">~80%</p>
                   <p className="text-neutral-700">
                     Health outcomes are shaped mostly by non-medical factors such as housing stability, food access, transportation, and social context, which is why SDOH identification and navigation are essential to better outcomes.
                   </p>
                 </div>
-                <div className="bg-white rounded-lg border border-neutral-200 p-6">
+                <div className="bg-white rounded-lg border border-neutral-200 p-6 h-full">
                   <p className="text-3xl font-bold text-accent mb-2">~65%</p>
                   <p className="text-neutral-700">
                     Nearly 65% of adults aged 21 and older are not up to date on at least one routine cancer screening.
                   </p>
                 </div>
               </div>
-              <div className="mt-6 text-xs text-neutral-500 leading-relaxed">
+              <div className="mt-6 text-[11px] text-neutral-500 leading-relaxed text-center">
                 Sources: National Academy of Medicine social determinants framework; U.S. preventive-care and cancer-screening adherence literature.
               </div>
             </div>
@@ -237,7 +240,7 @@ function renderIcon(icon: string) {
 
 export const metadata: Metadata = {
   title: 'About Advantis | Patient Engagement & Care Completion',
-  description: 'Learn about Advantis: high-touch member engagement, preventive screening completion, resource navigation, and care-gap closure for health plans and health systems.',
+  description: 'Learn about Advantis: high-touch patient engagement, preventive screening completion, resource navigation, and care-gap closure delivered as a service.',
   keywords: [
     'about Advantis',
     'patient engagement',
@@ -253,7 +256,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'About Advantis | Patient Engagement & Care Completion',
-    description: 'Learn about Advantis: high-touch member engagement, preventive screening completion, resource navigation, and care-gap closure for health plans and health systems.',
+    description: 'Learn about Advantis: high-touch patient engagement, preventive screening completion, resource navigation, and care-gap closure delivered as a service.',
     url: 'https://advantis.care/about',
     siteName: 'Advantis',
     images: [
@@ -270,7 +273,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'About Advantis | Patient Engagement & Care Completion',
-    description: 'Learn about Advantis: high-touch member engagement, preventive screening completion, resource navigation, and care-gap closure for health plans and health systems.',
+    description: 'Learn about Advantis: high-touch patient engagement, preventive screening completion, resource navigation, and care-gap closure delivered as a service.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },

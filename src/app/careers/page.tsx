@@ -3,7 +3,7 @@ import CareersClientSection from './CareersClientSection';
 
 export const metadata: Metadata = {
   title: 'Careers at Advantis | Value-Based Care & Extension-of-Care',
-  description: 'Join Advantis and help transform healthcare. Explore careers in member engagement, care completion, and clinical operations for health plans and health systems.',
+  description: 'Join Advantis and help transform healthcare. Explore careers in patient engagement, care completion, and population health operations.',
   keywords: [
     'careers at Advantis',
     'healthcare careers',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Careers at Advantis | Value-Based Care & Extension-of-Care',
-    description: 'Join Advantis and help transform healthcare. Explore careers in member engagement, care completion, and clinical operations for health plans and health systems.',
+    description: 'Join Advantis and help transform healthcare. Explore careers in patient engagement, care completion, and population health operations.',
     url: 'https://advantis.care/careers',
     siteName: 'Advantis',
     images: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Careers at Advantis | Value-Based Care & Extension-of-Care',
-    description: 'Join Advantis and help transform healthcare. Explore careers in member engagement, care completion, and clinical operations for health plans and health systems.',
+    description: 'Join Advantis and help transform healthcare. Explore careers in patient engagement, care completion, and population health operations.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },

@@ -4,7 +4,7 @@ import ContactForm from './ContactForm';
 
 export const metadata: Metadata = {
   title: 'Contact Advantis | Partnerships',
-  description: 'Contact Advantis about member engagement, preventive screening completion, resource navigation, care-gap closure, and Medicare RPM/CCM programs for health plans and health systems.',
+  description: 'Contact Advantis about patient engagement, preventive screening completion, resource navigation, care-gap closure, and population health operations services.',
   keywords: [
     'contact Advantis',
     'member engagement',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Contact Advantis | Partnerships',
-    description: 'Contact Advantis about member engagement, preventive screening completion, resource navigation, care-gap closure, and Medicare RPM/CCM programs for health plans and health systems.',
+    description: 'Contact Advantis about patient engagement, preventive screening completion, resource navigation, care-gap closure, and population health operations services.',
     url: 'https://advantis.care/contact',
     siteName: 'Advantis',
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Contact Advantis | Partnerships',
-    description: 'Contact Advantis about member engagement, preventive screening completion, resource navigation, care-gap closure, and Medicare RPM/CCM programs for health plans and health systems.',
+    description: 'Contact Advantis about patient engagement, preventive screening completion, resource navigation, care-gap closure, and population health operations services.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },
@@ -58,7 +58,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Information & Form */}
-      <section className="py-16 md:py-24">
+      <section id="contact-form" className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-24">
             {/* Contact Information */}
