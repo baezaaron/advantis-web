@@ -1,6 +1,4 @@
 "use client";
-import Button from '@/components/Button';
-import { HeartPulseIcon, UsersIcon, StarIcon } from '@/components/icons';
 import { useState } from 'react';
 
 export default function CareersClientSection() {
@@ -12,11 +10,12 @@ export default function CareersClientSection() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-semibold text-primary mb-6">
-              Join Our Team
+              Build systems that help people receive support
             </h1>
             <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
-              At Advantis, we're on a mission to transform healthcare through innovative technology and compassionate care. We're looking for talented individuals who want to make a real impact on patient outcomes and help make quality healthcare accessible to all. If you're passionate about making a difference, please apply below. Feel free to also reach out to <a href="mailto:abaez@advantis.care" className="underline text-primary">abaez@advantis.care</a> to discuss how you could be a part of the Advantis team.
+              Advantis is building the operating infrastructure behind more accountable whole-person care. Our teams engage members, navigate complex systems, coordinate across community partners, and turn frontline work into measurable outcomes. We are looking for thoughtful, disciplined people who care about impact, member dignity, and operational excellence.
             </p>
+            <p className="text-neutral-700">To explore opportunities, contact <a href="mailto:abaez@advantis.care" className="underline text-primary">abaez@advantis.care</a>.</p>
           </div>
         </div>
       </section>
@@ -65,4 +64,4 @@ export default function CareersClientSection() {
       )}
     </>
   );
-} 
+}

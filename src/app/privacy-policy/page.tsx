@@ -1,23 +1,23 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Advantis Extension-of-Care Services',
-  description: 'Read the Advantis privacy policy: how we protect patient data, ensure HIPAA compliance, and safeguard your information in our healthcare support services.',
+  title: 'Privacy Policy | Advantis Care',
+  description: 'Read how Advantis Care collects, uses, and safeguards information related to its website and social-care operations.',
   keywords: [
     'privacy policy',
     'patient data protection',
     'HIPAA compliance',
     'Advantis privacy',
-    'extension-of-care services',
+    'social care operations',
     'value-based care',
     'healthcare privacy',
     'data security',
     'healthcare data protection'
   ],
   openGraph: {
-    title: 'Privacy Policy | Advantis Extension-of-Care Services',
-    description: 'Read the Advantis privacy policy: how we protect patient data, ensure HIPAA compliance, and safeguard your information in our healthcare support services.',
-    url: 'https://advantis.care/privacy-policy',
+    title: 'Privacy Policy | Advantis Care',
+    description: 'Read how Advantis Care collects, uses, and safeguards information related to its website and social-care operations.',
+    url: 'https://advantis.care/privacy-policy/',
     siteName: 'Advantis',
     images: [
       {
@@ -32,11 +32,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Privacy Policy | Advantis Extension-of-Care Services',
-    description: 'Read the Advantis privacy policy: how we protect patient data, ensure HIPAA compliance, and safeguard your information in our healthcare support services.',
+    title: 'Privacy Policy | Advantis Care',
+    description: 'Read how Advantis Care collects, uses, and safeguards information related to its website and social-care operations.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },
+  alternates: { canonical: '/privacy-policy/' },
 };
 
 export default function PrivacyPolicyPage() {
@@ -136,4 +137,4 @@ export default function PrivacyPolicyPage() {
       </section>
     </>
   );
-} 
+}

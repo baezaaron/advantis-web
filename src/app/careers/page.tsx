@@ -2,24 +2,22 @@ import type { Metadata } from 'next';
 import CareersClientSection from './CareersClientSection';
 
 export const metadata: Metadata = {
-  title: 'Careers at Advantis | Value-Based Care & Extension-of-Care',
-  description: 'Join Advantis and help transform healthcare. Explore careers in patient engagement, care completion, and population health operations.',
+  title: 'Careers at Advantis | Social Care Operations',
+  description: 'Build systems that help people receive support through accountable member engagement, navigation, and social-care operations.',
   keywords: [
     'careers at Advantis',
     'healthcare careers',
-    'value-based care jobs',
-    'extension-of-care careers',
+    'social care jobs',
+    'member engagement careers',
     'join Advantis',
     'healthcare technology jobs',
-    'health tech jobs',
-    'healthcare operations careers',
-    'health plan careers',
-    'health system careers'
+    'care operations careers',
+    'healthcare operations careers'
   ],
   openGraph: {
-    title: 'Careers at Advantis | Value-Based Care & Extension-of-Care',
-    description: 'Join Advantis and help transform healthcare. Explore careers in patient engagement, care completion, and population health operations.',
-    url: 'https://advantis.care/careers',
+    title: 'Careers at Advantis | Social Care Operations',
+    description: 'Build systems that help people receive support through accountable member engagement, navigation, and social-care operations.',
+    url: 'https://advantis.care/careers/',
     siteName: 'Advantis',
     images: [
       {
@@ -34,13 +32,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Careers at Advantis | Value-Based Care & Extension-of-Care',
-    description: 'Join Advantis and help transform healthcare. Explore careers in patient engagement, care completion, and population health operations.',
+    title: 'Careers at Advantis | Social Care Operations',
+    description: 'Build systems that help people receive support through accountable member engagement, navigation, and social-care operations.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },
+  alternates: { canonical: '/careers/' },
 };
 
 export default function CareersPage() {
   return <CareersClientSection />;
-} 
+}

@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from 'react';
-import { MedicalIcon, SupportIcon } from '@/components/icons';
 import dynamic from 'next/dynamic';
 import { useSearchParams } from 'next/navigation';
 const RecaptchaWidget = dynamic(
@@ -34,10 +33,10 @@ export default function ContactForm() {
     if (!interestFromQuery) return;
 
     const interestLabels: Record<string, string> = {
-      'partnerships': 'General partnership inquiry',
+      'partnerships': 'Health plan partnership',
       'health-plan': 'Health plan partnership',
-      'provider-network': 'Provider or network partnership',
-      'partnership-call': 'Schedule a partnership call',
+      'provider-network': 'Community or service-delivery partnership',
+      'partnership-call': 'Data and operations collaboration',
     };
 
     const interestLabel = interestLabels[interestFromQuery] || 'Partnership inquiry';
@@ -170,18 +169,25 @@ export default function ContactForm() {
               />
             </div>
             <div>
-              <label htmlFor="Service Type" className="block text-sm font-medium text-neutral-700 mb-1">
-                Service Type
+              <label htmlFor="serviceType" className="block text-sm font-medium text-neutral-700 mb-1">
+                Partnership interest
               </label>
-              <input
-                type="text"
+              <select
                 id="serviceType"
                 name="serviceType"
                 value={formData.serviceType}
                 onChange={handleChange}
-                placeholder="Provider or Patient"
                 className="w-full px-4 py-2 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-accent"
-              />
+                required
+              >
+                <option value="" disabled>Select an option</option>
+                <option value="Health plan partnership">Health plan partnership</option>
+                <option value="Care network partnership">Care network partnership</option>
+                <option value="Community or service-delivery partnership">Community or service-delivery partnership</option>
+                <option value="Data and operations collaboration">Data and operations collaboration</option>
+                <option value="Careers">Careers</option>
+                <option value="Other">Other</option>
+              </select>
             </div>
           </div>
           <div>
@@ -219,4 +225,4 @@ export default function ContactForm() {
       )}
     </div>
   );
-} 
+}

@@ -39,7 +39,7 @@ export default function Footer() {
       } else {
         setError('There was an error submitting the form.');
       }
-    } catch (err) {
+    } catch {
       setError('Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);
@@ -70,7 +70,7 @@ export default function Footer() {
                   </div>
                 </Link>
                 <p className="text-neutral-300 mb-4">
-                Our lives run on data  -  healthcare should too.
+                Making whole-person care measurable, scalable, and accountable.
                 </p>
                 <div className="flex space-x-4 mb-6">
                   <a href="mailto:info@advantis.care" aria-label="Email" className="text-white hover:text-accent transition-colors">
@@ -103,7 +103,12 @@ export default function Footer() {
 
               {/* Contact Form */}
               <div className="md:col-span-7">
-                <h3 className="text-xl font-semibold mb-6">Get in Touch</h3>
+                <h3 className="text-xl font-semibold mb-6">Talk to Our Team</h3>
+                {isSubmitted && (
+                  <p className="mb-4 rounded-lg bg-white/10 px-4 py-3 text-sm text-white">
+                    Thank you. Your message has been received, and our team will follow up soon.
+                  </p>
+                )}
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-1 text-neutral-300">Name</label>
@@ -181,10 +186,11 @@ export default function Footer() {
             <div className="lg:col-span-4">
               <h3 className="text-lg font-semibold mb-4">Company</h3>
               <ul className="space-y-2">
+                <li><Link href="/services/" className="text-neutral-300 hover:text-accent transition-colors">What We Do</Link></li>
+                <li><Link href="/#who-we-serve" className="text-neutral-300 hover:text-accent transition-colors">Who We Serve</Link></li>
                 <li><Link href="/about" className="text-neutral-300 hover:text-accent transition-colors">About Us</Link></li>
                 <li><Link href="/careers" className="text-neutral-300 hover:text-accent transition-colors">Careers</Link></li>
                 <li><Link href="/contact" className="text-neutral-300 hover:text-accent transition-colors">Contact Us</Link></li>
-                <li><Link href="/blog/" className="text-neutral-300 hover:text-accent transition-colors">Blog</Link></li>
               </ul>
             </div>
           </div>
@@ -197,4 +203,4 @@ export default function Footer() {
       </footer>
     </>
   );
-} 
+}

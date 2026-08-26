@@ -22,6 +22,20 @@ const nextConfig = {
   trailingSlash: true,
   // Ensure all assets are copied to output directory
   assetPrefix: "",
+  async redirects() {
+    return [
+      {
+        source: "/blog/:path*",
+        destination: "/services/",
+        permanent: true,
+      },
+      {
+        source: "/services/community-first/:path*",
+        destination: "/services/",
+        permanent: true,
+      },
+    ];
+  },
 }
 
-module.exports = nextConfig 
+module.exports = nextConfig

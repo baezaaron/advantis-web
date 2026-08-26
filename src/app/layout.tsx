@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Lora, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -20,8 +21,33 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Advantis | Patient Engagement & Care Completion",
-  description: "Advantis helps healthcare organizations and community partners turn outreach into completed preventive care, resolved social barriers, and closed care gaps.",
+  metadataBase: new URL("https://advantis.care"),
+  title: "Advantis Care | Member Engagement & Social Care Operations",
+  description: "Advantis helps health plans, care networks, and community partners engage hard-to-reach members, coordinate social-care services, and document closed-loop outcomes.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Advantis Care | Member Engagement & Social Care Operations",
+    description: "Advantis helps health plans, care networks, and community partners engage hard-to-reach members, coordinate social-care services, and document closed-loop outcomes.",
+    url: "/",
+    siteName: "Advantis Care",
+    type: "website",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Advantis Care: From member engagement to completed support",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Advantis Care | Member Engagement & Social Care Operations",
+    description: "Advantis helps health plans, care networks, and community partners engage hard-to-reach members, coordinate social-care services, and document closed-loop outcomes.",
+    images: ["/og.png"],
+  },
   icons: {
     icon: [
       { url: "/favicon.ico" }
@@ -50,8 +76,8 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 
         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8NX742D8C"></script>
-        <script dangerouslySetInnerHTML={{ __html: `
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-T8NX742D8C" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());

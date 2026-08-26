@@ -31,13 +31,15 @@ export default function FadeInSection({
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const observedElement = ref.current;
+
+    if (observedElement) {
+      observer.observe(observedElement);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (observedElement) {
+        observer.unobserve(observedElement);
       }
     };
   }, []);

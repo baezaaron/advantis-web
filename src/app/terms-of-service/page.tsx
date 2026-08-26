@@ -1,23 +1,23 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Advantis Extension-of-Care Services',
-  description: 'Review the Advantis terms of service: guidelines for using our value-based healthcare support services. Learn your rights and responsibilities.',
+  title: 'Terms of Service | Advantis Care',
+  description: 'Review the terms that govern use of the Advantis Care website and services.',
   keywords: [
     'terms of service',
     'Advantis terms',
-    'extension-of-care services terms',
+    'social care operations terms',
     'healthcare service agreement',
     'value-based care',
-    'extension-of-care services',
+    'member engagement services',
     'healthcare service terms',
     'HIPAA compliant services',
     'healthcare partnership agreement'
   ],
   openGraph: {
-    title: 'Terms of Service | Advantis Extension-of-Care Services',
-    description: 'Review the Advantis terms of service: guidelines for using our value-based healthcare support services. Learn your rights and responsibilities.',
-    url: 'https://advantis.care/terms-of-service',
+    title: 'Terms of Service | Advantis Care',
+    description: 'Review the terms that govern use of the Advantis Care website and services.',
+    url: 'https://advantis.care/terms-of-service/',
     siteName: 'Advantis',
     images: [
       {
@@ -32,11 +32,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Terms of Service | Advantis Extension-of-Care Services',
-    description: 'Review the Advantis terms of service: guidelines for using our value-based healthcare support services. Learn your rights and responsibilities.',
+    title: 'Terms of Service | Advantis Care',
+    description: 'Review the terms that govern use of the Advantis Care website and services.',
     images: ['/images/og-advantis.png'],
     site: '@advantis',
   },
+  alternates: { canonical: '/terms-of-service/' },
 };
 
 export default function TermsOfServicePage() {
@@ -73,9 +74,9 @@ export default function TermsOfServicePage() {
 
             <h2>Description of Services</h2>
             <p>
-              Advantis provides technology-enabled healthcare support services for patients at home. 
-              Our services may include, but are not limited to, remote patient monitoring, telehealth 
-              consultations, and in-home support coordination.
+              Advantis provides member engagement and social-care operations for healthcare and community
+              programs. Services may include HRSN screening, navigation, service coordination,
+              quality assurance, and operational reporting as defined with each partner.
             </p>
 
             <h2>User Responsibilities</h2>
@@ -150,4 +151,4 @@ export default function TermsOfServicePage() {
       </section>
     </>
   );
-} 
+}

@@ -1,10 +1,9 @@
 import React from 'react';
 import Button from './Button';
-import CustomImage from '@/components/Image';
 
 export default function Hero() {
   return (
-    <div className="relative min-h-[90vh] flex items-center">
+    <div className="relative min-h-[82vh] flex items-center">
       {/* Background gradient */}
       <div className="absolute inset-0 z-0 bg-primary">
         {/* Gradient overlay for visual interest */}
@@ -12,20 +11,20 @@ export default function Hero() {
       </div>
       
       {/* Content */}
-      <div className="container mx-auto px-4 md:px-6 relative z-10 py-16 md:py-24">
-        <div className="max-w-2xl text-white">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight drop-shadow-md">
-            <span className="bg-gradient-to-r from-white to-accent/90 bg-clip-text text-transparent">Extend Your Care</span>
+      <div className="container mx-auto px-4 md:px-6 relative z-10 py-14 md:py-20">
+        <div className="max-w-3xl text-white">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-md">
+            <span className="bg-gradient-to-r from-white to-accent/90 bg-clip-text text-transparent">From member engagement to completed support</span>
           </h1>
-          <p className="text-2xl md:text-3xl mb-10 text-white/90 font-light">
-            A high-touch clinical and administrative extension-of-care service focused on closing care gaps and documenting completion
+          <p className="max-w-2xl text-lg md:text-xl mb-8 text-white/90 font-light leading-relaxed">
+            Advantis helps health plans, care networks, and community partners reach hard-to-engage members, navigate health-related social needs, coordinate services, and document what happens next.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/contact/?interest=partnerships#contact-form" size="lg" variant="secondary" className="px-8 py-4 text-base">
-              Talk to Partnerships
+              Talk to Our Team
             </Button>
-            <Button href="/#how-it-works" variant="outline" size="lg" className="px-8 py-4 text-base border-white text-white hover:bg-white/10">
-              See Our Care Completion Model
+            <Button href="/services/" variant="outline" size="lg" className="px-8 py-4 text-base border-white text-white hover:bg-white/10">
+              Explore What We Do
             </Button>
           </div>
         </div>
@@ -44,4 +43,4 @@ export default function Hero() {
       </div>
     </div>
   );
-} 
+}

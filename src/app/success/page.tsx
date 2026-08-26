@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 
 export default function SuccessPage() {
   const searchParams = useSearchParams();
@@ -54,8 +55,8 @@ export default function SuccessPage() {
             {error && <div className="text-red-600 mt-2">{error}</div>}
           </div>
         )}
-        <a href="/" className="inline-block bg-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-dark transition-colors mt-6">Return Home</a>
+        <Link href="/" className="inline-block bg-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-dark transition-colors mt-6">Return Home</Link>
       </div>
     </section>
   );
-} 
+}
