@@ -52,8 +52,8 @@ export default function ContactPage() {
                 <ContactInfo
                   title="Phone"
                   description="Monday through Friday, 9 a.m. to 9 p.m. Eastern"
-                  value="(212) 470-6966"
-                  link="tel:+12124706966"
+                  value="973-723-1162"
+                  link="tel:+19737231162"
                 />
                 <ContactInfo
                   title="Office"

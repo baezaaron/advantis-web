@@ -47,6 +47,10 @@ const audiences = [
     title: 'Community and service-delivery partners',
     description: 'Operational support that improves member handoffs, service visibility, documentation, and coordination across a fragmented delivery environment.',
   },
+  {
+    title: 'Employers and workforce organizations',
+    description: 'A practical coordination layer that helps employees navigate social barriers, access relevant support, and feel cared for beyond the workplace.',
+  },
 ];
 
 const steps = [
@@ -103,6 +107,24 @@ export default function HomePage() {
               {services.map((service) => (
                 <ServiceCard key={service.title} {...service} link="/services/" />
               ))}
+            </div>
+          </div>
+        </section>
+      </FadeInSection>
+
+      <FadeInSection>
+        <section className="section bg-neutral-100" aria-labelledby="relationship-heading">
+          <div className="container">
+            <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-10 lg:gap-16 items-start">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent mb-4">The relationship layer</p>
+                <h2 id="relationship-heading" className="text-3xl md:text-5xl font-bold mb-6">Connecting providers, members, and community organizations</h2>
+                <p className="text-lg text-neutral-700 leading-relaxed">Health systems can give providers tools, but tools alone do not create trusted community relationships or make it clear where a member should turn next. Advantis builds and manages relationships with community-based organizations and other local partners, giving providers a practical pathway from identified need to coordinated support.</p>
+              </div>
+              <div className="rounded-xl border border-neutral-200 bg-white p-8 shadow-sm">
+                <h3 className="text-2xl font-bold mb-4">A more cared-for workforce</h3>
+                <p className="text-neutral-700 leading-relaxed">For employers, social challenges outside the workplace can affect health, focus, attendance, and retention. By taking on the coordination and logistical work behind social care, Advantis helps organizations connect people to relevant support while giving leaders clearer visibility into what is working.</p>
+              </div>
             </div>
           </div>
         </section>

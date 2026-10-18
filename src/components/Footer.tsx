@@ -79,12 +79,6 @@ export default function Footer() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </a>
-                  <a href="https://x.com/AdvantisCare" target="_blank" rel="noopener noreferrer" aria-label="X" className="text-white hover:text-accent transition-colors">
-                    {/* X (Twitter) Icon */}
-                    <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </a>
                   <a href="https://linkedin.com/company/advantis-care" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white hover:text-accent transition-colors">
                     {/* LinkedIn Icon */}
                     <svg className="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
@@ -96,7 +90,7 @@ export default function Footer() {
                   <p className="mb-1">181 7th Ave</p>
                   <p className="mb-1">New York, NY 10011</p>
                   <p className="mb-4">United States</p>
-                  <p className="mb-1">Phone: (212) 470-6966</p>
+                  <p className="mb-1">Phone: 973-723-1162</p>
                   <p>Email: abaez@advantis.care</p>
                 </div>
               </div>

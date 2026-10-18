@@ -35,10 +35,8 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: "Advantis Care: From member engagement to completed support",
+        url: "/images/Advantis-Logo-200.png",
+        alt: "Advantis Care logo",
       },
     ],
   },
@@ -46,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Advantis Care | Member Engagement & Social Care Operations",
     description: "Advantis helps health plans, care networks, and community partners engage hard-to-reach members, coordinate social-care services, and document closed-loop outcomes.",
-    images: ["/og.png"],
+    images: ["/images/Advantis-Logo-200.png"],
   },
   icons: {
     icon: [
