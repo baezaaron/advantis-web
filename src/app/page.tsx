@@ -2,78 +2,38 @@ import Hero from '@/components/Hero';
 import ServiceCard from '@/components/ServiceCard';
 import Button from '@/components/Button';
 import FadeInSection from '@/components/FadeInSection';
-import { HeartPulseIcon, SupportIcon, TechIcon, UsersIcon } from '@/components/icons';
+import { HeartPulseIcon, TechIcon, UsersIcon } from '@/components/icons';
 
-const services = [
+const pillars = [
   {
-    title: 'Member engagement',
-    description: 'Persistent, respectful outreach designed to reach members who are often missed by traditional workflows and move each interaction toward a clear next step.',
+    title: 'Engage',
+    description: 'Persistent, respectful outreach that reaches members traditional workflows miss and identifies what they need.',
     icon: <UsersIcon className="h-7 w-7" />,
   },
   {
-    title: 'HRSN screening and navigation',
-    description: 'Structured screening, eligibility support, resource navigation, and follow-up across food, housing, transportation, utilities, and other health-related social needs.',
+    title: 'Support',
+    description: 'Help delivered by our team or coordinated with the right partner, clearing the barriers in between.',
     icon: <HeartPulseIcon className="h-7 w-7" />,
   },
   {
-    title: 'Service coordination and fulfillment',
-    description: 'Coordination with community and enhanced-service partners, with follow-through that goes beyond making a referral to determine whether support was actually delivered.',
-    icon: <SupportIcon className="h-7 w-7" />,
-  },
-  {
-    title: 'Quality, data, and network operations',
-    description: 'Standardized workflows, quality assurance, service-event documentation, and operational reporting that help partners understand capacity, completion, barriers, and next actions.',
+    title: 'Confirm',
+    description: 'Follow-through, quality review, and reporting that show whether support was actually delivered.',
     icon: <TechIcon className="h-7 w-7" />,
   },
 ];
 
-const measures = [
-  { label: 'Reach', detail: 'Attempts, contacts, consent, and engagement by population' },
-  { label: 'Identify', detail: 'Screenings completed, needs identified, and eligibility status' },
-  { label: 'Fulfill', detail: 'Referrals accepted, services initiated, services completed, and time to completion' },
-  { label: 'Learn', detail: 'Unresolved barriers, repeat needs, quality findings, capacity gaps, and outcome trends' },
-];
-
 const audiences = [
-  {
-    title: 'Health plans and accountable organizations',
-    description: 'Member engagement, social-care operations, and structured reporting that support program responsibilities, quality priorities, and accountable service delivery.',
-  },
-  {
-    title: 'Care networks and coordinating organizations',
-    description: 'Scalable engagement, navigation, quality assurance, and operating capacity that help networks move members through consistent end-to-end workflows.',
-  },
-  {
-    title: 'Community and service-delivery partners',
-    description: 'Operational support that improves member handoffs, service visibility, documentation, and coordination across a fragmented delivery environment.',
-  },
-  {
-    title: 'Employers and workforce organizations',
-    description: 'A practical coordination layer that helps employees navigate social barriers, access relevant support, and feel cared for beyond the workplace.',
-  },
+  { title: 'Health plans', description: 'Accountable member engagement and social-care operations.' },
+  { title: 'Care networks', description: 'Consistent, scalable workflows from screening to completion.' },
+  { title: 'Community partners', description: 'Better handoffs, visibility, and coordination.' },
+  { title: 'Employers', description: 'Practical support for employees facing barriers outside work.' },
 ];
 
 const steps = [
-  {
-    number: '01',
-    title: 'Define the population and workflow',
-    description: 'We align on the population, program requirements, responsibilities, escalation paths, data exchange, and measures of success.',
-  },
-  {
-    number: '02',
-    title: 'Engage and assess',
-    description: 'Our teams conduct persistent outreach, build trust, identify needs, and establish the next appropriate action.',
-  },
-  {
-    number: '03',
-    title: 'Navigate and coordinate',
-    description: 'We connect members to available services and work with partners to reduce administrative and practical barriers.',
-  },
-  {
-    number: '04',
-    title: 'Verify and report',
-    description: 'We follow the journey through completion or a documented handoff, then return structured service-event data and actionable operational insights.',
-  },
+  { title: 'Reach', description: 'Engage the member and build trust.' },
+  { title: 'Identify', description: 'Pinpoint the need, from care gaps to social barriers.' },
+  { title: 'Support', description: 'Deliver help directly or through a trusted partner.' },
+  { title: 'Confirm', description: 'Verify the loop is closed and report results.' },
 ];
 
 export default function HomePage() {
@@ -82,13 +42,13 @@ export default function HomePage() {
       <Hero />
 
       <FadeInSection>
-        <section className="section bg-white" aria-labelledby="mission-heading">
+        <section className="section bg-white" aria-labelledby="problem-heading">
           <div className="container">
-            <div className="max-w-4xl mx-auto text-center">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent mb-4">Our mission in action</p>
-              <h2 id="mission-heading" className="text-3xl md:text-5xl font-bold mb-6">Making social care work in practice</h2>
+            <div className="max-w-3xl mx-auto text-center">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent mb-4">The problem</p>
+              <h2 id="problem-heading" className="text-3xl md:text-5xl font-bold mb-6">A referral is not a resolution</h2>
               <p className="text-lg md:text-xl text-neutral-700 leading-relaxed">
-                Identifying a social need is only the beginning. Members still have to be reached, eligibility must be understood, services must be coordinated, and outcomes must be documented. Advantis operates across that gap. We combine high-touch engagement, disciplined workflows, community partnerships, and operational data so whole-person care can move from intention to completion.
+                Identifying a need is only the beginning. Too often, members are never reached, follow-up stalls, and no one knows whether the need was met. Advantis closes that loop.
               </p>
             </div>
           </div>
@@ -96,16 +56,40 @@ export default function HomePage() {
       </FadeInSection>
 
       <FadeInSection>
-        <section id="what-we-do" className="section bg-neutral-100 scroll-mt-20" aria-labelledby="services-heading">
+        <section id="how-it-works" className="section bg-neutral-100 scroll-mt-20" aria-labelledby="process-heading">
+          <div className="container">
+            <div className="section-header">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent mb-4">How it works</p>
+              <h2 id="process-heading" className="text-3xl md:text-5xl font-bold">How we close the loop</h2>
+            </div>
+            <div className="relative">
+            <div className="hidden lg:block absolute top-7 left-[12.5%] right-[12.5%] h-0.5 bg-accent/30" aria-hidden="true"></div>
+            <ol className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {steps.map((step, index) => (
+                <li key={step.title} className="relative text-center">
+                  <span className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-accent text-xl font-bold text-primary" aria-hidden="true">
+                    {index + 1}
+                  </span>
+                  <h3 className="text-xl font-bold mb-2">{step.title}</h3>
+                  <p className="text-neutral-700">{step.description}</p>
+                </li>
+              ))}
+            </ol>
+            </div>
+          </div>
+        </section>
+      </FadeInSection>
+
+      <FadeInSection>
+        <section id="what-we-do" className="section bg-white scroll-mt-20" aria-labelledby="services-heading">
           <div className="container">
             <div className="section-header">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent mb-4">What we do</p>
-              <h2 id="services-heading" className="text-3xl md:text-5xl font-bold mb-5">The operating layer between need and resolution</h2>
-              <p className="text-lg text-neutral-700">Advantis supports the full member journey while working within the platforms, benefit structures, and partner networks already in place.</p>
+              <h2 id="services-heading" className="text-3xl md:text-5xl font-bold">Three things, done all the way through</h2>
             </div>
-            <div className="grid md:grid-cols-2 gap-6">
-              {services.map((service) => (
-                <ServiceCard key={service.title} {...service} link="/services/" />
+            <div className="grid md:grid-cols-3 gap-6">
+              {pillars.map((pillar) => (
+                <ServiceCard key={pillar.title} {...pillar} link="/services/" />
               ))}
             </div>
           </div>
@@ -113,38 +97,21 @@ export default function HomePage() {
       </FadeInSection>
 
       <FadeInSection>
-        <section className="section bg-neutral-100" aria-labelledby="relationship-heading">
+        <section className="section bg-primary text-white" aria-labelledby="difference-heading">
           <div className="container">
-            <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-10 lg:gap-16 items-start">
-              <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent mb-4">The relationship layer</p>
-                <h2 id="relationship-heading" className="text-3xl md:text-5xl font-bold mb-6">Connecting providers, members, and community organizations</h2>
-                <p className="text-lg text-neutral-700 leading-relaxed">Health systems can give providers tools, but tools alone do not create trusted community relationships or make it clear where a member should turn next. Advantis builds and manages relationships with community-based organizations and other local partners, giving providers a practical pathway from identified need to coordinated support.</p>
-              </div>
-              <div className="rounded-xl border border-neutral-200 bg-white p-8 shadow-sm">
-                <h3 className="text-2xl font-bold mb-4">A more cared-for workforce</h3>
-                <p className="text-neutral-700 leading-relaxed">For employers, social challenges outside the workplace can affect health, focus, attendance, and retention. By taking on the coordination and logistical work behind social care, Advantis helps organizations connect people to relevant support while giving leaders clearer visibility into what is working.</p>
-              </div>
+            <div className="max-w-3xl mx-auto text-center">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent mb-4">What makes us different</p>
+              <h2 id="difference-heading" className="text-3xl md:text-5xl font-bold text-white mb-6">We bring the community relationships</h2>
+              <p className="text-lg md:text-xl text-white/85 leading-relaxed">
+                Tools alone don&apos;t create trust. Advantis builds and manages relationships with community-based organizations, giving providers a dependable path from identified need to delivered support.
+              </p>
             </div>
-          </div>
-        </section>
-      </FadeInSection>
-
-      <FadeInSection>
-        <section className="section bg-primary text-white" aria-labelledby="accountability-heading">
-          <div className="container">
-            <div className="section-header">
-              <h2 id="accountability-heading" className="text-3xl md:text-5xl font-bold text-white mb-5">Accountability at every step</h2>
-              <p className="text-lg text-white/80">Performance is measured across the member journey, not only at the point of referral.</p>
-            </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-              {measures.map((measure, index) => (
-                <div key={measure.label} className="rounded-xl border border-white/15 bg-white/10 p-6">
-                  <p className="text-accent font-semibold mb-3">0{index + 1}</p>
-                  <h3 className="text-2xl font-bold text-white mb-3">{measure.label}</h3>
-                  <p className="text-white/80">{measure.detail}</p>
-                </div>
-              ))}
+            <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-center" aria-hidden="true">
+              <span className="rounded-full border border-white/25 bg-white/10 px-6 py-3 font-semibold">Providers &amp; plans</span>
+              <span className="text-accent text-2xl rotate-90 md:rotate-0">→</span>
+              <span className="rounded-full bg-accent px-6 py-3 font-bold text-primary">Advantis</span>
+              <span className="text-accent text-2xl rotate-90 md:rotate-0">→</span>
+              <span className="rounded-full border border-white/25 bg-white/10 px-6 py-3 font-semibold">Trusted community partners</span>
             </div>
           </div>
         </section>
@@ -155,49 +122,24 @@ export default function HomePage() {
           <div className="container">
             <div className="section-header">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent mb-4">Who we serve</p>
-              <h2 id="audience-heading" className="text-3xl md:text-5xl font-bold mb-5">Built for organizations accountable to members</h2>
+              <h2 id="audience-heading" className="text-3xl md:text-5xl font-bold">Built for organizations accountable to people</h2>
             </div>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {audiences.map((audience) => (
                 <article key={audience.title} className="rounded-xl border border-neutral-200 bg-neutral-50 p-7">
-                  <h3 className="text-xl font-bold mb-4">{audience.title}</h3>
+                  <h3 className="text-xl font-bold mb-3">{audience.title}</h3>
                   <p className="text-neutral-700">{audience.description}</p>
                 </article>
               ))}
             </div>
-            <p className="max-w-4xl mx-auto mt-9 text-center text-lg text-neutral-700">
-              Our operating model is designed to adapt across populations facing barriers to care, services, and benefit utilization.
-            </p>
-          </div>
-        </section>
-      </FadeInSection>
-
-      <FadeInSection>
-        <section id="how-it-works" className="section bg-neutral-100 scroll-mt-20" aria-labelledby="process-heading">
-          <div className="container">
-            <div className="section-header">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent mb-4">How it works</p>
-              <h2 id="process-heading" className="text-3xl md:text-5xl font-bold mb-5">A disciplined path from outreach to insight</h2>
-            </div>
-            <ol className="grid md:grid-cols-2 gap-6">
-              {steps.map((step) => (
-                <li key={step.number} className="bg-white rounded-xl border border-neutral-200 p-7 flex gap-5">
-                  <span className="text-2xl font-bold text-accent" aria-hidden="true">{step.number}</span>
-                  <div>
-                    <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                    <p className="text-neutral-700">{step.description}</p>
-                  </div>
-                </li>
-              ))}
-            </ol>
           </div>
         </section>
       </FadeInSection>
 
       <section className="py-20 md:py-28 bg-primary text-white">
-        <div className="container text-center max-w-4xl">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Build a more accountable member journey</h2>
-          <p className="text-lg md:text-xl text-white/85 mb-9">Talk with Advantis about strengthening engagement, navigation, service coordination, and social-care operations for the populations you serve.</p>
+        <div className="container text-center max-w-3xl">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Let&apos;s close the loop for your members</h2>
+          <p className="text-lg md:text-xl text-white/85 mb-9">Tell us about the population you serve, and we&apos;ll show you how Advantis can help.</p>
           <Button href="/contact/?interest=partnerships#contact-form" size="lg" variant="secondary">Start a Partnership Conversation</Button>
         </div>
       </section>

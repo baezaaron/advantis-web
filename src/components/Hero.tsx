@@ -14,10 +14,10 @@ export default function Hero() {
       <div className="container mx-auto px-4 md:px-6 relative z-10 py-14 md:py-20">
         <div className="max-w-3xl text-white">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-md">
-            <span className="bg-gradient-to-r from-white to-accent/90 bg-clip-text text-transparent">From member engagement to completed support</span>
+            <span className="bg-gradient-to-r from-white to-accent/90 bg-clip-text text-transparent">From identified need to completed support</span>
           </h1>
           <p className="max-w-2xl text-lg md:text-xl mb-8 text-white/90 font-light leading-relaxed">
-            Advantis helps health plans, care networks, and community partners reach hard-to-engage members, navigate health-related social needs, coordinate services, and document what happens next.
+            Advantis reaches members and resolves what stands in their way, from social drivers of health today to care gaps and coverage tomorrow. We make sure every loop is closed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/contact/?interest=partnerships#contact-form" size="lg" variant="secondary" className="px-8 py-4 text-base">

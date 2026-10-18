@@ -67,6 +67,13 @@ const capabilities = [
   },
 ];
 
+const measures = [
+  { label: 'Reach', detail: 'Attempts, contacts, consent, and engagement by population' },
+  { label: 'Identify', detail: 'Screenings completed, needs identified, and eligibility status' },
+  { label: 'Fulfill', detail: 'Referrals accepted, services initiated, services completed, and time to completion' },
+  { label: 'Learn', detail: 'Unresolved barriers, repeat needs, quality findings, capacity gaps, and outcome trends' },
+];
+
 export default function ServicesPage() {
   return (
     <>
@@ -86,7 +93,7 @@ export default function ServicesPage() {
             <div className="section-header">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent mb-4">Core capabilities</p>
               <h2 className="text-3xl md:text-5xl font-bold mb-5">The work required to close the loop</h2>
-              <p className="text-lg text-neutral-700">We work within partner-approved platforms, benefit structures, and networks to strengthen execution across the member journey.</p>
+              <p className="text-base md:text-lg text-neutral-700 text-balance md:whitespace-nowrap">We work within your existing platforms, benefits, and partner networks.</p>
             </div>
             <div className="space-y-6 max-w-5xl mx-auto">
               {capabilities.map((capability, index) => (
@@ -107,6 +114,44 @@ export default function ServicesPage() {
                     </ul>
                   </div>
                 </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      </FadeInSection>
+
+      <FadeInSection>
+        <section className="section bg-white" aria-labelledby="relationship-heading">
+          <div className="container">
+            <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-10 lg:gap-16 items-start">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent mb-4">The relationship layer</p>
+                <h2 id="relationship-heading" className="text-3xl md:text-5xl font-bold mb-6">Connecting providers, members, and community organizations</h2>
+                <p className="text-lg text-neutral-700 leading-relaxed">Health systems can give providers tools, but tools alone do not create trusted community relationships or make it clear where a member should turn next. Advantis builds and manages relationships with community-based organizations and other local partners, giving providers a practical pathway from identified need to coordinated support.</p>
+              </div>
+              <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-8 shadow-sm">
+                <h3 className="text-2xl font-bold mb-4">A more cared-for workforce</h3>
+                <p className="text-neutral-700 leading-relaxed">For employers, social challenges outside the workplace can affect health, focus, attendance, and retention. By taking on the coordination and logistical work behind social care, Advantis helps organizations connect people to relevant support while giving leaders clearer visibility into what is working.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeInSection>
+
+      <FadeInSection>
+        <section className="section bg-primary text-white" aria-labelledby="accountability-heading">
+          <div className="container">
+            <div className="section-header">
+              <h2 id="accountability-heading" className="text-3xl md:text-5xl font-bold text-white mb-5">Accountability at every step</h2>
+              <p className="text-lg text-white/80">Performance is measured across the member journey, not only at the point of referral.</p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {measures.map((measure, index) => (
+                <div key={measure.label} className="rounded-xl border border-white/15 bg-white/10 p-6">
+                  <p className="text-accent font-semibold mb-3">0{index + 1}</p>
+                  <h3 className="text-2xl font-bold text-white mb-3">{measure.label}</h3>
+                  <p className="text-white/80">{measure.detail}</p>
+                </div>
               ))}
             </div>
           </div>
